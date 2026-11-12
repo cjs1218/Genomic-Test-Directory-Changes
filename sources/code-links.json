@@ -27,6 +27,27 @@
       ],
       "note": "Marfan syndrome now tested under the aortopathy indication, R125",
       "source": "confirmed by the clinical team, November 2026"
+    },
+    {
+      "from": "R205",
+      "release": "2019-03",
+      "to": [
+        "R208"
+      ],
+      "note": "breast cancer at very high familial risk now tested under R208, renamed Inherited breast cancer and ovarian cancer in March 2019",
+      "source": "confirmed by the clinical team, November 2026"
+    },
+    {
+      "from": "R206",
+      "release": "2019-03",
+      "to": [
+        "R208"
+      ],
+      "auto": true,
+      "why": [
+        "removed in the same release that R208 was renamed Inherited breast cancer and ovarian cancer (not yet confirmed)"
+      ],
+      "note": "probably now tested under R208, like R205"
     }
   ]
 }
