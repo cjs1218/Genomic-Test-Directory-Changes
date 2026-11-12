@@ -1,5 +1,5 @@
 {
-  "about": "Confirmed replacements for retired R codes; these override the automatic suggestions. 'release' is the release the code was removed in. Add a 'source' saying who confirmed it.",
+  "about": "Replacements for retired R codes; these override the automatic suggestions. 'release' is the release the code was removed in. 'source' says who or what confirmed it (the clinical team, or NHS England's change log). Entries with auto: true are inferences from the directory text, shown as 'possibly replaced by' until confirmed. An empty 'to' means retired with no replacement.",
   "links": [
     {
       "from": "R59",
@@ -45,6 +45,172 @@
       ],
       "note": "breast and ovarian cancer at very high familial risk now tested under R208, renamed Inherited breast cancer and ovarian cancer in March 2019",
       "source": "confirmed by the clinical team, November 2026"
+    },
+    {
+      "from": "R34",
+      "release": "v3",
+      "to": [
+        "R32"
+      ],
+      "note": "testing for Sorsby retinal dystrophy is now within the scope of R32",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R35",
+      "release": "v3",
+      "to": [
+        "R32"
+      ],
+      "note": "testing for Doyne retinal dystrophy is now within the scope of R32",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R209",
+      "release": "v3",
+      "to": [
+        "R210",
+        "R211"
+      ],
+      "note": "the R210 and R211 criteria were amended to cover patients who would have been tested under R209",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R94",
+      "release": "v8.1",
+      "to": [
+        "R93"
+      ],
+      "note": "R93 was renamed to include HbSS sickle cell anaemia (v8.0, May 2025)",
+      "source": "NHS England change log, v8.0/v8.1 eligibility criteria"
+    },
+    {
+      "from": "R362",
+      "release": "v8.1",
+      "to": [
+        "R361"
+      ],
+      "note": "R361 was renamed to include sickle cell carrier testing (v8.0, May 2025)",
+      "source": "NHS England change log, v8.0/v8.1 eligibility criteria"
+    },
+    {
+      "from": "R177",
+      "release": "v9",
+      "to": [
+        "R438"
+      ],
+      "note": "R438 should be used where testing for Hirschsprung disease is required",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R407",
+      "release": "v7",
+      "to": [],
+      "note": "moved to the National Genomic Test Directory for cancer, where it was duplicated",
+      "source": "NHS England change log, v7 (July 2024) eligibility criteria"
+    },
+    {
+      "from": "R392",
+      "release": "2019-03",
+      "to": [
+        "R217"
+      ],
+      "auto": true,
+      "why": [
+        "from March 2019 the R217 criteria include X-linked acrogigantism"
+      ],
+      "note": "X-linked acrogigantism appears in the R217 criteria"
+    },
+    {
+      "from": "R408",
+      "release": "2021-10",
+      "to": [
+        "R138"
+      ],
+      "auto": true,
+      "why": [
+        "in October 2021 R138 was renamed to include survivors of a cardiac event, and its criteria include idiopathic ventricular fibrillation"
+      ],
+      "note": "R138 now covers survivors of proven cardiac arrest (idiopathic ventricular fibrillation)"
+    },
+    {
+      "from": "R30",
+      "release": "2019-03",
+      "to": [
+        "R29"
+      ],
+      "auto": true,
+      "why": [
+        "R29 covers microarray, fragile X and sequencing, which includes everything R30 offered"
+      ],
+      "note": "R29 included the same microarray and fragile X tests"
+    },
+    {
+      "from": "R238",
+      "release": "2020-08",
+      "to": [
+        "R165"
+      ],
+      "auto": true,
+      "why": [
+        "erythroderma is one of the features in the R165 criteria (weak evidence)"
+      ],
+      "note": "erythroderma is one of the listed features for R165"
+    },
+    {
+      "from": "R398",
+      "release": "v3",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R53",
+      "release": "v7.1",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v7.1 (January 2025) eligibility criteria"
+    },
+    {
+      "from": "R377",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R267",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R284",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R378",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R388",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R415",
+      "release": "v9",
+      "to": [],
+      "note": "Retired; the directory names no replacement code",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
     }
   ]
 }

@@ -143,7 +143,7 @@ async function renderCompare(s) {
   if (C.sameMonthUnsure(seenRel, s.seen)) notices.push(`${esc(seenRel.label)} was published in ${esc(C.relDate(seenRel))}; the exact day is not stated, so check whether the previous version still applied on ${esc(C.longDate(s.seen))}.`);
   if (backwards) notices.push('The “then” version is later than the “compare with” version.');
   if (!entA && entB) notices.push(`${code} was not in ${relA.label}.`);
-  if (entA && !entB) notices.push(`${code} is not in ${relB.label}.` + (links.length ? ' ' + links.map(l => l.to.length ? `${l.auto ? 'Possibly replaced by' : 'Replaced by'} ${l.to.map(c => `<a href="#${c}">${c}</a>`).join(', ')}${l.why ? ' (' + esc(l.why.join('; ')) + ')' : ''}${l.note ? ' – ' + esc(l.note) : ''}.` : 'No replacement code found.').join(' ') : ''));
+  if (entA && !entB) notices.push(`${code} is not in ${relB.label}.` + (links.length ? ' ' + links.map(l => l.to.length ? `${l.auto ? 'Possibly replaced by' : 'Replaced by'} ${l.to.map(c => `<a href="#${c}">${c}</a>`).join(', ')}${l.why ? ' (' + esc(l.why.join('; ')) + ')' : ''}${l.note ? ' – ' + esc(l.note) : ''}${l.source ? ' <span class="hint">(' + esc(l.source) + ')</span>' : ''}.` : `${esc(l.note || 'No replacement code found')}${l.source ? ' <span class="hint">(' + esc(l.source) + ')</span>' : ''}.`).join(' ') : ''));
   if (!entA && !entB) notices.push(`${code} is in neither version. It appears in: ${rec.present.map(id => esc(relById(id).label)).join(', ')}.`);
 
   const verCard = (label, r, ent, extra) => `<div class="ver"><div class="label">${label}</div><strong>${esc(r.label)}</strong>

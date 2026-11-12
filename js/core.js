@@ -198,7 +198,9 @@
       const r = gone && o.releases.find(x => x.id === gone.r);
       L.push(`${o.code} is not in ${o.relB.label}${r ? `: it was removed in ${relText(r)}` : ''}.`);
       for (const l of o.links || []) {
-        if (l.to && l.to.length) L.push(`${l.auto ? 'Possibly replaced by' : 'Replaced by'} ${l.to.join(', ')}${l.note ? ' – ' + l.note : ''}.`);
+        const cite = l.source && /NHS England/.test(l.source) ? ` (${l.source})` : '';
+        if (l.to && l.to.length) L.push(`${l.auto ? 'Possibly replaced by' : 'Replaced by'} ${l.to.join(', ')}${l.note ? ' – ' + l.note : ''}${cite}.`);
+        else if (l.note) L.push(`${l.note[0].toUpperCase()}${l.note.slice(1)}${cite}.`);
       }
     }
     if (o.entA && o.entB && norm(o.entA.name) !== norm(o.entB.name)) L.push(`Then called “${o.entA.name}”; now “${o.entB.name}”.`);

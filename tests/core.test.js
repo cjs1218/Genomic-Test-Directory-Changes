@@ -79,3 +79,14 @@ test('a panel the earlier tests did not use is not reported as unsigned', () => 
   assert.match(s, /then panel not used for this code/);
   assert.doesNotMatch(s, /then no GMS signed-off/);
 });
+
+test('retired codes: documented replacement cites its source; no replacement says so', () => {
+  const R = [{ id: 'a', label: 'v2', published: '2021-01-01' }, { id: 'b', label: 'v3', published: '2022-04-01' }];
+  const base = { seen: '2021-06-01', relA: R[0], relB: R[1], releases: R, entA: { name: 'Old' }, entB: undefined, genes: [], events: [{ r: 'b', k: ['removed'] }] };
+  const s1 = C.summary({ ...base, code: 'R34', links: [{ from: 'R34', to: ['R32 (Retinal disorders)'], note: 'now within the scope of R32', source: 'NHS England change log, v3 (April 2022) eligibility criteria' }] });
+  assert.match(s1, /Replaced by R32 \(Retinal disorders\) – now within the scope of R32 \(NHS England change log, v3/);
+  const s2 = C.summary({ ...base, code: 'R398', links: [{ from: 'R398', to: [], note: 'Retired; the directory names no replacement code', source: 'NHS England change log, v3' }] });
+  assert.match(s2, /Retired; the directory names no replacement code \(NHS England change log, v3\)\./);
+  const s3 = C.summary({ ...base, code: 'R59', links: [{ from: 'R59', to: ['R27'], note: 'x', source: 'confirmed by the clinical team' }] });
+  assert.doesNotMatch(s3, /clinical team/, 'internal confirmations are not quoted in a reply');
+});
