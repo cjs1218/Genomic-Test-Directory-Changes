@@ -17,3 +17,13 @@ wb.save(os.path.join(tmp, 'files', 'old.xlsx'))
 pv.SOURCES = tmp
 out = pv.parse({'id': 'old', 'files': {'xlsx': 'old.xlsx'}})
 print(json.dumps(out))
+
+# split-word repair (font ligature defect): rejoin only the defect's pattern, never two real words
+raw = ('Referrals for testing of the family. Whilstthis first deficiency affecting susceptibility for for of a family '
+       'Whilst this fortesting wherefamilial where where familial testing testing negativeT negative negative T cells')
+lay = ('Ref errals f or testing of the f amily. Whilst this f irst def iciency af f ecting susceptibilit y, of a '
+       'where f amilial negative T cells')
+fixed, n = pv.repair_splits(lay, raw)
+assert fixed == ('Referrals for testing of the family. Whilst this first deficiency affecting susceptibility, of a '
+                 'where familial negative T cells'), fixed
+assert n == 9, n

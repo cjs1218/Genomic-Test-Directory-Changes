@@ -142,7 +142,7 @@ def bullets(seg, short=False):
     items, notes, ind = [], [], None
     for _, l in seg:
         s = l.strip()
-        if s.startswith('Referrals for testing will') or s.startswith('Please note'): break
+        if re.match(r'Ref\s*errals\s*f\s*or\s*testing will', s) or s.startswith('Please note'): break
         b = re.match(r'^[•\-−·]\s*(.*)$', s)
         here = len(l) - len(l.lstrip())
         if short:
@@ -175,8 +175,8 @@ def table(seg):
     """Associated Tests table -> {test id: {family, scope}} using the header's column positions."""
     out, cols, cur = {}, None, None
     for _, l in seg:
-        if re.match(r'^\s*Code\s+Name\s+Optimal', l):
-            names = [r'Code', r'Name', r'Optimal', r'Scope\(s\)', r'Target(?! Name)', r'Target Name', r'Method']
+        if re.match(r'^\s*Code\s+Name\s+Opti(?:mal|onal)', l):
+            names = [r'Code', r'Name', r'Opti(?:mal|onal)', r'Scope\(s\)', r'Target(?! Name)', r'Target Name', r'Method']
             found = [re.search(n, l) for n in names]
             cols = [m.start() if m else 10 ** 6 for m in found]; cur = None; continue
         if not cols or l.strip() in ('Structure', 'Family', 'Family Structure'): continue
@@ -206,6 +206,43 @@ def change_log(L):
     return []
 
 
+def repair_splits(layout, raw):
+    """Some PDFs' fonts make `pdftotext -layout` split words ("Ref errals f or", "af f ecting", "susceptibilit y"), while
+    `-raw` reads them whole but loses the layout. Rejoin two or three fragments separated by single spaces when the joined
+    word occurs in the raw text, at least one fragment is not a word on its own there, and the split looks like the font
+    defect (after an "f" ligature, before "ion", or a stray single letter). Two real words are never merged, even where
+    the raw text runs them together. Returns (text, number rejoined)."""
+    import collections
+    freq = collections.Counter(re.findall(r"[A-Za-z]+", raw))
+    real = lambda w: (len(w) > 1 or w in ('a', 'A', 'I')) and freq[w] >= 2
+    stray = lambda w: len(w) == 1 and w.islower() and w != 'a'  # a lone capital is often meaningful (T cell, type A)
+
+    def defect(fr):
+        return (any(f.endswith('f') for f in fr[:-1]) or any(stray(f) for f in fr)
+                or any(x.endswith('t') and y.startswith('ion') for x, y in zip(fr, fr[1:])))
+    count = 0
+
+    def fix_line(line):
+        nonlocal count
+        parts = re.split(r'([A-Za-z]+)', line)  # odd indexes are words, even are the text between them
+        out, i = [parts[0]], 1
+        while i < len(parts):
+            done = False
+            for n in (2, 3):
+                j = i + 2 * (n - 1)
+                if j >= len(parts): continue
+                frags = [parts[k] for k in range(i, j + 1, 2)]
+                if any(parts[k] != ' ' for k in range(i + 1, j, 2)): continue
+                cand = ''.join(frags)
+                if n == 3 and any(real(f) and len(f) >= 4 for f in frags): continue  # never absorb a real word
+                if freq[cand] and defect(frags) and not all(real(f) for f in frags):
+                    out += [cand, parts[j + 1] if j + 1 < len(parts) else '']; count += n - 1; i = j + 2; done = True; break
+            if not done:
+                out += [parts[i], parts[i + 1] if i + 1 < len(parts) else '']; i += 2
+        return ''.join(out)
+    return '\n'.join(fix_line(l) for l in layout.split('\n')), count
+
+
 def parse(rel):
     problems = []
     files = rel.get('files', {})
@@ -217,7 +254,12 @@ def parse(rel):
     if pdf and os.path.exists(pdf):
         with tempfile.TemporaryDirectory() as tmp:
             subprocess.run(['pdftotext', '-layout', pdf, os.path.join(tmp, 't.txt')], check=True)
-            L = lines(open(os.path.join(tmp, 't.txt'), encoding='utf-8', errors='replace').read())
+            subprocess.run(['pdftotext', '-raw', pdf, os.path.join(tmp, 'r.txt')], check=True)
+            layout = open(os.path.join(tmp, 't.txt'), encoding='utf-8', errors='replace').read()
+            raw = open(os.path.join(tmp, 'r.txt'), encoding='utf-8', errors='replace').read()
+            layout, joined = repair_splits(layout, raw)
+            if joined: problems.append(f'note: {joined} words split by the PDF\'s fonts were rejoined (e.g. "Ref errals" → "Referrals")')
+            L = lines(layout)
     else:
         problems.append('no eligibility criteria PDF: criteria come from the spreadsheet only')
 

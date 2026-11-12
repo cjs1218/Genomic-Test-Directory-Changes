@@ -23,14 +23,15 @@
       "published": "2019-03-01",
       "datePrecision": "month",
       "directory": "March 2019 (2019/20)",
-      "criteria": "",
+      "criteria": "March 2019",
       "files": {
         "xlsx": "national-genomic-test-directory-rare-inherited-disease-march-2019.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-march-19.pdf"
       },
       "links": {
         "xlsx": "sources/files/national-genomic-test-directory-rare-inherited-disease-march-2019.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-march-19.pdf"
       }
     },
     {
@@ -39,13 +40,31 @@
       "published": "2020-08-01",
       "datePrecision": "month",
       "directory": "August 2020 (2020/21)",
-      "criteria": "",
+      "criteria": "August 2020",
       "files": {
         "xlsx": "National_Genomic_Test_Directory_Rare_Inherited_Disease_August_20-21.xlsm",
-        "pdf": ""
+        "pdf": "Rare_and_Inherited_Disease_Eligibility_Criteria_August_20-21.pdf"
       },
       "links": {
         "xlsx": "sources/files/National_Genomic_Test_Directory_Rare_Inherited_Disease_August_20-21.xlsm",
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/Rare_and_Inherited_Disease_Eligibility_Criteria_August_20-21.pdf"
+      }
+    },
+    {
+      "id": "2020-11",
+      "label": "2020/21 update",
+      "published": "2020-11-01",
+      "datePrecision": "month",
+      "directory": "August 2020 (2020/21); no separate November spreadsheet found",
+      "criteria": "November 2020 (its pages still say August 2020)",
+      "files": {
+        "xlsx": "National_Genomic_Test_Directory_Rare_Inherited_Disease_August_20-21.xlsm",
+        "pdf": "Rare-and-Inherited-Disease-Eligibility-Criteria-November-2020-21.pdf"
+      },
+      "links": {
+        "xlsx": "sources/files/National_Genomic_Test_Directory_Rare_Inherited_Disease_August_20-21.xlsm",
+        "pdf": "sources/files/Rare-and-Inherited-Disease-Eligibility-Criteria-November-2020-21.pdf",
         "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
       }
     },
@@ -55,14 +74,15 @@
       "published": "2021-10-01",
       "datePrecision": "month",
       "directory": "October 2021 (2021/22)",
-      "criteria": "",
+      "criteria": "October 2021 (file name says v2; its pages say October 2021)",
       "files": {
         "xlsx": "National-genomic-test-directory-rare-inherited-disease-2021-22.xlsx",
-        "pdf": ""
+        "pdf": "Rare-and-inherited-disease-eligibility-criteria-2021-22-v2.pdf"
       },
       "links": {
         "xlsx": "sources/files/National-genomic-test-directory-rare-inherited-disease-2021-22.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/Rare-and-inherited-disease-eligibility-criteria-2021-22-v2.pdf"
       }
     },
     {
@@ -71,14 +91,15 @@
       "published": "2021-10-02",
       "datePrecision": "month",
       "directory": "October 2021 v2 (corrections to the October 2021 release)",
-      "criteria": "",
+      "criteria": "October 2021 v2",
       "files": {
         "xlsx": "national-genomic-test-directory-rare-inherited-disease-v2.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v2.pdf"
       },
       "links": {
         "xlsx": "sources/files/national-genomic-test-directory-rare-inherited-disease-v2.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v2.pdf"
       }
     },
     {
@@ -87,14 +108,15 @@
       "published": "2022-04-01",
       "datePrecision": "month",
       "directory": "v3 (April 2022)",
-      "criteria": "",
+      "criteria": "v3 (April 2022)",
       "files": {
         "xlsx": "national-genomic-test-directory-rare-inherited-disease-v3.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v3-2.pdf"
       },
       "links": {
         "xlsx": "sources/files/national-genomic-test-directory-rare-inherited-disease-v3.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v3-2.pdf"
       }
     },
     {
@@ -103,14 +125,15 @@
       "published": "2022-08-01",
       "datePrecision": "month",
       "directory": "v3.1 (August 2022); the front sheet still says v3 April 2022",
-      "criteria": "",
+      "criteria": "v3.1 (August 2022)",
       "files": {
         "xlsx": "National-genomic-test-directory-rare-and-inherited-disease-version-3.1-August-2022.xlsx",
-        "pdf": ""
+        "pdf": "Rare-and-inherited-disease-eligibility-criteria-version-3.1-August-2022.pdf"
       },
       "links": {
         "xlsx": "sources/files/National-genomic-test-directory-rare-and-inherited-disease-version-3.1-August-2022.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/Rare-and-inherited-disease-eligibility-criteria-version-3.1-August-2022.pdf"
       }
     },
     {
@@ -118,14 +141,15 @@
       "label": "v4",
       "published": "2022-10-31",
       "directory": "v4 (31 October 2022)",
-      "criteria": "",
+      "criteria": "v4 (October 2022)",
       "files": {
         "xlsx": "rare-and-inherited-disease-national-genomic-test-directory-v4.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v4.pdf"
       },
       "links": {
         "xlsx": "sources/files/rare-and-inherited-disease-national-genomic-test-directory-v4.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v4.pdf"
       }
     },
     {
@@ -134,30 +158,32 @@
       "published": "2023-04-01",
       "datePrecision": "month",
       "directory": "v5 (April 2023)",
-      "criteria": "",
+      "criteria": "v5 (April 2023)",
       "files": {
         "xlsx": "National-genomic-test-directory-for-rare-and-inherited-disease-version-5.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v5-april-2023.pdf"
       },
       "links": {
         "xlsx": "sources/files/National-genomic-test-directory-for-rare-and-inherited-disease-version-5.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v5-april-2023.pdf"
       }
     },
     {
       "id": "v5.1",
-      "label": "v5.1",
+      "label": "v5.1 (criteria v5.2)",
       "published": "2023-06-01",
       "datePrecision": "month",
       "directory": "v5.1 (June 2023)",
-      "criteria": "",
+      "criteria": "v5.2 (June 2023)",
       "files": {
         "xlsx": "Rare-and-inherited-disease-national-genomic-test-directory-version-5.1.xlsx",
-        "pdf": ""
+        "pdf": "Rare-and-inherited-disease-eligibility-criteria-version-5.2.pdf"
       },
       "links": {
         "xlsx": "sources/files/Rare-and-inherited-disease-national-genomic-test-directory-version-5.1.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/Rare-and-inherited-disease-eligibility-criteria-version-5.2.pdf"
       }
     },
     {
@@ -166,14 +192,15 @@
       "published": "2024-01-01",
       "datePrecision": "month",
       "directory": "v6 (January 2024)",
-      "criteria": "",
+      "criteria": "v6 (January 2024)",
       "files": {
         "xlsx": "Rare-and-inherited-disease-national-genomic-test-directory-version-6.xlsx",
-        "pdf": ""
+        "pdf": "Rare-and-inherited-disease-eligibility-criteria-version-6-January-2024.pdf"
       },
       "links": {
         "xlsx": "sources/files/Rare-and-inherited-disease-national-genomic-test-directory-version-6.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/Rare-and-inherited-disease-eligibility-criteria-version-6-January-2024.pdf"
       }
     },
     {
@@ -182,14 +209,15 @@
       "published": "2024-07-01",
       "datePrecision": "month",
       "directory": "v7 (July 2024)",
-      "criteria": "",
+      "criteria": "v7 (July 2024)",
       "files": {
         "xlsx": "national-genomic-test-directory-rare-and-inherited-disease-eligibility-criteria-v7-updated.xlsx",
-        "pdf": ""
+        "pdf": "national-genomic-test-directory-rare-and-inherited-disease-eligibility-criteria-v7.pdf"
       },
       "links": {
         "xlsx": "sources/files/national-genomic-test-directory-rare-and-inherited-disease-eligibility-criteria-v7-updated.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/national-genomic-test-directory-rare-and-inherited-disease-eligibility-criteria-v7.pdf"
       }
     },
     {
@@ -198,14 +226,15 @@
       "published": "2025-01-01",
       "datePrecision": "month",
       "directory": "v7.1 (January 2025)",
-      "criteria": "",
+      "criteria": "v7.1 (January 2025)",
       "files": {
         "xlsx": "rare-and-inherited-disease-national-genomics-test-directory-official-V7.1.xlsx",
-        "pdf": ""
+        "pdf": "rare-inherited-disease-eligibility-criteria-V7.1-OFFICIAL.pdf"
       },
       "links": {
         "xlsx": "sources/files/rare-and-inherited-disease-national-genomics-test-directory-official-V7.1.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-inherited-disease-eligibility-criteria-V7.1-OFFICIAL.pdf"
       }
     },
     {
@@ -228,14 +257,15 @@
       "label": "v9",
       "published": "2026-04-08",
       "directory": "v9 (8 April 2026)",
-      "criteria": "",
+      "criteria": "v9 (8 April 2026)",
       "files": {
         "xlsx": "rare-and-inherited-disease-national-genomics-test-directory-v9.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v9.pdf"
       },
       "links": {
         "xlsx": "sources/files/rare-and-inherited-disease-national-genomics-test-directory-v9.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v9.pdf"
       }
     },
     {

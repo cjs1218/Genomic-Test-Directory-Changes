@@ -1,0 +1,19 @@
+{
+"id": 290,
+"name": "Familial rhabdomyosarcoma",
+"current": "1.6",
+"signoffs": [],
+"currentGreen": [
+"BUB1B",
+"CDKN1C",
+"HRAS",
+"MLH1",
+"MSH2",
+"MSH6",
+"NBN",
+"NF1",
+"PMS2",
+"RB1",
+"TP53"
+]
+}

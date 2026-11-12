@@ -1,0 +1,22 @@
+{
+"id": 36,
+"name": "Multiple endocrine tumours",
+"current": "1.15",
+"signoffs": [],
+"currentGreen": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MAX",
+"MEN1",
+"PRKAR1A",
+"RET",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"TP53",
+"VHL"
+]
+}

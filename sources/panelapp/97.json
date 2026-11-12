@@ -1,0 +1,21 @@
+{
+"id": 97,
+"name": "Inherited phaeochromocytoma and paraganglioma",
+"current": "1.12",
+"signoffs": [],
+"currentGreen": [
+"FH",
+"MAX",
+"MEN1",
+"NF1",
+"PRKAR1A",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+}

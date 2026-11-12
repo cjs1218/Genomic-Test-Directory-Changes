@@ -1,7 +1,7 @@
 # Verbatim testing criteria from the eligibility criteria PDF text (`pdftotext -layout`).
 # Adapted from GeneRoute's tools/extract_criteria.py (same author); keep the two in step when the PDF layout changes.
 import re, sys
-STOP = re.compile(r'^\s*(Overlapping indications|Referrals for testing will|Where in Pathway|Associated Tests|Requesting Specialties|Genetic testing may occasionally be appropriate)')
+STOP = re.compile(r'^\s*(Overlapping indications|Ref\s*errals\s*f\s*or\s*testing will|Where in Pathway|Associated Tests|Requesting Specialties|Genetic testing may occasionally be appropriate)')
 MARK = re.compile(r'^(\d{1,2}\.|\d{1,2}\)|[a-z]\.|[a-z]\)|\((?:[ivx]+|[a-z]|\d+)\)|[ivx]+\.|•|-)\s*(.*)$')
 FOOTER = re.compile(r'\b\d{1,2}(st|nd|rd|th)? [A-Z][a-z]+ 20\d\d v\d+(\.\d+)?$')
 

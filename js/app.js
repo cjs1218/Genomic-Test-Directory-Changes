@@ -221,7 +221,7 @@ function renderCriteria(entA, entB, relA, relB) {
       + [[relA, entA], [relB, entB]].filter(([r]) => !r.noCriteria).map(([r, e]) => `<h4>${esc(r.label)}</h4><pre class="crit">${esc(e ? C.criteriaText(e.criteria) : '') || '<em>Not in this version</em>'}</pre>`).join('');
     return;
   }
-  const same = C.norm(ta) === C.norm(tb);
+  const same = C.norm(ta).replace(/\s+/g, '') === C.norm(tb).replace(/\s+/g, '');  // spacing alone is PDF extraction, not wording
   const ops = C.diffLines(ta, tb);
   const pdf = (r, e) => r.links && r.links.pdf && e && e.page ? ` <a class="no-print small" href="${esc(r.links.pdf)}#page=${e.page}">PDF p. ${e.page}</a>` : '';
   const head = `<div class="result-head"><h3>Eligibility criteria</h3><div class="seg no-print" role="group" aria-label="Layout">

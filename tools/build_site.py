@@ -29,7 +29,9 @@ def norm(s):
 
 
 def crit_text(e):
-    return norm(' '.join(f'{m} {t}' for _, m, t in e.get('criteria', [])))
+    # spacing is ignored: PDF text extraction can split or run words together, and a change only in spaces is never a
+    # change in wording
+    return re.sub(r'\s+', '', norm(' '.join(f'{m} {t}' for _, m, t in e.get('criteria', []))))
 
 
 def words(s):

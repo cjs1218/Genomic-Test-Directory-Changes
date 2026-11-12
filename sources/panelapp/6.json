@@ -1,0 +1,17 @@
+{
+"id": 6,
+"name": "Familial hypercholesterolaemia",
+"current": "1.31",
+"signoffs": [],
+"currentGreen": [
+"ABCG5",
+"ABCG8",
+"APOB",
+"APOE",
+"CYP27A1",
+"LDLR",
+"LDLRAP1",
+"LIPA",
+"PCSK9"
+]
+}
