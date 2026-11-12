@@ -18,6 +18,15 @@
       ],
       "note": "intellectual disability testing now requested under R27",
       "source": "confirmed by the clinical team, November 2026"
+    },
+    {
+      "from": "R126",
+      "release": "2019-03",
+      "to": [
+        "R125"
+      ],
+      "note": "Marfan syndrome now tested under the aortopathy indication, R125",
+      "source": "confirmed by the clinical team, November 2026"
     }
   ]
 }
