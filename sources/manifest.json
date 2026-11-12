@@ -242,14 +242,15 @@
       "label": "v8.1",
       "published": "2025-07-09",
       "directory": "v8.1 (9 July 2025)",
-      "criteria": "",
+      "criteria": "v8.1 (July 2025)",
       "files": {
         "xlsx": "rare-and-inheriteddisease-nationa-genomics-test-directory-V8.1.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-V8.1.pdf"
       },
       "links": {
         "xlsx": "sources/files/rare-and-inheriteddisease-nationa-genomics-test-directory-V8.1.xlsx",
-        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-V8.1.pdf"
       }
     },
     {

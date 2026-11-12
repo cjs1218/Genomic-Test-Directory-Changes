@@ -65,14 +65,14 @@ release's first parse needs checking: open a few R codes in the app and compare 
 | v7 | July 2024 (spreadsheet file named "eligibility-criteria-v7-updated") | ✓ | ✓ |
 | v7.1 | January 2025 | ✓ | ✓ |
 | v8.0 | May 2025 | ☐ missing | ☐ missing |
-| v8.1 | 9 July 2025 | ✓ | ☐ |
+| v8.1 | 9 July 2025 | ✓ | ✓ |
 | v9 | 8 April 2026 | ✓ | ✓ |
 | v9.1 | 20 May 2026 (criteria update; directory still v9) | (v9) | ✓ from GeneRoute |
 | v9.2 | 9 November 2026 | ✓ | ☐ |
 
 Not found yet: the December 2017 and March 2018 drafts (before 2018/19); the 2018/19 testing criteria (Annex 1); a
-September 2020 release (the 2021/22 change column says "Changes since September 2020"); v8.0 (May 2025); and the v8.1
-and v9.2 criteria PDFs. Until a release's criteria are loaded, its criteria are compared with the nearest loaded
+September 2020 release (the 2021/22 change column says "Changes since September 2020"); v8.0 (May 2025); and the v9.2
+criteria PDF. Until a release's criteria are loaded, its criteria are compared with the nearest loaded
 versions, and the app says the change happened somewhere between them.
 
 Some PDFs (October 2021, v3, v9) have a font defect that splits words when the text is extracted ("Ref errals f or").

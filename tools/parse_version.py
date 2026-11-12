@@ -259,6 +259,9 @@ def parse(rel):
             raw = open(os.path.join(tmp, 'r.txt'), encoding='utf-8', errors='replace').read()
             layout, joined = repair_splits(layout, raw)
             if joined: problems.append(f'note: {joined} words split by the PDF\'s fonts were rejoined (e.g. "Ref errals" → "Referrals")')
+            # a heading with a stray code run into it ("R15R92   Rare anaemia" in v8.1) is read as the second code
+            layout, n_fixed = re.subn(r'(?m)^(\s*)R\d+(R\d+)(\s{2,}[A-Z])', r'\1\2\3', layout)
+            if n_fixed: problems.append(f'note: {n_fixed} heading(s) with two codes run together read as the second code (e.g. "R15R92" → "R92")')
             L = lines(layout)
     else:
         problems.append('no eligibility criteria PDF: criteria come from the spreadsheet only')
