@@ -125,3 +125,23 @@ test('shortAnswer: plain English, dated changes, quoted wording, substitution no
     entA: { name: 'Epilepsy' }, entB: undefined, links: [{ to: ['R27 (Paediatric disorders)'], note: 'epilepsy now under R27' }], critA: R[0], critB: R[1], changes: [] });
   assert.match(retired, /R59 has since been retired \(April 2022, v3\)\.\nIt is now covered by R27 \(Paediatric disorders\): epilepsy now under R27\./);
 });
+
+test('patientLetter: plain English, number changes first, no version numbers, placeholder for next steps', () => {
+  const R = [{ id: 'a', label: '2019/20', published: '2019-03-01', datePrecision: 'month' }, { id: 'b', label: 'v3', published: '2022-04-01', datePrecision: 'month' },
+    { id: 'c', label: 'v9.2', published: '2026-11-09' }];
+  const changes = C.lineChanges(
+    '1. Living affected individual with breast or ovarian cancer where the family history meets one of the criteria:\n  a. Breast cancer (age < 30 years), OR\n  b. Old criterion, OR',
+    '1. Living affected individual with breast* or high grade ovarian cancer where the family history meets one of the criteria:\n  a. Breast cancer (age < 40 years), OR');
+  const base = { code: 'R208', seen: '2019-06-01', relA: R[0], relB: R[2], releases: R, links: [], changes };
+  const s = C.patientLetter({ ...base, events: [{ r: 'b', k: ['criteria', 'tests'] }], entA: { name: 'Inherited breast cancer and ovarian cancer' }, entB: { name: 'x' } });
+  assert.match(s, /^When you were seen on 1 June 2019, NHS genetic testing for inherited breast cancer and ovarian cancer was offered .* published by NHS England in March 2019\./);
+  assert.match(s, /updated once, in April 2022\./);
+  assert.match(s, /For example:\n• The criteria said “Breast cancer \(age < 30 years\)”; they now say “Breast cancer \(age < 40 years\)”\./, 'age change first, without the trailing OR');
+  assert.match(s, /\[Add whether the patient may now meet the criteria/);
+  assert.doesNotMatch(s, /v3|v9|2019\/20|R208/, 'no version numbers or codes');
+  const retired = C.patientLetter({ ...base, code: 'R59', events: [{ r: 'b', k: ['removed'] }], entA: { name: 'Early onset epilepsy' }, entB: undefined,
+    links: [{ to: ['R27 (Paediatric disorders)'] }], changes: [] });
+  assert.match(retired, /withdrawn \(in April 2022\)\. Testing for this is now requested under a different category in the directory: R27, Paediatric disorders\./);
+  const notYet = C.patientLetter({ ...base, code: 'R472', events: [{ r: 'c', k: ['added'] }], entA: undefined, entB: { name: 'Spinal muscular atrophy' }, changes: [] });
+  assert.match(notYet, /did not include a test for spinal muscular atrophy\. This test was added in November 2026\./);
+});

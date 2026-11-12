@@ -207,3 +207,18 @@ button.link:hover { background: none; color: var(--accent-dark); }
   .form-row .field.actions { padding-top: 0; width: 100%; }
   .form-row .field.actions button { width: 100%; }
 }
+
+/* ---------- Round 2: answer tabs, glossary, limits ---------- */
+.answer-tabs { display: flex; gap: 6px; flex-wrap: wrap; margin: 0 0 8px; }
+.answer-tabs [role=tab] { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 6px 12px; }
+.answer-tabs [role=tab][aria-selected="true"] { background: var(--accent); color: #fff; }
+#out-hint { margin: -2px 0 8px; }
+.term { border-bottom: 1px dotted currentColor; cursor: help; position: relative; }
+.term:hover::after, .term:focus::after { content: attr(data-tip); position: absolute; left: 0; top: calc(100% + 4px); z-index: 20; width: max-content; max-width: min(300px, 80vw);
+  background: var(--fg); color: var(--bg); padding: 6px 8px; border-radius: 4px; font-size: .82rem; font-weight: 400; line-height: 1.4; white-space: normal;
+  text-transform: none; letter-spacing: 0; box-shadow: 0 4px 12px rgb(0 0 0 / .2); }
+.limits summary { cursor: pointer; font-weight: 600; color: var(--accent); }
+.limits ul { margin: 8px 0; padding-left: 20px; }
+.limits li { margin: 4px 0; }
+#start-limits { margin-top: 14px; }
+@media print { .term { border-bottom: 0; } }

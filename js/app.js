@@ -19,6 +19,40 @@ const codeNum = c => parseInt(c.slice(1), 10);
 const KIND_LABEL = { added: 'New code', removed: 'Retired', name: 'Renamed', criteria: 'Criteria', tests: 'Tests', panels: 'Panels',
   overlapping: 'Overlapping', pathway: 'Pathway', specialties: 'Specialties', noted: 'Noted in spreadsheet' };
 const MAIN_KINDS = ['added', 'removed', 'name', 'criteria', 'tests'];  // what the timeline shows by default
+/** Plain-language meanings, shown on hover, tap or keyboard focus. */
+const GLOSSARY = {
+  WGS: 'Whole genome sequencing: reads all of a person’s DNA.',
+  WES: 'Whole exome sequencing: reads the parts of the DNA that code for proteins.',
+  MLPA: 'A lab method that finds missing or extra copies of parts of a gene.',
+  CNV: 'Copy number variant: a larger piece of DNA that is missing or duplicated.',
+  CNVs: 'Copy number variants: larger pieces of DNA that are missing or duplicated.',
+  STR: 'Short tandem repeat: a repeated stretch of DNA that can expand and cause disease.',
+  STRs: 'Short tandem repeats: repeated stretches of DNA that can expand and cause disease.',
+  NIPD: 'Non-invasive prenatal diagnosis, from a sample of the mother’s blood.',
+  FISH: 'A lab method that uses fluorescent probes to look at chromosomes.',
+  Microarray: 'A test that looks across all chromosomes for missing or extra pieces.',
+  Singleton: 'Only the patient is tested.',
+  Trio: 'The patient and both parents are tested together.',
+  Duo: 'The patient and one parent are tested together.',
+  Core: 'Core: offered by every Genomic Laboratory Hub.',
+  Specialised: 'Specialised: offered by designated laboratories.',
+  'Highly specialised': 'Highly specialised: offered by a small number of national centres.',
+  'Small variants': 'Small changes of one or a few DNA letters.',
+  target: 'What is tested: named genes, a PanelApp panel of genes, or the whole genome.',
+  method: 'How the laboratory does the test.',
+  commissioning: 'Which laboratories may offer the test (Core, Specialised or Highly specialised).',
+  family: 'Who should be tested together for the best result: singleton, duo or trio.',
+  scope: 'The kinds of genetic change the test looks for.',
+  overlapping: 'Other R codes to consider instead of, or as well as, this one.',
+  panelapp: 'PanelApp (Genomics England) lists the genes tested for each condition. Only green genes, those with enough evidence, are tested, using the version signed off for NHS testing.'
+};
+const term = (text, key) => `<span class="term" tabindex="0" data-tip="${esc(GLOSSARY[key || text])}">${text}</span>`;
+const TERM_RE = /\b(WGS|WES|MLPA|CNVs?|STRs?|NIPD|FISH|Microarray|Singleton|Trio|Duo|Highly specialised|Small variants)\b/g;
+/** Add explanations to known terms in the text parts of some HTML (never inside tags). */
+const termify = html => html.replace(/(^|>)([^<]+)/g, (m, a, t) => a + t.replace(TERM_RE, w => term(w)));
+const REPORT = 'https://github.com/cjs1218/Genomic-Test-Directory-Changes/issues/new';
+/** "Mar 2019": a release's date, short, for tight labels. */
+const shortDate = r => C.relDate(r).replace(/^(\d+ )?(\w{3})\w*/, '$2');
 /** A release as people say it: "April 2022 (v3)", or just "October 2018 (2018/19)". */
 const relName = r => `${C.relDate(r)} (${r.label})`;
 
@@ -196,6 +230,8 @@ function wireShowMore(root) {
 let critMode = 'changes';
 try { critMode = localStorage.getItem('tdh-crit2') || 'changes'; } catch (e) { /* storage blocked */ }
 let showAll = false;
+let outMode = 'notes';
+try { outMode = localStorage.getItem('tdh-out') || 'notes'; } catch (e) { /* storage blocked */ }
 
 async function renderCompare(s) {
   const out = $('#result');
@@ -250,8 +286,13 @@ async function renderCompare(s) {
     </div>
     ${notices.map(n => `<div class="notice">${n}</div>`).join('')}
   </div>
-  <div class="card answer" id="r-summary"><h3>Short answer</h3><pre class="summary-text" id="summary-text">Working out…</pre>
-    <div class="toolbar no-print"><button type="button" id="copy-summary">Copy short answer</button><span class="hint" id="copied" role="status"></span></div>
+  <div class="card answer" id="r-summary"><h3>Short answer</h3>
+    <div class="answer-tabs no-print" role="tablist" aria-label="Wording for">
+      <button type="button" role="tab" id="tab-notes" aria-controls="summary-text" data-out="notes">For clinical notes</button>
+      <button type="button" role="tab" id="tab-letter" aria-controls="summary-text" data-out="letter">For a letter to the patient</button></div>
+    <pre class="summary-text" id="summary-text" role="tabpanel">Working out…</pre>
+    <p class="hint" id="out-hint"></p>
+    <div class="toolbar no-print"><button type="button" id="copy-summary">Copy</button><span class="hint" id="copied" role="status"></span></div>
     <details class="detail-record no-print"><summary>Detailed record (every change, with genes) for notes</summary>
       <pre class="summary-text" id="detail-text">Working out…</pre>
       <button type="button" class="secondary" id="copy-detail">Copy detailed record</button><span class="hint" id="copied-detail" role="status"></span></details>
@@ -260,23 +301,41 @@ async function renderCompare(s) {
   <div class="card" id="r-timeline"><h3>When it changed</h3><div id="timeline"></div></div>
   <div class="card" id="r-tests"><h3>Tests</h3>${testsTable(entA, entB, centA, centB)}</div>
   <div class="card" id="r-genes"><h3>Genes</h3><p class="muted">Loading gene lists…</p></div>
-  <div class="card" id="r-other"><h3>Other sections of the criteria</h3>${otherSections(critA === critB ? null : centA, critA === critB ? null : centB, critA, critB)}</div>`;
+  <div class="card" id="r-other"><h3>Other sections of the criteria</h3>${otherSections(critA === critB ? null : centA, critA === critB ? null : centB, critA, critB)}</div>
+  <div class="card no-print">${limitsHtml(code)}</div>`;
 
   const changes = (centA && centB) ? C.lineChanges(C.criteriaText(centA.criteria), C.criteriaText(centB.criteria)) : [];
   renderCriteria({ code, centA, centB, critA, critB, relA, relB, changes });
   renderTimeline(code, relA, relB, s.seen);
   $('#copy-link').onclick = () => copy(location.href, '#copied', 'Link copied');
   $('#print').onclick = () => window.print();
-  const short = C.shortAnswer({ code, name, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events,
-    entA, entB, links: linksNamed, critA, critB, changes, maxChanges: 6 });
-  $('#summary-text').textContent = short;
-  $('#copy-summary').onclick = () => copy(short, '#copied', 'Short answer copied');
+  const input_ = { code, name, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events,
+    entA, entB, links: linksNamed, critA, critB, changes, maxChanges: 6 };
+  const texts = { notes: C.shortAnswer(input_), letter: C.patientLetter(input_) };
+  const hints = { notes: 'For the clinical record or a reply to a colleague: version numbers, dates and the criteria wording.',
+    letter: 'Plain English for a patient, with no version numbers or gene lists. Edit before sending: complete the part in square brackets.' };
+  const show = which => {
+    outMode = which;
+    try { localStorage.setItem('tdh-out', which); } catch (e) { /* storage blocked */ }
+    $('#summary-text').textContent = texts[which]; $('#out-hint').textContent = hints[which]; $('#copied').textContent = '';
+    document.querySelectorAll('.answer-tabs [role=tab]').forEach(b => { b.setAttribute('aria-selected', b.dataset.out === which); b.tabIndex = b.dataset.out === which ? 0 : -1; });
+    $('#copy-summary').textContent = which === 'letter' ? 'Copy letter wording' : 'Copy for notes';
+  };
+  document.querySelectorAll('.answer-tabs [role=tab]').forEach(b => {
+    b.onclick = () => show(b.dataset.out);
+    b.onkeydown = ev => { if (ev.key === 'ArrowRight' || ev.key === 'ArrowLeft') { const o = b.dataset.out === 'notes' ? 'letter' : 'notes'; show(o); $('#tab-' + o).focus(); } };
+  });
+  show(outMode);
+  $('#copy-summary').onclick = () => copy(texts[outMode], '#copied', outMode === 'letter' ? 'Letter wording copied' : 'Copied for notes');
   document.title = `${code} – Test Directory Changes`;
   const genes = await renderGenes(entA, entB, s.seen || C.inForce(relA), relB === LATEST ? today() : C.inForce(relB));
   let detail = C.summary({ code, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events, entA, entB, links: linksNamed, genes });
   const noCrit = [relA, relB].filter(r => r.noCriteria);
   if (noCrit.length) detail = detail.replace(/\nDates are when/, `\nThe eligibility criteria documents for ${noCrit.map(r => r.label).join(' and ')} are not held yet; criteria were compared using ${[critA, critB].filter(Boolean).map(r => r.label).join(' and ')}.\nDates are when`);
   $('#detail-text').textContent = detail;
+  // add the gene changes to the notes version
+  const geneLines = detail.split('\n').filter(l => l.startsWith('Genes – '));
+  if (geneLines.length) { texts.notes = texts.notes.replace(/\nDates are when/, '\n' + geneLines.join('\n') + '\nDates are when'); if (outMode === 'notes') show('notes'); }
   $('#copy-detail').onclick = () => copy(detail, '#copied-detail', 'Detailed record copied');
 }
 
@@ -289,8 +348,8 @@ function renderCriteria(o) {
     <div class="seg no-print" role="group" aria-label="How to show the criteria">
       ${[['changes', 'Changes only'], ['side', 'Side by side'], ['inline', 'Full text']].map(([m, l]) => `<button type="button" data-mode="${m}" aria-pressed="${critMode === m}">${l}</button>`).join('')}</div></div>`;
   const subst = [];
-  if (critA && critA !== relA) subst.push(`the ${esc(relA.label)} criteria document isn't held, so ${esc(critA.label)} is used`);
-  if (critB && critB !== relB) subst.push(`the ${esc(relB.label)} criteria document isn't held yet, so ${esc(critB.label)} (the latest held) is used${relB.links && relB.links.pdf ? ` – <a href="${esc(relB.links.pdf)}">${esc(relB.label)} PDF</a>` : ''}`);
+  if (critA && critA !== relA) subst.push(`the criteria document for ${esc(relName(relA))} isn't held, so ${esc(relName(critA))} is used`);
+  if (critB && critB !== relB) subst.push(`the criteria document for ${esc(relName(relB))} isn't held yet, so ${esc(relName(critB))}, the latest held, is used${relB.links && relB.links.pdf ? ` – <a href="${esc(relB.links.pdf)}">${esc(relB.label)} PDF</a>` : ''}`);
   if (subst.length) head += `<div class="notice">Note: ${subst.join('; ')}.</div>`;
   if (!centA || !centB) {
     box.innerHTML = head + `<p class="muted">${!centA && !centB ? 'No criteria held for this code in either version.' : `${esc(o.code)} has no criteria in ${esc(!centA ? la : lb)}.`}</p>`
@@ -300,11 +359,11 @@ function renderCriteria(o) {
   } else {
     const ta = C.criteriaText(centA.criteria), tb = C.criteriaText(centB.criteria);
     const ops = C.diffLines(ta, tb);
-    const legend = `<p class="legend">${changes.length ? `${changes.length} change${changes.length > 1 ? 's' : ''} to the wording between ${esc(la)} and ${esc(lb)}: <del>removed</del> and <ins>added</ins> words are marked. Changes only in spacing or punctuation are not counted.` : `The wording is the same in ${esc(la)} and ${esc(lb)} (apart from spacing and punctuation).`}</p>`;
+    const legend = `<p class="legend">${changes.length ? `${changes.length} change${changes.length > 1 ? 's' : ''} to the wording between ${esc(relName(critA))} and ${esc(relName(critB))}: <del>removed</del> and <ins>added</ins> words are marked. Changes only in spacing or punctuation are not counted.` : `The wording is the same in ${esc(relName(critA))} and ${esc(relName(critB))} (apart from spacing and punctuation).`}</p>`;
     let body;
-    if (critMode === 'side') body = `<div class="side"><div><h4>${esc(la)}${pdf(critA, centA)}</h4><pre class="crit">${diffHtml(ops, 'a')}</pre></div><div><h4>${esc(lb)}${pdf(critB, centB)}</h4><pre class="crit">${diffHtml(ops, 'b')}</pre></div></div>`;
+    if (critMode === 'side') body = `<div class="side"><div><h4>${esc(relName(critA))}${pdf(critA, centA)}</h4><pre class="crit">${diffHtml(ops, 'a')}</pre></div><div><h4>${esc(relName(critB))}${pdf(critB, centB)}</h4><pre class="crit">${diffHtml(ops, 'b')}</pre></div></div>`;
     else if (critMode === 'inline') body = `<p class="hint">Original documents:${pdf(critA, centA)} ·${pdf(critB, centB)}</p><pre class="crit">${diffHtml(ops, 'all')}</pre>`;
-    else body = changesHtml(changes, la, lb, 8) + `<p class="hint no-print">Original documents:${pdf(critA, centA)} ·${pdf(critB, centB)}</p>`;
+    else body = changesHtml(changes, shortDate(critA), shortDate(critB), 8) + `<p class="hint no-print">Original documents:${pdf(critA, centA)} ·${pdf(critB, centB)}</p>`;
     box.innerHTML = head + legend + body;
     wireShowMore(box);
   }
@@ -357,7 +416,7 @@ function renderTimeline(code, relA, relB, seen) {
     const [P, R] = await Promise.all([release(prev.id), release(r.id)]);
     const a = P.byCode[code], c = R.byCode[code];
     const ch = a && c ? C.lineChanges(C.criteriaText(a.criteria), C.criteriaText(c.criteria)) : [];
-    div.innerHTML = `<p class="hint">Compared with ${esc(relName(prev))}.</p>` + changesHtml(ch, prev.label, r.label, 6);
+    div.innerHTML = `<p class="hint">Compared with ${esc(relName(prev))}.</p>` + changesHtml(ch, shortDate(prev), shortDate(r), 6);
     wireShowMore(div);
   });
 }
@@ -389,12 +448,12 @@ function testsTable(entA, entB, centA, centB) {
     }).join('');
     return `<tr class="${cls}"><td class="code" data-label="Test"><span>${esc(id)}</span></td><td data-label="Status"><span><span class="status ${status.toLowerCase()}">${status}</span></span></td>${cells}</tr>`;
   });
-  return `<div class="table-wrap"><table class="tests"><thead><tr><th>Test</th><th>Status</th>${TEST_FIELDS.map(([, l]) => `<th>${l}</th>`).join('')}</tr></thead><tbody>${rows.join('')}</tbody></table></div>`;
+  return `<div class="table-wrap"><table class="tests"><thead><tr><th>Test</th><th>Status</th>${TEST_FIELDS.map(([k, l]) => `<th>${term(l, k)}</th>`).join('')}</tr></thead><tbody>${termify(rows.join(''))}</tbody></table></div>`;
 }
 
 function otherSections(centA, centB, critA, critB) {
   if (!centA || !centB) return `<p class="muted">${critA === critB ? 'Both dates use the same criteria document, so these sections are unchanged.' : 'Not held for both versions.'}</p>`;
-  const parts = [['overlapping', 'Overlapping indications (other codes to consider)'], ['pathway', 'Where in the pathway'], ['specialties', 'Who can request it']];
+  const parts = [['overlapping', 'Other codes to consider (overlapping indications)'], ['pathway', 'When in the patient’s care to test'], ['specialties', 'Who can request it']];
   const html = parts.map(([k, label]) => {
     const asText = e => { const v = e && e[k]; return Array.isArray(v) ? v.map(x => '• ' + x).join('\n') : (v || ''); };
     const x = asText(centA), y = asText(centB);
@@ -402,7 +461,7 @@ function otherSections(centA, centB, critA, critB) {
     const same = C.norm(x).replace(/\s+/g, '') === C.norm(y).replace(/\s+/g, '');
     return `<details><summary><strong>${label}</strong> – ${same ? 'no change' : 'changed'}</summary><pre class="crit">${same ? esc(y) : diffHtml(C.diffLines(x, y), 'all')}</pre></details>`;
   }).join('');
-  return `<p class="hint">Compared between ${esc(critA.label)} and ${esc(critB.label)}.</p>` + (html || '<p class="muted">Not given in these versions.</p>');
+  return `<p class="hint">Compared between ${esc(relName(critA))} and ${esc(relName(critB))}.</p>` + (html || '<p class="muted">Not given in these versions.</p>');
 }
 
 async function renderGenes(entA, entB, dateA, dateB) {
@@ -410,7 +469,7 @@ async function renderGenes(entA, entB, dateA, dateB) {
   const pa = new Set((entA ? entA.tests : []).flatMap(t => t.panels || []));
   const pb = new Set((entB ? entB.tests : []).flatMap(t => t.panels || []));
   const ids = [...new Set([...pa, ...pb])];
-  const head = '<h3>Genes</h3><p class="hint">For tests that use a PanelApp panel: the genes on the panel that laboratories test (green genes, at the version signed off for NHS testing) on each date. Genes listed by name are in the Tests table above.</p>';
+  const head = `<h3>Genes</h3><p class="hint">For tests that use a ${term('PanelApp', 'panelapp')} panel: the genes laboratories tested on each date. Genes listed by name are in the Tests table above.</p>`;
   if (!ids.length) { box.innerHTML = head + '<p class="muted">These tests don’t use a PanelApp panel in either version.</p>'; return []; }
   const genes = [];
   const blocks = [];
@@ -429,6 +488,20 @@ async function renderGenes(entA, entB, dateA, dateB) {
   }
   box.innerHTML = head + blocks.join('');
   return genes;
+}
+
+/** What the tool can and can't tell you, and how to report a problem. */
+function limitsHtml(code) {
+  const missing = RELEASES.filter(r => r.noCriteria);
+  const title = encodeURIComponent(`Problem${code ? ' with ' + code : ''}: `);
+  return `<details class="limits"><summary>What this can and can’t tell you</summary><ul>
+    <li>It shows what the published directory documents said. It does not say whether a particular patient met the criteria: that needs clinical judgement.</li>
+    <li>Each version is taken to apply from the date it was published until the next one. For some older versions only the month is known; a visit in that month is flagged.</li>
+    <li>The criteria wording is read from the PDFs automatically. Differences only in spacing, punctuation or numbering are ignored. Always check the original document (linked) before relying on the wording.</li>
+    <li>Criteria documents not held yet: ${missing.map(r => esc(relName(r))).join(', ') || 'none'}. Where one is missing, the nearest version held is used and the page says so.</li>
+    <li>Gene lists come from PanelApp sign-offs, which began in early 2020. Before that, genes are as listed in the directory.</li>
+    <li>Where a retired code went comes from NHS England’s change notes, or from the clinical team. “May now be covered by” means it is an inference, not confirmed.</li>
+  </ul><p><a href="${REPORT}?title=${title}">Report a problem or a mistake</a></p></details>`;
 }
 
 // ---------- release view ----------
@@ -475,6 +548,7 @@ function route() {
 
 function init() {
   fillReleaseSelects();
+  $('#start-limits').innerHTML = limitsHtml();
   $('#stats').textContent = `Every version from ${C.relDate(RELEASES[0])} to ${C.relDate(LATEST)} (${RELEASES.length} versions)`;
   $('#built').textContent = `Data built ${C.longDate(TDH_BUILT)}.`;
   window.addEventListener('hashchange', route);

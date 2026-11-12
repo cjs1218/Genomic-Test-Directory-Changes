@@ -12,15 +12,21 @@ style and reading the directory the same way. Independent: not an NHS website. N
 Type an R code, a condition (old and retired names too) or a gene, choose it from the suggestions, and enter the date the
 patient was seen. The page then shows, in this order:
 
-- **Short answer**: plain English to copy into a reply. Which version applied then and which applies now, when the
-  criteria and tests changed (by month), and the criteria wording then and now, quoted. Retired codes say what replaced
-  them, citing NHS England's change log where that is the source. A *detailed record* (every change, with genes) sits
-  underneath for notes.
+- **Short answer**, in two versions to copy:
+  - *For clinical notes*: which version applied then and now, when the criteria and tests changed (by month), the
+    criteria wording then and now, quoted, and gene changes. Retired codes say what replaced them, citing NHS England's
+    change log where that is the source.
+  - *For a letter to the patient*: plain English with no version numbers or gene lists, up to three examples of how the
+    criteria changed (age and score changes first), and a marked place for the clinician's own sentence on next steps.
+
+  A *detailed record* (every change in every version) sits underneath.
 - **Eligibility criteria: what changed**: each changed line as a "then / now" pair with the changed words marked
   (changes only in spacing, punctuation or list numbering are ignored). Also available side by side or as full text.
 - **When it changed**: the versions that changed the criteria, tests, name or code, each dated. Each criteria change
   opens to show that step's wording change. "Show every version" adds the minor ones.
 - **Tests**, **Genes** (PanelApp genes signed off for NHS testing on each date) and the other criteria sections.
+  Technical terms (WGS, MLPA, CNVs, trio …) explain themselves on hover, tap or keyboard focus.
+- **What this can and can't tell you**, and a link to report a problem.
 
 When a version's criteria document isn't held (currently v9.2), its criteria are taken from the nearest version that is,
 and the page says so. There is also a **What changed in a version** view and a list of the **Versions held**. Every view

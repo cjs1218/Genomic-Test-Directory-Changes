@@ -347,6 +347,53 @@
     return L.join('\n');
   }
 
-  const api = { lineChanges, criteriaSource, shortAnswer, longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
+  /**
+   * Wording for a letter to the patient: plain English, no version numbers or gene lists, the criteria quoted where they
+   * changed, and a marked place for the clinician's own sentence on what happens next. Same input as shortAnswer.
+   */
+  function patientLetter(o) {
+    const L = [], relA = o.relA || o.releases[0];
+    const rel = id => o.releases.find(r => r.id === id);
+    const span = between(o.releases, relA.id, o.relB.id).map(r => r.id);
+    const evs = o.events.filter(e => span.includes(e.r));
+    const crit = evs.filter(e => e.k.includes('criteria')), tests = evs.filter(e => e.k.includes('tests'));
+    const what = (o.entA || o.entB || {}).name || o.name;
+    const seenTxt = o.seen ? `When you were seen on ${longDate(o.seen)}` : `In ${monthOf(relA)}`;
+    if (o.entA) L.push(`${seenTxt}, NHS genetic testing for ${lowerFirst(what)} was offered to people who met the eligibility criteria in the National Genomic Test Directory, published by NHS England in ${monthOf(o.relA || relA)}.`);
+    else {
+      const first = o.events.find(e => e.k.includes('added'));
+      L.push(`${seenTxt}, the National Genomic Test Directory published by NHS England did not include a test for ${lowerFirst(what)}.${first ? ` This test was added in ${monthOf(rel(first.r))}.` : ''}`);
+    }
+    if (o.entA && !o.entB) {
+      const gone = o.events.find(e => e.k.includes('removed'));
+      const to = (o.links || []).find(l => l.to && l.to.length && !l.auto);
+      L.push(`This test has since been withdrawn${gone ? ` (in ${monthOf(rel(gone.r))})` : ''}.${to ? ` Testing for this is now requested under a different category in the directory: ${to.to.map(t => t.replace(/^(R\d+) \((.*)\)$/, '$1, $2')).join(' and ')}.` : ''}`);
+    }
+    if (o.entA && o.entB) {
+      if (!crit.length && !tests.length) L.push('The criteria for this test have not changed since then.');
+      else {
+        if (crit.length) {
+          const last = rel(crit[crit.length - 1].r);
+          L.push(`Since then, the criteria have been reviewed and updated ${crit.length === 1 ? `once, in ${monthOf(last)}` : `${crit.length} times, most recently in ${monthOf(last)}`}.`);
+          // examples a patient can follow: changed numbers (ages, scores) first, then shorter lines; notes left out
+          const score = c => (c.kind === 'changed' && c.ops.some(([op, t]) => op && /\d/.test(t)) ? 0 : 1000) + (c.a || c.b || '').length;
+          const keep = (o.changes || []).filter(c => !/^\s*(?:NOTE|\*|•)/i.test(c.a || c.b || '') && (c.a || c.b || '').length < 220)
+            .map((c, n) => ({ c, n, s: score(c) })).sort((x, y) => x.s - y.s || x.n - y.n).slice(0, 3).map(x => x.c);
+          // the connecting "OR" / "AND" at the end of a criterion means nothing on its own in a letter
+          const q = t => quote(String(t).replace(/[,;]?\s*\b(?:OR|AND)\s*$/, '').replace(/[,;:]\s*$/, ''));
+          if (keep.length) L.push((keep.length > 1 ? 'For example:\n' : 'For example:\n') + keep.map(c =>
+            c.kind === 'changed' ? `• The criteria said ${q(c.a)}; they now say ${q(c.b)}.`
+              : c.kind === 'removed' ? `• ${q(c.a)} is no longer part of the criteria.`
+                : `• ${q(c.b)} has been added to the criteria.`).join('\n'));
+        }
+        if (tests.length) L.push(`The test itself has also been updated since then${tests.length > 1 ? `, ${tests.length} times` : ''} (for example, how it is done or which genes it looks at).`);
+      }
+    }
+    L.push('[Add whether the patient may now meet the criteria, and what happens next.]');
+    return L.join('\n\n');
+  }
+  const lowerFirst = s => /^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
+
+  const api = { patientLetter, lineChanges, criteriaSource, shortAnswer, longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.TDHCore = api;
 })(typeof self !== 'undefined' ? self : this);
