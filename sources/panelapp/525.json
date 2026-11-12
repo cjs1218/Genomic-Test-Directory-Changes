@@ -1,0 +1,102 @@
+{
+"id": 525,
+"name": "Inherited predisposition to acute myeloid leukaemia (AML)",
+"current": "3.11",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-03",
+"green": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"RUNX1",
+"TERC",
+"TERT",
+"TP53"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"RUNX1",
+"SAMD9L",
+"TERC",
+"TERT",
+"TP53"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"MBD4",
+"RUNX1",
+"SAMD9L",
+"TERC",
+"TERT",
+"TP53"
+]
+},
+{
+"v": "3.5",
+"date": "2026-05-06",
+"green": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"MBD4",
+"RUNX1",
+"SAMD9L",
+"TERC",
+"TERT",
+"TP53"
+]
+},
+{
+"v": "3.10",
+"date": "2026-08-12",
+"green": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"MBD4",
+"RUNX1",
+"SAMD9L",
+"TERC",
+"TERT",
+"TP53"
+]
+}
+],
+"currentGreen": [
+"ANKRD26",
+"CEBPA",
+"DDX41",
+"ETV6",
+"GATA2",
+"MBD4",
+"RUNX1",
+"SAMD9L",
+"TERC",
+"TERT",
+"TP53"
+]
+}

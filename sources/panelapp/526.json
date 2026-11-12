@@ -1,0 +1,100 @@
+{
+"id": 526,
+"name": "Neuronal ceroid lipofuscinosis",
+"current": "3.5",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"ATP13A2",
+"CLN3",
+"CLN5",
+"CLN6",
+"CLN8",
+"CTSD",
+"CTSF",
+"DNAJC5",
+"KCTD7",
+"MFSD8",
+"PPT1",
+"TPP1"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"ATP13A2",
+"CLCN6",
+"CLN3",
+"CLN5",
+"CLN6",
+"CLN8",
+"CTSD",
+"CTSF",
+"DNAJC5",
+"KCTD7",
+"MFSD8",
+"PPT1",
+"TPP1"
+]
+},
+{
+"v": "3.0",
+"date": "2025-04-30",
+"green": [
+"ATP13A2",
+"CLCN6",
+"CLN3",
+"CLN5",
+"CLN6",
+"CLN8",
+"CTSD",
+"CTSF",
+"DNAJC5",
+"GRN",
+"KCTD7",
+"MFSD8",
+"PPT1",
+"TPP1"
+]
+},
+{
+"v": "3.4",
+"date": "2026-08-12",
+"green": [
+"ATP13A2",
+"CLCN6",
+"CLN3",
+"CLN5",
+"CLN6",
+"CLN8",
+"CTSD",
+"CTSF",
+"DNAJC5",
+"GRN",
+"KCTD7",
+"MFSD8",
+"PPT1",
+"TPP1"
+]
+}
+],
+"currentGreen": [
+"ATP13A2",
+"CLCN6",
+"CLN3",
+"CLN5",
+"CLN6",
+"CLN8",
+"CTSD",
+"CTSF",
+"DNAJC5",
+"GRN",
+"KCTD7",
+"MFSD8",
+"PPT1",
+"TPP1"
+]
+}

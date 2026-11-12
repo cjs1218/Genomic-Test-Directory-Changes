@@ -1,0 +1,74 @@
+{
+"id": 527,
+"name": "Familial Chylomicronaemia Syndrome",
+"current": "3.7",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-18",
+"green": [
+"APOA5",
+"APOB",
+"APOC2",
+"APOE",
+"CREB3L3",
+"GPD1",
+"GPIHBP1",
+"LMF1",
+"LPL"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"APOA5",
+"APOC2",
+"APOE",
+"CREB3L3",
+"GPD1",
+"GPIHBP1",
+"LMF1",
+"LPL"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"APOA5",
+"APOC2",
+"APOE",
+"CREB3L3",
+"GPD1",
+"GPIHBP1",
+"LMF1",
+"LPL"
+]
+},
+{
+"v": "3.6",
+"date": "2026-08-12",
+"green": [
+"APOA5",
+"APOC2",
+"APOE",
+"CREB3L3",
+"GPD1",
+"GPIHBP1",
+"LMF1",
+"LPL"
+]
+}
+],
+"currentGreen": [
+"APOA5",
+"APOC2",
+"APOE",
+"CREB3L3",
+"GPD1",
+"GPIHBP1",
+"LMF1",
+"LPL"
+]
+}
