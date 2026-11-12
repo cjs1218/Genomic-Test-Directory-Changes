@@ -1,0 +1,126 @@
+{
+"id": 649,
+"name": "Inherited phaeochromocytoma and paraganglioma excluding NF1",
+"current": "5.1",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+},
+{
+"v": "1.4",
+"date": "2020-11-11",
+"green": [
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"DLST",
+"FH",
+"MAX",
+"MDH2",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"SLC25A11",
+"TMEM127",
+"VHL"
+]
+},
+{
+"v": "3.0",
+"date": "2024-08-07",
+"green": [
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+},
+{
+"v": "4.0",
+"date": "2026-05-06",
+"green": [
+"DNMT3A",
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+},
+{
+"v": "5.0",
+"date": "2026-08-12",
+"green": [
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+}
+],
+"currentGreen": [
+"FH",
+"MAX",
+"MEN1",
+"RET",
+"SDHA",
+"SDHAF2",
+"SDHB",
+"SDHC",
+"SDHD",
+"TMEM127",
+"VHL"
+]
+}

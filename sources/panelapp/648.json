@@ -1,0 +1,79 @@
+{
+"id": 648,
+"name": "Endocrine neoplasia",
+"current": "3.9",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"RET"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"PRKAR1A",
+"RET",
+"VHL"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"PRKAR1A",
+"RET",
+"VHL"
+]
+},
+{
+"v": "3.4",
+"date": "2026-05-06",
+"green": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"PRKAR1A",
+"RET",
+"VHL"
+]
+},
+{
+"v": "3.8",
+"date": "2026-08-12",
+"green": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"PRKAR1A",
+"RET",
+"VHL"
+]
+}
+],
+"currentGreen": [
+"AIP",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"PRKAR1A",
+"RET",
+"VHL"
+]
+}
