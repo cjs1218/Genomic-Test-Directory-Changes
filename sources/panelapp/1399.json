@@ -1,0 +1,24 @@
+{
+"id": 1399,
+"name": "Thiamine metabolism dysfunction syndrome 2",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"SLC19A3"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"SLC19A3"
+]
+}
+],
+"currentGreen": [
+"SLC19A3"
+]
+}

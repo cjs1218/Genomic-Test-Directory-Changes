@@ -1,0 +1,58 @@
+{
+"id": 1109,
+"name": "Multi Locus Imprinting Disorder (MLID)",
+"current": "2.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2022-11-30",
+"green": [
+"KHDC3L",
+"NLRP2",
+"NLRP5",
+"NLRP7",
+"PADI6"
+]
+},
+{
+"v": "1.2",
+"date": "2023-03-22",
+"green": [
+"KHDC3L",
+"NLRP2",
+"NLRP5",
+"NLRP7",
+"PADI6"
+]
+},
+{
+"v": "2.0",
+"date": "2026-05-06",
+"green": [
+"KHDC3L",
+"NLRP2",
+"NLRP5",
+"NLRP7",
+"PADI6"
+]
+},
+{
+"v": "2.4",
+"date": "2026-08-12",
+"green": [
+"KHDC3L",
+"NLRP2",
+"NLRP5",
+"NLRP7",
+"PADI6"
+]
+}
+],
+"currentGreen": [
+"KHDC3L",
+"NLRP2",
+"NLRP5",
+"NLRP7",
+"PADI6"
+]
+}

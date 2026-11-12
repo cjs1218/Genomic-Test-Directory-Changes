@@ -1,0 +1,34 @@
+{
+"id": 1221,
+"name": "Hereditary diffuse gastric cancer",
+"current": "2.7",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-03-22",
+"green": [
+"CDH1"
+]
+},
+{
+"v": "2.0",
+"date": "2023-12-20",
+"green": [
+"CDH1",
+"CTNNA1"
+]
+},
+{
+"v": "2.6",
+"date": "2026-08-12",
+"green": [
+"CDH1",
+"CTNNA1"
+]
+}
+],
+"currentGreen": [
+"CDH1",
+"CTNNA1"
+]
+}

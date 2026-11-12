@@ -1,0 +1,24 @@
+{
+"id": 1350,
+"name": "IPEX - Immunodysregulation Polyendocrinopathy and Enteropathy, X-Linked",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"FOXP3"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"FOXP3"
+]
+}
+],
+"currentGreen": [
+"FOXP3"
+]
+}

@@ -1,0 +1,27 @@
+{
+"id": 1337,
+"name": "Generalised arterial calcification in infancy",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ABCC6",
+"ENPP1"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"ABCC6",
+"ENPP1"
+]
+}
+],
+"currentGreen": [
+"ABCC6",
+"ENPP1"
+]
+}

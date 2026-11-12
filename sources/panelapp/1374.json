@@ -1,0 +1,27 @@
+{
+"id": 1374,
+"name": "Niemann Pick disease type C",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"NPC1",
+"NPC2"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"NPC1",
+"NPC2"
+]
+}
+],
+"currentGreen": [
+"NPC1",
+"NPC2"
+]
+}

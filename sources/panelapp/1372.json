@@ -1,0 +1,24 @@
+{
+"id": 1372,
+"name": "Neutropaenia consistent with ELANE variants",
+"current": "1.7",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ELANE"
+]
+},
+{
+"v": "1.6",
+"date": "2026-08-12",
+"green": [
+"ELANE"
+]
+}
+],
+"currentGreen": [
+"ELANE"
+]
+}

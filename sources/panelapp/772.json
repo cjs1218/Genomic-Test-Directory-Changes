@@ -1,0 +1,47 @@
+{
+"id": 772,
+"name": "Familial hypercholesterolaemia (GMS)",
+"current": "2.7",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"APOB",
+"APOE",
+"LDLR",
+"LDLRAP1",
+"PCSK9"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"APOB",
+"APOE",
+"LDLR",
+"LDLRAP1",
+"PCSK9"
+]
+},
+{
+"v": "2.6",
+"date": "2026-08-12",
+"green": [
+"APOB",
+"APOE",
+"LDLR",
+"LDLRAP1",
+"PCSK9"
+]
+}
+],
+"currentGreen": [
+"APOB",
+"APOE",
+"LDLR",
+"LDLRAP1",
+"PCSK9"
+]
+}

@@ -1,0 +1,24 @@
+{
+"id": 1344,
+"name": "Haemophagocytic syndrome with absent XIAP expression",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"XIAP"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"XIAP"
+]
+}
+],
+"currentGreen": [
+"XIAP"
+]
+}

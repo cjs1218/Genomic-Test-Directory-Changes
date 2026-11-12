@@ -1,0 +1,24 @@
+{
+"id": 1210,
+"name": "Alstrom syndrome",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ALMS1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"ALMS1"
+]
+}
+],
+"currentGreen": [
+"ALMS1"
+]
+}

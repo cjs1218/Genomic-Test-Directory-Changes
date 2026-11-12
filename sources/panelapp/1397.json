@@ -1,0 +1,55 @@
+{
+"id": 1397,
+"name": "Sickle cell, thalassaemia and other haemoglobinopathies",
+"current": "2.12",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"HBA1",
+"HBB"
+]
+},
+{
+"v": "2.0",
+"date": "2024-08-07",
+"green": [
+"HBA1",
+"HBA2",
+"HBB",
+"HBG1",
+"HBG2"
+]
+},
+{
+"v": "2.2",
+"date": "2025-04-30",
+"green": [
+"HBA1",
+"HBA2",
+"HBB",
+"HBG1",
+"HBG2"
+]
+},
+{
+"v": "2.11",
+"date": "2026-08-12",
+"green": [
+"HBA1",
+"HBA2",
+"HBB",
+"HBG1",
+"HBG2"
+]
+}
+],
+"currentGreen": [
+"HBA1",
+"HBA2",
+"HBB",
+"HBG1",
+"HBG2"
+]
+}

@@ -1,0 +1,24 @@
+{
+"id": 1361,
+"name": "Mucopolysaccharidosis type II",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"IDS"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"IDS"
+]
+}
+],
+"currentGreen": [
+"IDS"
+]
+}

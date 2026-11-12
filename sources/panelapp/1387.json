@@ -1,0 +1,24 @@
+{
+"id": 1387,
+"name": "Segmental or atypical neurofibromatosis type 1 testing",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"NF1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"NF1"
+]
+}
+],
+"currentGreen": [
+"NF1"
+]
+}

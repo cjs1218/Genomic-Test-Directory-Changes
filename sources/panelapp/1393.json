@@ -1,0 +1,24 @@
+{
+"id": 1393,
+"name": "Spinal muscular atrophy - Diagnostic",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"SMN1"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"SMN1"
+]
+}
+],
+"currentGreen": [
+"SMN1"
+]
+}

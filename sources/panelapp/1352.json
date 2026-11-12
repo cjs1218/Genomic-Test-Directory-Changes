@@ -1,0 +1,24 @@
+{
+"id": 1352,
+"name": "Krabbe disease - Saposin A deficiency",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"PSAP"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"PSAP"
+]
+}
+],
+"currentGreen": [
+"PSAP"
+]
+}

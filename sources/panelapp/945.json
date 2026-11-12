@@ -1,0 +1,42 @@
+{
+"id": 945,
+"name": "Thrombocythaemia",
+"current": "2.3",
+"signoffs": [
+{
+"v": "1.1",
+"date": "2020-09-30",
+"green": [
+"JAK2",
+"MPL",
+"THPO"
+]
+},
+{
+"v": "2.0",
+"date": "2026-05-06",
+"green": [
+"JAK2",
+"MPL",
+"SH2B3",
+"THPO"
+]
+},
+{
+"v": "2.2",
+"date": "2026-08-12",
+"green": [
+"JAK2",
+"MPL",
+"SH2B3",
+"THPO"
+]
+}
+],
+"currentGreen": [
+"JAK2",
+"MPL",
+"SH2B3",
+"THPO"
+]
+}

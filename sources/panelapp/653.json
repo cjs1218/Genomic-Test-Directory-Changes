@@ -1,0 +1,78 @@
+{
+"id": 653,
+"name": "Polycystic liver disease",
+"current": "1.34",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"ALG8",
+"DNAJB11",
+"GANAB",
+"LRP5",
+"PKD1",
+"PKD2",
+"PKHD1",
+"PRKCSH",
+"SEC63"
+]
+},
+{
+"v": "1.4",
+"date": "2020-03-04",
+"green": [
+"ALG8",
+"DNAJB11",
+"GANAB",
+"LRP5",
+"PKD1",
+"PKD2",
+"PKHD1",
+"PRKCSH",
+"SEC63"
+]
+},
+{
+"v": "1.26",
+"date": "2023-03-22",
+"green": [
+"ALG8",
+"DNAJB11",
+"GANAB",
+"LRP5",
+"PKD1",
+"PKD2",
+"PKHD1",
+"PRKCSH",
+"SEC63"
+]
+},
+{
+"v": "1.33",
+"date": "2026-08-12",
+"green": [
+"ALG8",
+"DNAJB11",
+"GANAB",
+"LRP5",
+"PKD1",
+"PKD2",
+"PKHD1",
+"PRKCSH",
+"SEC63"
+]
+}
+],
+"currentGreen": [
+"ALG8",
+"DNAJB11",
+"GANAB",
+"LRP5",
+"PKD1",
+"PKD2",
+"PKHD1",
+"PRKCSH",
+"SEC63"
+]
+}

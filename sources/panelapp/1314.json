@@ -1,0 +1,24 @@
+{
+"id": 1314,
+"name": "Central congenital hypoventilation",
+"current": "1.9",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"PHOX2B"
+]
+},
+{
+"v": "1.8",
+"date": "2026-08-12",
+"green": [
+"PHOX2B"
+]
+}
+],
+"currentGreen": [
+"PHOX2B"
+]
+}

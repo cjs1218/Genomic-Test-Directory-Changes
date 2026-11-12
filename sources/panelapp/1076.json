@@ -1,0 +1,30 @@
+{
+"id": 1076,
+"name": "Malignant hyperthermia",
+"current": "1.7",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2022-11-30",
+"green": [
+"CACNA1S",
+"RYR1",
+"STAC3"
+]
+},
+{
+"v": "1.6",
+"date": "2026-08-12",
+"green": [
+"CACNA1S",
+"RYR1",
+"STAC3"
+]
+}
+],
+"currentGreen": [
+"CACNA1S",
+"RYR1",
+"STAC3"
+]
+}

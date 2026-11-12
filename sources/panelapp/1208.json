@@ -1,0 +1,24 @@
+{
+"id": 1208,
+"name": "Agammaglobulinaemia with absent BTK expression",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"BTK"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"BTK"
+]
+}
+],
+"currentGreen": [
+"BTK"
+]
+}

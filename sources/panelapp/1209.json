@@ -1,0 +1,30 @@
+{
+"id": 1209,
+"name": "Albright hereditary osteodystrophy, pseudohypoparathyroidism, pseudopseudohypoparathyroidism, acrodysostosis and osteoma cutis",
+"current": "2.1",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"GNAS",
+"PDE4D",
+"PRKAR1A"
+]
+},
+{
+"v": "2.0",
+"date": "2026-08-12",
+"green": [
+"GNAS",
+"PDE4D",
+"PRKAR1A"
+]
+}
+],
+"currentGreen": [
+"GNAS",
+"PDE4D",
+"PRKAR1A"
+]
+}

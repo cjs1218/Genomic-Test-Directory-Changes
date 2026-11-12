@@ -1,0 +1,31 @@
+{
+"id": 1207,
+"name": "Acute intermittent porphyria",
+"current": "2.3",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"HMBS"
+]
+},
+{
+"v": "2.0",
+"date": "2026-05-06",
+"green": [
+"HMBS"
+]
+},
+{
+"v": "2.2",
+"date": "2026-08-12",
+"green": [
+"HMBS"
+]
+}
+],
+"currentGreen": [
+"HMBS"
+]
+}

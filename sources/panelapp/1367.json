@@ -1,0 +1,27 @@
+{
+"id": 1367,
+"name": "Multiple exostoses",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"EXT1",
+"EXT2"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"EXT1",
+"EXT2"
+]
+}
+],
+"currentGreen": [
+"EXT1",
+"EXT2"
+]
+}

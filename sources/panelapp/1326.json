@@ -1,0 +1,24 @@
+{
+"id": 1326,
+"name": "Factor IX deficiency",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"F9"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"F9"
+]
+}
+],
+"currentGreen": [
+"F9"
+]
+}

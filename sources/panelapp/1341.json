@@ -1,0 +1,24 @@
+{
+"id": 1341,
+"name": "GM1 Gangliosidosis and Mucopolysaccharidosis Type IVB",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"GLB1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"GLB1"
+]
+}
+],
+"currentGreen": [
+"GLB1"
+]
+}

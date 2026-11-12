@@ -1,0 +1,24 @@
+{
+"id": 1324,
+"name": "Facioscapulohumeral muscular dystrophy - extended testing",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"SMCHD1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"SMCHD1"
+]
+}
+],
+"currentGreen": [
+"SMCHD1"
+]
+}

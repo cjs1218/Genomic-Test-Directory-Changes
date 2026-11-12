@@ -1,0 +1,24 @@
+{
+"id": 1388,
+"name": "Severe combined immunodeficiency with adenosine deaminase deficiency",
+"current": "1.7",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ADA"
+]
+},
+{
+"v": "1.6",
+"date": "2026-08-12",
+"green": [
+"ADA"
+]
+}
+],
+"currentGreen": [
+"ADA"
+]
+}

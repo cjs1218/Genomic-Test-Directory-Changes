@@ -1,0 +1,24 @@
+{
+"id": 1313,
+"name": "Carney complex",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"PRKAR1A"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"PRKAR1A"
+]
+}
+],
+"currentGreen": [
+"PRKAR1A"
+]
+}

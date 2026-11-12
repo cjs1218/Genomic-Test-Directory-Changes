@@ -1,0 +1,24 @@
+{
+"id": 1356,
+"name": "Mitochondrial Complex V deficiency, TMEM70 type",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"TMEM70"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"TMEM70"
+]
+}
+],
+"currentGreen": [
+"TMEM70"
+]
+}

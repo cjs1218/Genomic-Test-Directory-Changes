@@ -1,0 +1,27 @@
+{
+"id": 1349,
+"name": "Inherited susceptibility to acute lymphoblastoid leukaemia (ALL)",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ETV6",
+"PAX5"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"ETV6",
+"PAX5"
+]
+}
+],
+"currentGreen": [
+"ETV6",
+"PAX5"
+]
+}

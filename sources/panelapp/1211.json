@@ -1,0 +1,24 @@
+{
+"id": 1211,
+"name": "Alveolar capillary dysplasia with misalignment of pulmonary veins",
+"current": "1.10",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"FOXF1"
+]
+},
+{
+"v": "1.9",
+"date": "2026-08-12",
+"green": [
+"FOXF1"
+]
+}
+],
+"currentGreen": [
+"FOXF1"
+]
+}

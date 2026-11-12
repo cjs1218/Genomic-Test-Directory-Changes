@@ -1,0 +1,27 @@
+{
+"id": 1373,
+"name": "Nevoid Basal Cell Carcinoma Syndrome or Gorlin syndrome",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"PTCH1",
+"SUFU"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"PTCH1",
+"SUFU"
+]
+}
+],
+"currentGreen": [
+"PTCH1",
+"SUFU"
+]
+}

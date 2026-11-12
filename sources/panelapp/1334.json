@@ -1,0 +1,66 @@
+{
+"id": 1334,
+"name": "Familial tumours of the nervous system",
+"current": "3.3",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"DGCR8",
+"LZTFL1",
+"NF2",
+"SMARCB1",
+"SMARCE1",
+"SUFU"
+]
+},
+{
+"v": "2.0",
+"date": "2023-12-20",
+"green": [
+"DGCR8",
+"LZTR1",
+"NF2",
+"SMARCB1",
+"SMARCE1",
+"SUFU"
+]
+},
+{
+"v": "3.0",
+"date": "2026-05-06",
+"green": [
+"CDKN2A",
+"DGCR8",
+"LZTR1",
+"NF2",
+"SMARCB1",
+"SMARCE1",
+"SUFU"
+]
+},
+{
+"v": "3.2",
+"date": "2026-08-12",
+"green": [
+"CDKN2A",
+"DGCR8",
+"LZTR1",
+"NF2",
+"SMARCB1",
+"SMARCE1",
+"SUFU"
+]
+}
+],
+"currentGreen": [
+"CDKN2A",
+"DGCR8",
+"LZTR1",
+"NF2",
+"SMARCB1",
+"SMARCE1",
+"SUFU"
+]
+}

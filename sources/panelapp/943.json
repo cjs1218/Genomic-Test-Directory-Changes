@@ -1,0 +1,100 @@
+{
+"id": 943,
+"name": "Osteopetrosis",
+"current": "2.3",
+"signoffs": [
+{
+"v": "1.1",
+"date": "2020-09-21",
+"green": [
+"AMER1",
+"ANKH",
+"CA2",
+"CLCN7",
+"CTSK",
+"FAM20C",
+"FERMT3",
+"LEMD3",
+"LRP5",
+"OSTM1",
+"PTH1R",
+"RASGRP2",
+"SNX10",
+"SOST",
+"TCIRG1",
+"TGFB1",
+"TNFRSF11A",
+"TNFSF11",
+"TYROBP"
+]
+},
+{
+"v": "2.0",
+"date": "2026-05-06",
+"green": [
+"AMER1",
+"ANKH",
+"CA2",
+"CLCN7",
+"CTSK",
+"FAM20C",
+"FERMT3",
+"LEMD3",
+"LRP5",
+"OSTM1",
+"PTH1R",
+"RASGRP2",
+"SNX10",
+"SOST",
+"TCIRG1",
+"TGFB1",
+"TNFRSF11A",
+"TNFSF11"
+]
+},
+{
+"v": "2.2",
+"date": "2026-08-12",
+"green": [
+"AMER1",
+"ANKH",
+"CA2",
+"CLCN7",
+"CTSK",
+"FAM20C",
+"FERMT3",
+"LEMD3",
+"LRP5",
+"OSTM1",
+"PTH1R",
+"RASGRP2",
+"SNX10",
+"SOST",
+"TCIRG1",
+"TGFB1",
+"TNFRSF11A",
+"TNFSF11"
+]
+}
+],
+"currentGreen": [
+"AMER1",
+"ANKH",
+"CA2",
+"CLCN7",
+"CTSK",
+"FAM20C",
+"FERMT3",
+"LEMD3",
+"LRP5",
+"OSTM1",
+"PTH1R",
+"RASGRP2",
+"SNX10",
+"SOST",
+"TCIRG1",
+"TGFB1",
+"TNFRSF11A",
+"TNFSF11"
+]
+}

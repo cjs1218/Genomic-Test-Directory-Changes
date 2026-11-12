@@ -1,0 +1,24 @@
+{
+"id": 1354,
+"name": "Lysosomal acid lipase deficiency",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"LIPA"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"LIPA"
+]
+}
+],
+"currentGreen": [
+"LIPA"
+]
+}

@@ -1,0 +1,24 @@
+{
+"id": 1371,
+"name": "Neuronal ceroid lipofuscinosis type 2",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"TPP1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"TPP1"
+]
+}
+],
+"currentGreen": [
+"TPP1"
+]
+}

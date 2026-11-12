@@ -1,0 +1,27 @@
+{
+"id": 1391,
+"name": "Sitosterolaemia",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ABCG5",
+"ABCG8"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"ABCG5",
+"ABCG8"
+]
+}
+],
+"currentGreen": [
+"ABCG5",
+"ABCG8"
+]
+}

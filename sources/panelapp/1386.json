@@ -1,0 +1,24 @@
+{
+"id": 1386,
+"name": "SCID with features of gamma chain deficiency",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"IL2RG"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"IL2RG"
+]
+}
+],
+"currentGreen": [
+"IL2RG"
+]
+}

@@ -1,0 +1,24 @@
+{
+"id": 1345,
+"name": "Hereditary angioedema types I and II",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"SERPING1"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"SERPING1"
+]
+}
+],
+"currentGreen": [
+"SERPING1"
+]
+}

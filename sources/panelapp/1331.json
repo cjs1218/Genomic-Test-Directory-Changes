@@ -1,0 +1,24 @@
+{
+"id": 1331,
+"name": "Factor XI deficiency",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"F11"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"F11"
+]
+}
+],
+"currentGreen": [
+"F11"
+]
+}

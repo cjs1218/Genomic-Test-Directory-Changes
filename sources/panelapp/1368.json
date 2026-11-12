@@ -1,0 +1,32 @@
+{
+"id": 1368,
+"name": "NARP syndrome or maternally inherited Leigh syndrome",
+"current": "2.4",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"MT-ATP6",
+"MT-ND6"
+]
+},
+{
+"v": "2.0",
+"date": "2024-08-07",
+"green": [
+"MT-ATP6"
+]
+},
+{
+"v": "2.3",
+"date": "2026-08-12",
+"green": [
+"MT-ATP6"
+]
+}
+],
+"currentGreen": [
+"MT-ATP6"
+]
+}

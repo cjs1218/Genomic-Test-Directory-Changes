@@ -1,0 +1,27 @@
+{
+"id": 1370,
+"name": "Neurofibromatosis type 1 (GMS)",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"NF1",
+"SPRED1"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"NF1",
+"SPRED1"
+]
+}
+],
+"currentGreen": [
+"NF1",
+"SPRED1"
+]
+}

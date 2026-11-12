@@ -1,0 +1,24 @@
+{
+"id": 1383,
+"name": "Pulmonary alveolar microlithiasis",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"SLC34A2"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"SLC34A2"
+]
+}
+],
+"currentGreen": [
+"SLC34A2"
+]
+}

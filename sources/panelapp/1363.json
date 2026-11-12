@@ -1,0 +1,24 @@
+{
+"id": 1363,
+"name": "Mucopolysaccharidosis type IIIB",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"NAGLU"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"green": [
+"NAGLU"
+]
+}
+],
+"currentGreen": [
+"NAGLU"
+]
+}

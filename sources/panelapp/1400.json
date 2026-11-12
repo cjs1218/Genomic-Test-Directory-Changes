@@ -1,0 +1,27 @@
+{
+"id": 1400,
+"name": "Tuberous sclerosis",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"TSC1",
+"TSC2"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"TSC1",
+"TSC2"
+]
+}
+],
+"currentGreen": [
+"TSC1",
+"TSC2"
+]
+}

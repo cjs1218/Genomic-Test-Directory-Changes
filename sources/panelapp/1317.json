@@ -1,0 +1,24 @@
+{
+"id": 1317,
+"name": "Congenital adrenal hyperplasia",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"CYP21A2"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"CYP21A2"
+]
+}
+],
+"currentGreen": [
+"CYP21A2"
+]
+}

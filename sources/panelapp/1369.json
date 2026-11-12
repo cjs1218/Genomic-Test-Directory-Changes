@@ -1,0 +1,35 @@
+{
+"id": 1369,
+"name": "Neonatal diabetes - small panel",
+"current": "1.8",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"ABCC8",
+"KCNJ11"
+]
+},
+{
+"v": "1.2",
+"date": "2023-09-26",
+"green": [
+"ABCC8",
+"KCNJ11"
+]
+},
+{
+"v": "1.7",
+"date": "2026-08-12",
+"green": [
+"ABCC8",
+"KCNJ11"
+]
+}
+],
+"currentGreen": [
+"ABCC8",
+"KCNJ11"
+]
+}

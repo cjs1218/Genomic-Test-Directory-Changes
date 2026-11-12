@@ -1,0 +1,27 @@
+{
+"id": 1222,
+"name": "Li Fraumeni Syndrome",
+"current": "1.8",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-03-22",
+"green": [
+"POT1",
+"TP53"
+]
+},
+{
+"v": "1.7",
+"date": "2026-08-12",
+"green": [
+"POT1",
+"TP53"
+]
+}
+],
+"currentGreen": [
+"POT1",
+"TP53"
+]
+}

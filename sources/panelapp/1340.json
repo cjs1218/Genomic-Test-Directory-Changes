@@ -1,0 +1,24 @@
+{
+"id": 1340,
+"name": "Glycogen storage disease V",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"PYGM"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"green": [
+"PYGM"
+]
+}
+],
+"currentGreen": [
+"PYGM"
+]
+}

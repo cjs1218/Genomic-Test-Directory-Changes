@@ -1,0 +1,24 @@
+{
+"id": 1311,
+"name": "CADASIL",
+"current": "1.9",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-09-14",
+"green": [
+"NOTCH3"
+]
+},
+{
+"v": "1.8",
+"date": "2026-08-12",
+"green": [
+"NOTCH3"
+]
+}
+],
+"currentGreen": [
+"NOTCH3"
+]
+}
