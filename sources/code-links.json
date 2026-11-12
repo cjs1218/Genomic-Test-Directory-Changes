@@ -1,0 +1,23 @@
+{
+  "about": "Confirmed replacements for retired R codes; these override the automatic suggestions. 'release' is the release the code was removed in. Add a 'source' saying who confirmed it.",
+  "links": [
+    {
+      "from": "R59",
+      "release": "v9",
+      "to": [
+        "R27"
+      ],
+      "note": "epilepsy testing now requested under R27",
+      "source": "confirmed by the clinical team, November 2026"
+    },
+    {
+      "from": "R29",
+      "release": "v9",
+      "to": [
+        "R27"
+      ],
+      "note": "intellectual disability testing now requested under R27",
+      "source": "confirmed by the clinical team, November 2026"
+    }
+  ]
+}

@@ -177,7 +177,8 @@ async function renderCompare(s) {
   $('#print').onclick = () => window.print();
   const genes = await renderGenes(entA, entB, s.seen || C.inForce(relA), relB === LATEST ? today() : C.inForce(relB));
   const noCrit = [relA, relB].filter(r => r.noCriteria);
-  let text = C.summary({ code, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events, entA, entB, links, genes });
+  const linksNamed = links.map(l => ({ ...l, to: (l.to || []).map(c => TDH_CHANGES[c] ? `${c} (${latestName(c)})` : c) }));
+  let text = C.summary({ code, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events, entA, entB, links: linksNamed, genes });
   if (noCrit.length) text = text.replace(/\nDates are when/, `\nThe eligibility criteria for ${noCrit.map(r => r.label).join(' and ')} are not loaded yet, so criteria changes in ${noCrit.length > 1 ? 'those versions' : 'that version'} are not included.\nDates are when`);
   $('#summary-text').textContent = text;
   $('#copy-summary').onclick = () => copy(text, 'Summary copied');

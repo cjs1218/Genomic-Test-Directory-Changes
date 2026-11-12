@@ -55,7 +55,7 @@ release's first parse needs checking: open a few R codes in the app and compare 
 | 2020/21 | August 2020 | ✓ | ✓ |
 | 2020/21 update | November 2020 (criteria only; its pages still say August 2020) | uses August 2020 | ✓ |
 | 2021/22 | October 2021 | ✓ | ✓ (file named `…2021-22-v2.pdf`, but its pages say October 2021) |
-| 2021/22 v2 | October 2021 (corrections; exact date not stated) | ✓ | ✓ |
+| 2021/22 v2 | 2 February 2022 (corrections to October 2021) | ✓ | ✓ |
 | v3 | April 2022 | ✓ | ✓ |
 | v3.1 | August 2022 (spreadsheet front sheet still says v3 April 2022) | ✓ | ✓ |
 | v4 | 31 October 2022 | ✓ | ✓ |

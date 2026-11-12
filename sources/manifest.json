@@ -88,9 +88,8 @@
     {
       "id": "v2",
       "label": "2021/22 v2",
-      "published": "2021-10-02",
-      "datePrecision": "month",
-      "directory": "October 2021 v2 (corrections to the October 2021 release)",
+      "published": "2022-02-02",
+      "directory": "October 2021 v2 (corrections to the October 2021 release); published 2 February 2022",
       "criteria": "October 2021 v2",
       "files": {
         "xlsx": "national-genomic-test-directory-rare-inherited-disease-v2.xlsx",
