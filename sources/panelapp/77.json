@@ -1,0 +1,88 @@
+{
+"id": 77,
+"name": "Xeroderma pigmentosum, Trichothiodystrophy or Cockayne syndrome",
+"current": "3.9",
+"signoffs": [
+{
+"v": "2.5",
+"date": "2020-02-24",
+"green": [
+"DDB2",
+"ERCC1",
+"ERCC2",
+"ERCC3",
+"ERCC4",
+"ERCC5",
+"ERCC6",
+"ERCC8",
+"GTF2H5",
+"MPLKIP",
+"POLH",
+"XPA",
+"XPC"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"CARS",
+"DDB2",
+"ERCC1",
+"ERCC2",
+"ERCC3",
+"ERCC4",
+"ERCC5",
+"ERCC6",
+"ERCC8",
+"GTF2E2",
+"GTF2H5",
+"MPLKIP",
+"POLH",
+"RNF113A",
+"XPA",
+"XPC"
+]
+},
+{
+"v": "3.8",
+"date": "2026-08-12",
+"green": [
+"CARS",
+"DDB2",
+"ERCC1",
+"ERCC2",
+"ERCC3",
+"ERCC4",
+"ERCC5",
+"ERCC6",
+"ERCC8",
+"GTF2E2",
+"GTF2H5",
+"MPLKIP",
+"POLH",
+"RNF113A",
+"XPA",
+"XPC"
+]
+}
+],
+"currentGreen": [
+"CARS",
+"DDB2",
+"ERCC1",
+"ERCC2",
+"ERCC3",
+"ERCC4",
+"ERCC5",
+"ERCC6",
+"ERCC8",
+"GTF2E2",
+"GTF2H5",
+"MPLKIP",
+"POLH",
+"RNF113A",
+"XPA",
+"XPC"
+]
+}

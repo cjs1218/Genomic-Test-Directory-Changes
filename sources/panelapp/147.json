@@ -1,0 +1,138 @@
+{
+"id": 147,
+"name": "Cerebral vascular malformations",
+"current": "5.3",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-02",
+"green": [
+"ACTA2",
+"ACVRL1",
+"CCM2",
+"COL3A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"ACTA2",
+"ACVRL1",
+"ANGPTL6",
+"CCM2",
+"COL3A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+},
+{
+"v": "4.0",
+"date": "2025-04-30",
+"green": [
+"ACTA2",
+"ACVRL1",
+"ANGPTL6",
+"CCM2",
+"COL3A1",
+"COL5A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+},
+{
+"v": "5.0",
+"date": "2026-05-06",
+"green": [
+"ACTA2",
+"ACVRL1",
+"ANGPTL6",
+"ANO1",
+"CBL",
+"CCM2",
+"COL3A1",
+"COL5A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+},
+{
+"v": "5.2",
+"date": "2026-08-12",
+"green": [
+"ACTA2",
+"ACVRL1",
+"ANGPTL6",
+"ANO1",
+"CBL",
+"CCM2",
+"COL3A1",
+"COL5A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+}
+],
+"currentGreen": [
+"ACTA2",
+"ACVRL1",
+"ANGPTL6",
+"ANO1",
+"CBL",
+"CCM2",
+"COL3A1",
+"COL5A1",
+"ENG",
+"GUCY1A3",
+"KRIT1",
+"PDCD10",
+"RASA1",
+"RNF213",
+"SAMHD1",
+"SLC2A10",
+"SMAD4",
+"YY1AP1"
+]
+}

@@ -1,0 +1,99 @@
+{
+"id": 105,
+"name": "Pneumothorax - familial",
+"current": "3.8",
+"signoffs": [
+{
+"v": "2.17",
+"date": "2020-03-04",
+"green": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+},
+{
+"v": "2.18",
+"date": "2020-03-04",
+"green": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+},
+{
+"v": "2.19",
+"date": "2020-03-04",
+"green": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+},
+{
+"v": "3.7",
+"date": "2026-08-12",
+"green": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+}
+],
+"currentGreen": [
+"COL3A1",
+"FBN1",
+"FLCN",
+"SERPINA1",
+"TGFB2",
+"TGFB3",
+"TGFBR1",
+"TGFBR2",
+"TSC1",
+"TSC2"
+]
+}

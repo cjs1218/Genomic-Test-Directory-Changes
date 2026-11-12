@@ -1,0 +1,198 @@
+{
+"id": 134,
+"name": "Arrhythmogenic right ventricular cardiomyopathy",
+"current": "3.21",
+"signoffs": [
+{
+"v": "2.4",
+"date": "2020-02-19",
+"green": [
+"CDH2",
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "2.8",
+"date": "2020-08-20",
+"green": [
+"CDH2",
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "2.10",
+"date": "2020-10-15",
+"green": [
+"CDH2",
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.5",
+"date": "2023-03-22",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.10",
+"date": "2024-05-01",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.11",
+"date": "2024-08-07",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.12",
+"date": "2024-10-30",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.13",
+"date": "2025-04-30",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.15",
+"date": "2026-05-06",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+},
+{
+"v": "3.17",
+"date": "2026-08-12",
+"green": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+}
+],
+"currentGreen": [
+"DES",
+"DSC2",
+"DSG2",
+"DSP",
+"FLNC",
+"JUP",
+"LMNA",
+"PKP2",
+"PLN",
+"TMEM43"
+]
+}

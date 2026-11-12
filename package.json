@@ -1,0 +1,12 @@
+{
+  "name": "genomic-test-directory-changes",
+  "private": true,
+  "description": "Static site; these scripts only build the data and run the checks.",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "parse": "python3 tools/parse_version.py --all",
+    "build": "python3 tools/build_site.py",
+    "panels": "python3 tools/panel_history.py",
+    "serve": "python3 -m http.server 8000"
+  }
+}

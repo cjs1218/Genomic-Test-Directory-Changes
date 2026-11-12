@@ -1,0 +1,84 @@
+{
+"id": 312,
+"name": "Familial hypoparathyroidism",
+"current": "3.7",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-25",
+"green": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE"
+]
+},
+{
+"v": "2.3",
+"date": "2020-02-25",
+"green": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE"
+]
+},
+{
+"v": "2.14",
+"date": "2024-05-01",
+"green": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE"
+]
+},
+{
+"v": "3.0",
+"date": "2025-04-30",
+"green": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE",
+"TBX1"
+]
+},
+{
+"v": "3.6",
+"date": "2026-08-12",
+"green": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE",
+"TBX1"
+]
+}
+],
+"currentGreen": [
+"AIRE",
+"CASR",
+"GATA3",
+"GCM2",
+"GNA11",
+"PTH",
+"TBCE",
+"TBX1"
+]
+}

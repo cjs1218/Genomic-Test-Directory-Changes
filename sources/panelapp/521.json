@@ -1,0 +1,51 @@
+{
+"id": 521,
+"name": "Inherited renal cancer",
+"current": "1.31",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-04",
+"green": [
+"BAP1",
+"FH",
+"FLCN",
+"MET",
+"SDHB",
+"VHL"
+]
+},
+{
+"v": "1.28",
+"date": "2026-05-06",
+"green": [
+"BAP1",
+"FH",
+"FLCN",
+"MET",
+"SDHB",
+"VHL"
+]
+},
+{
+"v": "1.30",
+"date": "2026-08-12",
+"green": [
+"BAP1",
+"FH",
+"FLCN",
+"MET",
+"SDHB",
+"VHL"
+]
+}
+],
+"currentGreen": [
+"BAP1",
+"FH",
+"FLCN",
+"MET",
+"SDHB",
+"VHL"
+]
+}

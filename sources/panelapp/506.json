@@ -1,0 +1,190 @@
+{
+"id": 506,
+"name": "Progressive cardiac conduction disease",
+"current": "2.18",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-02",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "1.5",
+"date": "2020-08-20",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.2",
+"date": "2023-03-22",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.7",
+"date": "2024-05-01",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.8",
+"date": "2024-08-07",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.9",
+"date": "2024-10-30",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.10",
+"date": "2025-04-30",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.15",
+"date": "2026-05-06",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+},
+{
+"v": "2.17",
+"date": "2026-08-12",
+"green": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+}
+],
+"currentGreen": [
+"DES",
+"EMD",
+"GLA",
+"HCN4",
+"LAMP2",
+"LMNA",
+"NKX2-5",
+"PRKAG2",
+"SCN5A",
+"TNNI3K",
+"TTR"
+]
+}

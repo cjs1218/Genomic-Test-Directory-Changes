@@ -1,0 +1,126 @@
+{
+"id": 516,
+"name": "Thrombophilia with a likely monogenic cause",
+"current": "3.3",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-03",
+"green": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PLG",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PLG",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+},
+{
+"v": "2.2",
+"date": "2023-03-22",
+"green": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PLG",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+},
+{
+"v": "3.0",
+"date": "2026-05-06",
+"green": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+},
+{
+"v": "3.2",
+"date": "2026-08-12",
+"green": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+}
+],
+"currentGreen": [
+"ADAMTS13",
+"F2",
+"F5",
+"FGA",
+"FGB",
+"FGG",
+"HRG",
+"PIGA",
+"PROC",
+"PROS1",
+"SERPINC1",
+"SERPIND1",
+"SERPINE1",
+"THBD"
+]
+}

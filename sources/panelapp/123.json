@@ -1,0 +1,49 @@
+{
+"id": 123,
+"name": "Hereditary haemorrhagic telangiectasia",
+"current": "3.9",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-02",
+"green": [
+"ACVRL1",
+"ENG",
+"EPHB4",
+"SMAD4"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"ACVRL1",
+"ENG",
+"EPHB4",
+"GDF2",
+"RASA1",
+"SMAD4"
+]
+},
+{
+"v": "3.8",
+"date": "2026-08-12",
+"green": [
+"ACVRL1",
+"ENG",
+"EPHB4",
+"GDF2",
+"RASA1",
+"SMAD4"
+]
+}
+],
+"currentGreen": [
+"ACVRL1",
+"ENG",
+"EPHB4",
+"GDF2",
+"RASA1",
+"SMAD4"
+]
+}

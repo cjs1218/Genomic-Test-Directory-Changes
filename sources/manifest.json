@@ -1,0 +1,32 @@
+{
+  "about": "Every published release of the rare and inherited disease National Genomic Test Directory. One entry per publication date (spreadsheet and eligibility criteria published together). Add older releases as their files are saved in sources/files/ (see sources/README.md), then run npm run build. Dates are publication dates (YYYY-MM-DD); 'inForceFrom' only when a release says it took effect on a different date.",
+  "releases": [
+    {
+      "id": "v9.1",
+      "label": "v9.1",
+      "published": "2026-05-20",
+      "directory": "v9 (8 April 2026)",
+      "criteria": "v9.1 (20 May 2026)",
+      "files": { "xlsx": "", "pdf": "" },
+      "links": {
+        "xlsx": "https://www.england.nhs.uk/wp-content/uploads/2018/08/rare-and-inherited-disease-national-genomics-test-directory-v9.xlsx",
+        "pdf": "https://www.england.nhs.uk/wp-content/uploads/2018/08/rare-and-inherited-disease-eligibility-criteria-v9.1.pdf",
+        "archive": "https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/"
+      },
+      "parsedFrom": "GeneRoute Test Directory Explorer data (tools/import_generoute.py), built from the files above"
+    },
+    {
+      "id": "v9.2",
+      "label": "v9.2",
+      "published": "2026-11-09",
+      "directory": "v9.2 (9 November 2026)",
+      "criteria": "v9.2 (9 November 2026)",
+      "files": { "xlsx": "rare-and-inherited-disease-national-genomics-test-directory-v9.2.xlsx", "pdf": "rare-and-inherited-disease-eligibility-criteria-v9.2.pdf" },
+      "links": {
+        "xlsx": "https://www.england.nhs.uk/wp-content/uploads/2018/08/rare-and-inherited-disease-national-genomics-test-directory-v9.2.xlsx",
+        "pdf": "https://www.england.nhs.uk/wp-content/uploads/2018/08/rare-and-inherited-disease-eligibility-criteria-v9.2.pdf",
+        "archive": "https://www.england.nhs.uk/publication/national-genomic-test-directories/"
+      }
+    }
+  ]
+}

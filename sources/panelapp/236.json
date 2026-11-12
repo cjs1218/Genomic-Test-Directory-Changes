@@ -1,0 +1,67 @@
+{
+"id": 236,
+"name": "Hyperthyroidism",
+"current": "3.8",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-19",
+"green": [
+"ALB",
+"SECISBP2",
+"SLC16A2",
+"THRA",
+"THRB",
+"TSHR"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"ALB",
+"SECISBP2",
+"SLC16A2",
+"THRA",
+"THRB",
+"TSHR",
+"TTR"
+]
+},
+{
+"v": "3.5",
+"date": "2026-05-06",
+"green": [
+"ALB",
+"SECISBP2",
+"SLC16A2",
+"THRA",
+"THRB",
+"TSHR",
+"TTR"
+]
+},
+{
+"v": "3.7",
+"date": "2026-08-12",
+"green": [
+"ALB",
+"SECISBP2",
+"SLC16A2",
+"THRA",
+"THRB",
+"TSHR",
+"TTR"
+]
+}
+],
+"currentGreen": [
+"ALB",
+"SECISBP2",
+"SLC16A2",
+"THRA",
+"THRB",
+"TSHR",
+"TTR"
+]
+}

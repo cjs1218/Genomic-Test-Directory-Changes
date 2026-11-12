@@ -1,0 +1,93 @@
+{
+"id": 193,
+"name": "Pulmonary arterial hypertension",
+"current": "4.15",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-02",
+"green": [
+"ACVRL1",
+"ATP13A3",
+"BMPR2",
+"EIF2AK4",
+"ENG",
+"GDF2",
+"KCNK3",
+"SMAD9",
+"SOX17",
+"TBX4"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"ACVRL1",
+"ATP13A3",
+"BMPR2",
+"EIF2AK4",
+"ENG",
+"GDF2",
+"KCNK3",
+"KDR",
+"SMAD9",
+"SOX17",
+"TBX4"
+]
+},
+{
+"v": "4.0",
+"date": "2025-04-30",
+"green": [
+"ABCC8",
+"ACVRL1",
+"ATP13A3",
+"BMPR2",
+"EIF2AK4",
+"ENG",
+"GDF2",
+"KCNK3",
+"KDR",
+"SARS2",
+"SMAD9",
+"SOX17",
+"TBX4"
+]
+},
+{
+"v": "4.14",
+"date": "2026-08-12",
+"green": [
+"ABCC8",
+"ACVRL1",
+"ATP13A3",
+"BMPR2",
+"EIF2AK4",
+"ENG",
+"GDF2",
+"KCNK3",
+"KDR",
+"SARS2",
+"SMAD9",
+"SOX17",
+"TBX4"
+]
+}
+],
+"currentGreen": [
+"ABCC8",
+"ACVRL1",
+"ATP13A3",
+"BMPR2",
+"EIF2AK4",
+"ENG",
+"GDF2",
+"KCNK3",
+"KDR",
+"SARS2",
+"SMAD9",
+"SOX17",
+"TBX4"
+]
+}

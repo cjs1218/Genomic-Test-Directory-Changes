@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test Directory Changes</title>
+  <meta name="description" content="Compare an R code in the NHS England rare and inherited disease National Genomic Test Directory between the date a patient was seen and now: eligibility criteria, tests, codes and genes, with when each change was published.">
+  <meta name="theme-color" content="#0e5866">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-head">
+    <div class="wrap head-row">
+      <div class="brand">
+        <svg class="brand-mark" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true"><circle cx="22" cy="22" r="22" fill="#fff"/><path d="M13 31V13h9a5 5 0 0 1 0 10h-9m9 0 7 8" fill="none" stroke="#0e5866" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M27 13h5m-2.5 0v6" stroke="#3fc1c9" stroke-width="2.5" stroke-linecap="round"/></svg>
+        <div>
+          <a class="brand-home" href="https://generoute.co.uk/">GeneRoute<span class="visually-hidden"> home</span></a>
+          <h1><a href="./">Test Directory Changes</a> <span class="pill">In development</span></h1>
+          <p id="stats"></p>
+        </div>
+      </div>
+      <a class="head-link" href="https://generoute.co.uk/test-directory-explorer/">Test Directory Explorer</a>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <p class="intro"><strong>Independent – not an NHS website.</strong> Why wasn't a test offered then? Compare an R code in the rare and inherited
+      disease National Genomic Test Directory on the date a patient was seen with the current version (or any other version), and see when each change was published.</p>
+
+    <nav class="tabs" aria-label="Views">
+      <a href="#" data-view="compare" class="tab">Compare an R code</a>
+      <a href="#view=release" data-view="release" class="tab">What changed in a version</a>
+      <a href="#view=versions" data-view="versions" class="tab">Versions loaded</a>
+    </nav>
+
+    <section id="compare-view">
+      <form id="compare-form" class="card form-grid" autocomplete="off">
+        <div class="field wide">
+          <label for="code">R code or condition</label>
+          <input id="code" list="codes" placeholder="e.g. R208, hearing loss, cardiomyopathy" required aria-describedby="code-hint">
+          <datalist id="codes"></datalist>
+          <p id="code-hint" class="hint">Old and retired codes and names are included.</p>
+        </div>
+        <div class="field">
+          <label for="seen">Date the patient was seen</label>
+          <input id="seen" type="date" aria-describedby="seen-hint">
+          <p id="seen-hint" class="hint">Or pick a version below.</p>
+        </div>
+        <div class="field">
+          <label for="from">Version then</label>
+          <select id="from"></select>
+        </div>
+        <div class="field">
+          <label for="to">Compare with</label>
+          <select id="to"></select>
+        </div>
+        <div class="field actions"><button type="submit">Compare</button></div>
+      </form>
+      <div id="choices" hidden></div>
+      <div id="result" aria-live="polite"></div>
+    </section>
+
+    <section id="release-view" hidden>
+      <form id="release-form" class="card form-grid">
+        <div class="field"><label for="rel">Version</label><select id="rel"></select></div>
+        <div class="field wide"><label for="rel-filter">Show</label>
+          <select id="rel-filter">
+            <option value="">Every change</option>
+            <option value="criteria">Eligibility criteria changed</option>
+            <option value="tests">Tests changed</option>
+            <option value="added">New codes</option>
+            <option value="removed">Removed codes</option>
+            <option value="name">Renamed</option>
+          </select></div>
+      </form>
+      <div id="release-result"></div>
+    </section>
+
+    <section id="versions-view" hidden></section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p id="built"></p>
+      <p><strong>An independent tool – not an NHS website or service.</strong> It shows what the published directory documents said; it is not a
+        substitute for clinical judgement or your Genomic Laboratory Hub's advice. Not affiliated with NHS England or Genomics England.
+        Test directory content © NHS England; gene lists from <a href="https://panelapp.genomicsengland.co.uk/">PanelApp</a> (Genomics England).
+        Historic versions from the <a href="https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/">UK Government Web Archive</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/core.js"></script>
+  <script src="data/releases.js"></script>
+  <script src="data/changes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

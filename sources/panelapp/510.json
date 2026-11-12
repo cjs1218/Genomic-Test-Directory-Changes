@@ -1,0 +1,53 @@
+{
+"id": 510,
+"name": "Sporadic aniridia",
+"current": "3.8",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-03",
+"green": [
+"FOXC1",
+"ISCA-37401-Loss (region)",
+"ITPR1",
+"PAX6"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"FOXC1",
+"ISCA-37401-Loss (region)",
+"ITPR1",
+"PAX6"
+]
+},
+{
+"v": "3.2",
+"date": "2023-03-22",
+"green": [
+"FOXC1",
+"ISCA-37401-Loss (region)",
+"ITPR1",
+"PAX6"
+]
+},
+{
+"v": "3.7",
+"date": "2026-08-12",
+"green": [
+"FOXC1",
+"ISCA-37401-Loss (region)",
+"ITPR1",
+"PAX6"
+]
+}
+],
+"currentGreen": [
+"FOXC1",
+"ISCA-37401-Loss (region)",
+"ITPR1",
+"PAX6"
+]
+}

@@ -1,0 +1,55 @@
+{
+"id": 507,
+"name": "Common craniosynostosis syndromes",
+"current": "1.19",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-13",
+"green": [
+"EFNB1",
+"ERF",
+"FGFR1",
+"FGFR2",
+"FGFR3",
+"TCF12",
+"TWIST1"
+]
+},
+{
+"v": "1.16",
+"date": "2026-05-06",
+"green": [
+"EFNB1",
+"ERF",
+"FGFR1",
+"FGFR2",
+"FGFR3",
+"TCF12",
+"TWIST1"
+]
+},
+{
+"v": "1.18",
+"date": "2026-08-12",
+"green": [
+"EFNB1",
+"ERF",
+"FGFR1",
+"FGFR2",
+"FGFR3",
+"TCF12",
+"TWIST1"
+]
+}
+],
+"currentGreen": [
+"EFNB1",
+"ERF",
+"FGFR1",
+"FGFR2",
+"FGFR3",
+"TCF12",
+"TWIST1"
+]
+}

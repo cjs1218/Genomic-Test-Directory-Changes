@@ -1,0 +1,129 @@
+{
+"id": 145,
+"name": "Congenital adrenal hypoplasia",
+"current": "5.6",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-19",
+"green": [
+"AAAS",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"AAAS",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"POLE",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+},
+{
+"v": "4.0",
+"date": "2025-04-30",
+"green": [
+"AAAS",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"CYP11B2",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"POLE",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+},
+{
+"v": "5.0",
+"date": "2026-05-06",
+"green": [
+"AAAS",
+"ABCD1",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"CYP11B2",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"POLE",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+},
+{
+"v": "5.5",
+"date": "2026-08-12",
+"green": [
+"AAAS",
+"ABCD1",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"CYP11B2",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"POLE",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+}
+],
+"currentGreen": [
+"AAAS",
+"ABCD1",
+"AIRE",
+"CDKN1C",
+"CYP11A1",
+"CYP11B2",
+"MC2R",
+"MRAP",
+"NNT",
+"NR0B1",
+"NR5A1",
+"POLE",
+"SAMD9",
+"SGPL1",
+"STAR",
+"TBX19"
+]
+}

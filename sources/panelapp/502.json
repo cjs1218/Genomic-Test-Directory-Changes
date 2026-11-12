@@ -1,0 +1,94 @@
+{
+"id": 502,
+"name": "Hereditary systemic amyloidosis",
+"current": "1.31",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-13",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+},
+{
+"v": "1.18",
+"date": "2023-03-22",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+},
+{
+"v": "1.22",
+"date": "2024-10-30",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+},
+{
+"v": "1.24",
+"date": "2025-04-30",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+},
+{
+"v": "1.28",
+"date": "2026-05-06",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+},
+{
+"v": "1.30",
+"date": "2026-08-12",
+"green": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+}
+],
+"currentGreen": [
+"APOA1",
+"APOA2",
+"APOC2",
+"FGA",
+"GSN",
+"LYZ",
+"TTR"
+]
+}

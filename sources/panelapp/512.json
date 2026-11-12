@@ -1,0 +1,45 @@
+{
+"id": 512,
+"name": "Congenital fibrosis of the extraocular muscles",
+"current": "2.8",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-03",
+"green": [
+"KIF21A",
+"PHOX2A",
+"TUBB3"
+]
+},
+{
+"v": "2.0",
+"date": "2025-04-30",
+"green": [
+"COL25A1",
+"KIF21A",
+"MYF5",
+"PHOX2A",
+"TUBB3"
+]
+},
+{
+"v": "2.7",
+"date": "2026-08-12",
+"green": [
+"COL25A1",
+"KIF21A",
+"MYF5",
+"PHOX2A",
+"TUBB3"
+]
+}
+],
+"currentGreen": [
+"COL25A1",
+"KIF21A",
+"MYF5",
+"PHOX2A",
+"TUBB3"
+]
+}

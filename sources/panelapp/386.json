@@ -1,0 +1,42 @@
+{
+"id": 386,
+"name": "Pancreatitis",
+"current": "3.7",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-03",
+"green": [
+"CFTR",
+"PRSS1",
+"SPINK1"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"CELA3B",
+"CFTR",
+"PRSS1",
+"SPINK1"
+]
+},
+{
+"v": "3.6",
+"date": "2026-08-12",
+"green": [
+"CELA3B",
+"CFTR",
+"PRSS1",
+"SPINK1"
+]
+}
+],
+"currentGreen": [
+"CELA3B",
+"CFTR",
+"PRSS1",
+"SPINK1"
+]
+}

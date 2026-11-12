@@ -1,0 +1,47 @@
+{
+"id": 503,
+"name": "Inherited MMR deficiency (Lynch syndrome)",
+"current": "1.16",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-04",
+"green": [
+"EPCAM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2"
+]
+},
+{
+"v": "1.13",
+"date": "2026-05-06",
+"green": [
+"EPCAM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2"
+]
+},
+{
+"v": "1.15",
+"date": "2026-08-12",
+"green": [
+"EPCAM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2"
+]
+}
+],
+"currentGreen": [
+"EPCAM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2"
+]
+}

@@ -1,0 +1,45 @@
+{
+"id": 513,
+"name": "Non-acute porphyrias",
+"current": "2.3",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-03",
+"green": [
+"ALAD",
+"ALAS2",
+"CPOX",
+"FECH",
+"HMBS",
+"PPOX",
+"UROD",
+"UROS"
+]
+},
+{
+"v": "2.0",
+"date": "2026-08-12",
+"green": [
+"ALAD",
+"ALAS2",
+"CPOX",
+"FECH",
+"HMBS",
+"PPOX",
+"UROD",
+"UROS"
+]
+}
+],
+"currentGreen": [
+"ALAD",
+"ALAS2",
+"CPOX",
+"FECH",
+"HMBS",
+"PPOX",
+"UROD",
+"UROS"
+]
+}

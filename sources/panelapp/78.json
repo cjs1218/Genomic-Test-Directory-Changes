@@ -1,0 +1,198 @@
+{
+"id": 78,
+"name": "Holoprosencephaly",
+"current": "6.8",
+"signoffs": [
+{
+"v": "2.3",
+"date": "2020-02-27",
+"green": [
+"CDON",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"PTCH1",
+"SHH",
+"SIX3",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"CDON",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "4.0",
+"date": "2023-03-22",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "4.4",
+"date": "2024-05-01",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "5.0",
+"date": "2024-08-07",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"FGF8",
+"FGFR1",
+"GLI2",
+"ISCA-46743-Loss (region)",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "5.1",
+"date": "2024-10-30",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"FGF8",
+"FGFR1",
+"GLI2",
+"ISCA-46743-Loss (region)",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "6.0",
+"date": "2026-05-06",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"ISCA-46743-Loss (region)",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+},
+{
+"v": "6.3",
+"date": "2026-08-12",
+"green": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"ISCA-46743-Loss (region)",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+}
+],
+"currentGreen": [
+"CDON",
+"CNOT1",
+"DHCR7",
+"DISP1",
+"FGF8",
+"FGFR1",
+"GLI2",
+"ISCA-46743-Loss (region)",
+"KMT2D",
+"PTCH1",
+"RAD21",
+"SHH",
+"SIX3",
+"SMC1A",
+"STAG2",
+"TGIF1",
+"ZIC2"
+]
+}

@@ -1,0 +1,74 @@
+{
+"id": 3,
+"name": "Stickler syndrome",
+"current": "4.12",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-19",
+"green": [
+"COL11A1",
+"COL11A2",
+"COL2A1",
+"COL9A1",
+"COL9A2",
+"COL9A3",
+"GZF1"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"COL11A1",
+"COL11A2",
+"COL2A1",
+"COL9A1",
+"COL9A2",
+"COL9A3",
+"GZF1"
+]
+},
+{
+"v": "4.0",
+"date": "2023-03-22",
+"green": [
+"BMP4",
+"COL11A1",
+"COL11A2",
+"COL2A1",
+"COL9A1",
+"COL9A2",
+"COL9A3",
+"GZF1",
+"VCAN"
+]
+},
+{
+"v": "4.11",
+"date": "2026-08-12",
+"green": [
+"BMP4",
+"COL11A1",
+"COL11A2",
+"COL2A1",
+"COL9A1",
+"COL9A2",
+"COL9A3",
+"GZF1",
+"VCAN"
+]
+}
+],
+"currentGreen": [
+"BMP4",
+"COL11A1",
+"COL11A2",
+"COL2A1",
+"COL9A1",
+"COL9A2",
+"COL9A3",
+"GZF1",
+"VCAN"
+]
+}

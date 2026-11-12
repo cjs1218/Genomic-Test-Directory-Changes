@@ -1,0 +1,85 @@
+{
+"id": 480,
+"name": "Familial hyperparathyroidism or Hypocalciuric hypercalcaemia",
+"current": "3.11",
+"signoffs": [
+{
+"v": "2.3",
+"date": "2020-03-03",
+"green": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"MEN1",
+"RET"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"GCM2",
+"GNA11",
+"MEN1",
+"RET"
+]
+},
+{
+"v": "3.2",
+"date": "2022-11-30",
+"green": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"GCM2",
+"GNA11",
+"MEN1",
+"RET"
+]
+},
+{
+"v": "3.7",
+"date": "2026-05-06",
+"green": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"GCM2",
+"GNA11",
+"MEN1",
+"RET"
+]
+},
+{
+"v": "3.10",
+"date": "2026-08-12",
+"green": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"GCM2",
+"GNA11",
+"MEN1",
+"RET"
+]
+}
+],
+"currentGreen": [
+"AP2S1",
+"CASR",
+"CDC73",
+"CDKN1B",
+"GCM2",
+"GNA11",
+"MEN1",
+"RET"
+]
+}

@@ -1,0 +1,27 @@
+{
+"id": 517,
+"name": "Combined factor V and VIII deficiency",
+"current": "1.13",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-03-03",
+"green": [
+"LMAN1",
+"MCFD2"
+]
+},
+{
+"v": "1.12",
+"date": "2026-08-12",
+"green": [
+"LMAN1",
+"MCFD2"
+]
+}
+],
+"currentGreen": [
+"LMAN1",
+"MCFD2"
+]
+}

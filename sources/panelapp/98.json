@@ -1,0 +1,126 @@
+{
+"id": 98,
+"name": "Segmental overgrowth disorders - Deep sequencing",
+"current": "5.7",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-24",
+"green": [
+"AKT1",
+"AKT3",
+"CCND2",
+"CDKN1C",
+"PIK3CA",
+"PIK3R2",
+"PTEN",
+"RASA1"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"AKT1",
+"AKT3",
+"CCND2",
+"CDKN1C",
+"PADI6",
+"PIK3CA",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+},
+{
+"v": "3.3",
+"date": "2023-03-22",
+"green": [
+"AKT1",
+"AKT3",
+"CCND2",
+"CDKN1C",
+"PADI6",
+"PIK3CA",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+},
+{
+"v": "4.0",
+"date": "2025-04-30",
+"green": [
+"AKT1",
+"AKT2",
+"AKT3",
+"ARAF",
+"CCND2",
+"CDKN1C",
+"GJA4",
+"PADI6",
+"PIK3CA",
+"PIK3R1",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+},
+{
+"v": "5.0",
+"date": "2026-05-06",
+"green": [
+"AKT1",
+"AKT2",
+"AKT3",
+"ARAF",
+"CCND2",
+"CDKN1C",
+"GJA4",
+"PIK3CA",
+"PIK3R1",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+},
+{
+"v": "5.2",
+"date": "2026-08-12",
+"green": [
+"AKT1",
+"AKT2",
+"AKT3",
+"ARAF",
+"CCND2",
+"CDKN1C",
+"GJA4",
+"PIK3CA",
+"PIK3R1",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+}
+],
+"currentGreen": [
+"AKT1",
+"AKT2",
+"AKT3",
+"ARAF",
+"CCND2",
+"CDKN1C",
+"GJA4",
+"PIK3CA",
+"PIK3R1",
+"PIK3R2",
+"PTEN",
+"RASA1",
+"SUZ12"
+]
+}

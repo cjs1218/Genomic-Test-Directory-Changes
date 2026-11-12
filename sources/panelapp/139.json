@@ -1,0 +1,108 @@
+{
+"id": 139,
+"name": "Atypical haemolytic uraemic syndrome",
+"current": "3.11",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-02-13",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+},
+{
+"v": "3.4",
+"date": "2024-10-30",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+},
+{
+"v": "3.6",
+"date": "2025-04-30",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+},
+{
+"v": "3.8",
+"date": "2026-05-06",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+},
+{
+"v": "3.10",
+"date": "2026-08-12",
+"green": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+}
+],
+"currentGreen": [
+"C3",
+"CD46",
+"CFB",
+"CFH",
+"CFHR1",
+"CFHR3",
+"CFI",
+"DGKE",
+"MMACHC"
+]
+}

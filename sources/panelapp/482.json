@@ -1,0 +1,113 @@
+{
+"id": 482,
+"name": "Hypophosphataemia or rickets",
+"current": "4.5",
+"signoffs": [
+{
+"v": "2.2",
+"date": "2020-03-03",
+"green": [
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAM20C",
+"FGF23",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+},
+{
+"v": "3.0",
+"date": "2022-11-30",
+"green": [
+"ALPL",
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAM20C",
+"FGF23",
+"OCRL",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+},
+{
+"v": "4.0",
+"date": "2025-04-30",
+"green": [
+"ALPL",
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAH",
+"FAM20C",
+"FGF23",
+"OCRL",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+},
+{
+"v": "4.2",
+"date": "2026-05-06",
+"green": [
+"ALPL",
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAH",
+"FAM20C",
+"FGF23",
+"OCRL",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+},
+{
+"v": "4.4",
+"date": "2026-08-12",
+"green": [
+"ALPL",
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAH",
+"FAM20C",
+"FGF23",
+"OCRL",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+}
+],
+"currentGreen": [
+"ALPL",
+"CYP27B1",
+"CYP2R1",
+"DMP1",
+"ENPP1",
+"FAH",
+"FAM20C",
+"FGF23",
+"OCRL",
+"PHEX",
+"SLC34A1",
+"SLC34A3",
+"VDR"
+]
+}

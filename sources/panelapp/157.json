@@ -1,0 +1,70 @@
+{
+"id": 157,
+"name": "Hereditary Erythrocytosis",
+"current": "3.3",
+"signoffs": [
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"BPGM",
+"EGLN1",
+"EPAS1",
+"EPO",
+"EPOR",
+"HBA1",
+"HBA2",
+"HBB",
+"SLC30A10",
+"VHL"
+]
+},
+{
+"v": "3.0",
+"date": "2026-05-06",
+"green": [
+"BPGM",
+"EGLN1",
+"EPAS1",
+"EPO",
+"EPOR",
+"HBA1",
+"HBA2",
+"HBB",
+"JAK2",
+"SLC30A10",
+"VHL"
+]
+},
+{
+"v": "3.2",
+"date": "2026-08-12",
+"green": [
+"BPGM",
+"EGLN1",
+"EPAS1",
+"EPO",
+"EPOR",
+"HBA1",
+"HBA2",
+"HBB",
+"JAK2",
+"SLC30A10",
+"VHL"
+]
+}
+],
+"currentGreen": [
+"BPGM",
+"EGLN1",
+"EPAS1",
+"EPO",
+"EPOR",
+"HBA1",
+"HBA2",
+"HBB",
+"JAK2",
+"SLC30A10",
+"VHL"
+]
+}
