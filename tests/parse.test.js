@@ -12,5 +12,6 @@ test('parse_version reads an old-style spreadsheet without a PDF', () => {
   assert.equal(r1.tests[0].method, 'Small panel');
   assert.deepEqual(r1.criteria, [[0, '', 'Age under 40'], [0, '', 'OR family history']]);
   assert.equal(r1.criteriaSource, 'spreadsheet');
-  assert.ok(out.problems.includes('R2: no criteria found'));
+  assert.ok(!r2.criteria, 'no criteria invented');
+  assert.deepEqual(out.problems.filter(p => /no criteria|PDF/.test(p)), ['no eligibility criteria PDF: criteria come from the spreadsheet only'], 'one note, not one per code');
 });

@@ -233,7 +233,7 @@ def parse(rel):
             if sheet_crit:
                 e['criteria'] = [[0, '', s] for s in sheet_crit.split('\n') if s]
                 e['criteriaSource'] = 'spreadsheet'
-            else:
+            elif L:  # without a PDF this is expected, and noted once above
                 problems.append(f'{c}: no criteria found')
         e['tests'] = []
         for t in tests:

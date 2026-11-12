@@ -1,0 +1,62 @@
+{
+"id": 538,
+"name": "Mitochondrial disorder with complex V deficiency",
+"current": "3.7",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"ATP5D",
+"ATPAF2",
+"TMEM70"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"ATP5A1",
+"ATP5D",
+"ATP5G3",
+"ATPAF2",
+"TMEM70"
+]
+},
+{
+"v": "3.0",
+"date": "2025-04-30",
+"green": [
+"ATP5A1",
+"ATP5D",
+"ATP5E",
+"ATP5G3",
+"ATP5O",
+"ATPAF2",
+"TMEM70"
+]
+},
+{
+"v": "3.6",
+"date": "2026-08-12",
+"green": [
+"ATP5A1",
+"ATP5D",
+"ATP5E",
+"ATP5G3",
+"ATP5O",
+"ATPAF2",
+"TMEM70"
+]
+}
+],
+"currentGreen": [
+"ATP5A1",
+"ATP5D",
+"ATP5E",
+"ATP5G3",
+"ATP5O",
+"ATPAF2",
+"TMEM70"
+]
+}

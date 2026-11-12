@@ -1,0 +1,52 @@
+{
+"id": 535,
+"name": "Mitochondrial disorder with complex II deficiency",
+"current": "2.13",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"SDHA",
+"SDHAF1",
+"SDHD"
+]
+},
+{
+"v": "2.0",
+"date": "2022-03-22",
+"green": [
+"SDHA",
+"SDHAF1",
+"SDHB",
+"SDHD"
+]
+},
+{
+"v": "2.2",
+"date": "2023-03-22",
+"green": [
+"SDHA",
+"SDHAF1",
+"SDHB",
+"SDHD"
+]
+},
+{
+"v": "2.12",
+"date": "2026-08-12",
+"green": [
+"SDHA",
+"SDHAF1",
+"SDHB",
+"SDHD"
+]
+}
+],
+"currentGreen": [
+"SDHA",
+"SDHAF1",
+"SDHB",
+"SDHD"
+]
+}

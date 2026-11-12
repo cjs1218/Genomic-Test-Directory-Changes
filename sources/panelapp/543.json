@@ -1,0 +1,116 @@
+{
+"id": 543,
+"name": "Bardet Biedl syndrome",
+"current": "2.19",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-18",
+"green": [
+"ARL6",
+"BBS1",
+"BBS10",
+"BBS12",
+"BBS2",
+"BBS4",
+"BBS5",
+"BBS7",
+"BBS9",
+"LZTFL1",
+"MKKS",
+"MKS1",
+"SDCCAG8",
+"TMEM67",
+"TTC8"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"ARL6",
+"BBS1",
+"BBS10",
+"BBS12",
+"BBS2",
+"BBS4",
+"BBS5",
+"BBS7",
+"BBS9",
+"IFT27",
+"IFT74",
+"LZTFL1",
+"MKKS",
+"MKS1",
+"SDCCAG8",
+"TMEM67",
+"TTC8"
+]
+},
+{
+"v": "2.16",
+"date": "2026-05-06",
+"green": [
+"ARL6",
+"BBS1",
+"BBS10",
+"BBS12",
+"BBS2",
+"BBS4",
+"BBS5",
+"BBS7",
+"BBS9",
+"IFT27",
+"IFT74",
+"LZTFL1",
+"MKKS",
+"MKS1",
+"SDCCAG8",
+"TMEM67",
+"TTC8"
+]
+},
+{
+"v": "2.18",
+"date": "2026-08-12",
+"green": [
+"ARL6",
+"BBS1",
+"BBS10",
+"BBS12",
+"BBS2",
+"BBS4",
+"BBS5",
+"BBS7",
+"BBS9",
+"IFT27",
+"IFT74",
+"LZTFL1",
+"MKKS",
+"MKS1",
+"SDCCAG8",
+"TMEM67",
+"TTC8"
+]
+}
+],
+"currentGreen": [
+"ARL6",
+"BBS1",
+"BBS10",
+"BBS12",
+"BBS2",
+"BBS4",
+"BBS5",
+"BBS7",
+"BBS9",
+"IFT27",
+"IFT74",
+"LZTFL1",
+"MKKS",
+"MKS1",
+"SDCCAG8",
+"TMEM67",
+"TTC8"
+]
+}

@@ -1,0 +1,33 @@
+{
+"id": 566,
+"name": "Primary pigmented nodular adrenocortical disease",
+"current": "1.13",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"ARMC5",
+"PDE11A",
+"PDE8B",
+"PRKAR1A"
+]
+},
+{
+"v": "1.12",
+"date": "2026-08-12",
+"green": [
+"ARMC5",
+"PDE11A",
+"PDE8B",
+"PRKAR1A"
+]
+}
+],
+"currentGreen": [
+"ARMC5",
+"PDE11A",
+"PDE8B",
+"PRKAR1A"
+]
+}

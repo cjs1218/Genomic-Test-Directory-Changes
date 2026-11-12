@@ -1,0 +1,80 @@
+{
+"id": 635,
+"name": "Inherited breast cancer and ovarian cancer",
+"current": "3.3",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2022-11-30",
+"green": [
+"ATM",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"ATM",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2"
+]
+},
+{
+"v": "2.5",
+"date": "2023-04-12",
+"green": [
+"ATM",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2",
+"RAD51C",
+"RAD51D"
+]
+},
+{
+"v": "3.0",
+"date": "2026-05-06",
+"green": [
+"ATM",
+"BARD1",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2",
+"RAD51C",
+"RAD51D"
+]
+},
+{
+"v": "3.2",
+"date": "2026-08-12",
+"green": [
+"ATM",
+"BARD1",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2",
+"RAD51C",
+"RAD51D"
+]
+}
+],
+"currentGreen": [
+"ATM",
+"BARD1",
+"BRCA1",
+"BRCA2",
+"CHEK2",
+"PALB2",
+"RAD51C",
+"RAD51D"
+]
+}

@@ -1,0 +1,62 @@
+{
+"id": 558,
+"name": "Multiple monogenic benign skin tumours",
+"current": "2.8",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"CYLD",
+"FLCN",
+"LEMD3",
+"MLH1",
+"MSH2"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"CYLD",
+"FLCN",
+"LEMD3",
+"MLH1",
+"MSH2",
+"PDGFRB"
+]
+},
+{
+"v": "2.5",
+"date": "2026-05-06",
+"green": [
+"CYLD",
+"FLCN",
+"LEMD3",
+"MLH1",
+"MSH2",
+"PDGFRB"
+]
+},
+{
+"v": "2.7",
+"date": "2026-08-12",
+"green": [
+"CYLD",
+"FLCN",
+"LEMD3",
+"MLH1",
+"MSH2",
+"PDGFRB"
+]
+}
+],
+"currentGreen": [
+"CYLD",
+"FLCN",
+"LEMD3",
+"MLH1",
+"MSH2",
+"PDGFRB"
+]
+}

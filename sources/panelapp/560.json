@@ -1,0 +1,89 @@
+{
+"id": 560,
+"name": "Cutaneous photosensitivity with a likely genetic cause",
+"current": "3.22",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"ALAD",
+"ALAS2",
+"CPOX",
+"FECH",
+"GATA1",
+"HMBS",
+"PPOX",
+"RECQL4",
+"UROD",
+"UROS",
+"UVSSA"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"green": [
+"ALAD",
+"ALAS2",
+"ANAPC1",
+"CPOX",
+"FECH",
+"GATA1",
+"HMBS",
+"PPOX",
+"RECQL4",
+"UROD",
+"UROS",
+"UVSSA"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"green": [
+"ALAD",
+"ALAS2",
+"ANAPC1",
+"CPOX",
+"FECH",
+"GATA1",
+"PPOX",
+"RECQL4",
+"UROD",
+"UROS",
+"UVSSA"
+]
+},
+{
+"v": "3.17",
+"date": "2026-08-12",
+"green": [
+"ALAD",
+"ALAS2",
+"ANAPC1",
+"CPOX",
+"FECH",
+"GATA1",
+"PPOX",
+"RECQL4",
+"UROD",
+"UROS",
+"UVSSA"
+]
+}
+],
+"currentGreen": [
+"ALAD",
+"ALAS2",
+"ANAPC1",
+"CPOX",
+"FECH",
+"GATA1",
+"PPOX",
+"RECQL4",
+"UROD",
+"UROS",
+"UVSSA"
+]
+}

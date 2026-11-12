@@ -1,0 +1,30 @@
+{
+"id": 562,
+"name": "Epidermodysplasia verruciformis",
+"current": "1.9",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"CIB1",
+"TMC6",
+"TMC8"
+]
+},
+{
+"v": "1.8",
+"date": "2026-08-12",
+"green": [
+"CIB1",
+"TMC6",
+"TMC8"
+]
+}
+],
+"currentGreen": [
+"CIB1",
+"TMC6",
+"TMC8"
+]
+}

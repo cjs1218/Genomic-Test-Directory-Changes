@@ -53,6 +53,6 @@ mentions May and July 2025 publications, so there are releases between v8 and v9
 
 | Release | Published | Files saved | Parsed and checked |
 |---|---|---|---|
-| v9.2 | 9 November 2026 | ☐ | ☐ |
+| v9.2 | 9 November 2026 | spreadsheet ✓, criteria PDF ☐ | spreadsheet ✓ |
 | v9.1 | 20 May 2026 (directory v9, 8 April 2026) | imported from GeneRoute | ✓ |
 | … older releases from the archive | | ☐ | ☐ |

@@ -175,7 +175,9 @@ async function renderCompare(s) {
   $('#copy-link').onclick = () => copy(location.href, 'Link copied');
   $('#print').onclick = () => window.print();
   const genes = await renderGenes(entA, entB, s.seen || C.inForce(relA), relB === LATEST ? today() : C.inForce(relB));
-  const text = C.summary({ code, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events, entA, entB, links, genes });
+  const noCrit = [relA, relB].filter(r => r.noCriteria);
+  let text = C.summary({ code, seen: s.seen, relA: s.seen ? seenRel : relA, relB, releases: RELEASES, events: rec.events, entA, entB, links, genes });
+  if (noCrit.length) text = text.replace(/\nDates are when/, `\nThe eligibility criteria for ${noCrit.map(r => r.label).join(' and ')} are not loaded yet, so criteria changes in ${noCrit.length > 1 ? 'those versions' : 'that version'} are not included.\nDates are when`);
   $('#summary-text').textContent = text;
   $('#copy-summary').onclick = () => copy(text, 'Summary copied');
   document.title = `${code} – Test Directory Changes`;
@@ -212,6 +214,12 @@ function timeline(code, relA, relB) {
 function renderCriteria(entA, entB, relA, relB) {
   const box = $('#r-criteria');
   const ta = entA ? C.criteriaText(entA.criteria) : '', tb = entB ? C.criteriaText(entB.criteria) : '';
+  const missing = [relA, relB].filter(r => r.noCriteria);
+  if (missing.length) {
+    box.innerHTML = `<h3>Eligibility criteria</h3><div class="notice">The eligibility criteria document for ${missing.map(r => esc(r.label)).join(' and ')} has not been added yet, so the wording can't be compared. ${missing.map(r => r.links && r.links.pdf ? `<a href="${esc(r.links.pdf)}">${esc(r.label)} criteria PDF</a>` : '').join(' ')}</div>`
+      + [[relA, entA], [relB, entB]].filter(([r]) => !r.noCriteria).map(([r, e]) => `<h4>${esc(r.label)}</h4><pre class="crit">${esc(e ? C.criteriaText(e.criteria) : '') || '<em>Not in this version</em>'}</pre>`).join('');
+    return;
+  }
   const same = C.norm(ta) === C.norm(tb);
   const ops = C.diffLines(ta, tb);
   const pdf = (r, e) => r.links && r.links.pdf && e && e.page ? ` <a class="no-print small" href="${esc(r.links.pdf)}#page=${e.page}">PDF p. ${e.page}</a>` : '';
@@ -230,6 +238,7 @@ function renderCriteria(entA, entB, relA, relB) {
   });
 }
 
+const PDF_FIELDS = ['family', 'scope'];
 const TEST_FIELDS = [['target', 'Target'], ['method', 'Method'], ['commissioning', 'Commissioning'], ['family', 'Family structure'], ['scope', 'Scope']];
 function testsTable(entA, entB) {
   const ta = Object.fromEntries((entA ? entA.tests : []).map(t => [t.id, t]));
@@ -239,11 +248,14 @@ function testsTable(entA, entB) {
   const rows = ids.map(id => {
     const a = ta[id], b = tb[id];
     const cls = !a ? 'is-added' : !b ? 'is-removed' : '';
-    const status = !a ? 'Added' : !b ? 'Removed' : TEST_FIELDS.some(([k]) => C.norm(a[k]) !== C.norm(b[k])) ? 'Changed' : 'Same';
+    // family structure and scope come from the criteria PDF: blank in one version usually means its PDF isn't loaded
+    const unknown = (k, x, y) => PDF_FIELDS.includes(k) && (!x || !y);
+    const status = !a ? 'Added' : !b ? 'Removed' : TEST_FIELDS.some(([k]) => !unknown(k, a[k], b[k]) && C.norm(a[k]) !== C.norm(b[k])) ? 'Changed' : 'Same';
     const cells = TEST_FIELDS.map(([k]) => {
       const x = a ? a[k] || '' : '', y = b ? b[k] || '' : '';
       if (!a) return `<td>${esc(y)}</td>`;
       if (!b) return `<td>${esc(x)}</td>`;
+      if (unknown(k, x, y)) return `<td>${esc(x || y)}${x || y ? ` <span class="hint">(${x ? 'then' : 'now'} only)</span>` : ''}</td>`;
       return `<td>${C.norm(x) === C.norm(y) ? esc(y) : diffHtml(C.diffText(x, y), 'all')}</td>`;
     }).join('');
     return `<tr class="${cls}"><td class="code">${esc(id)}</td><td>${status}</td>${cells}</tr>`;

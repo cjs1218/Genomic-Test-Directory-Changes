@@ -1,0 +1,51 @@
+{
+"id": 532,
+"name": "Mitochondrial liver disease",
+"current": "1.17",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"BCS1L",
+"DGUOK",
+"MPV17",
+"POLG",
+"TRMU",
+"TWNK"
+]
+},
+{
+"v": "1.9",
+"date": "2023-03-22",
+"green": [
+"BCS1L",
+"DGUOK",
+"MPV17",
+"POLG",
+"TRMU",
+"TWNK"
+]
+},
+{
+"v": "1.16",
+"date": "2026-08-12",
+"green": [
+"BCS1L",
+"DGUOK",
+"MPV17",
+"POLG",
+"TRMU",
+"TWNK"
+]
+}
+],
+"currentGreen": [
+"BCS1L",
+"DGUOK",
+"MPV17",
+"POLG",
+"TRMU",
+"TWNK"
+]
+}

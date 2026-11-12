@@ -1,0 +1,57 @@
+{
+"id": 536,
+"name": "Mitochondrial disorder with complex III deficiency",
+"current": "2.14",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-17",
+"green": [
+"BCS1L",
+"CYC1",
+"LYRM7",
+"TTC19",
+"UQCC2",
+"UQCRB"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"green": [
+"BCS1L",
+"CYC1",
+"LYRM7",
+"TTC19",
+"UQCC2",
+"UQCRB",
+"UQCRC2",
+"UQCRFS1"
+]
+},
+{
+"v": "2.8",
+"date": "2026-08-12",
+"green": [
+"BCS1L",
+"CYC1",
+"LYRM7",
+"TTC19",
+"UQCC2",
+"UQCRB",
+"UQCRC2",
+"UQCRFS1"
+]
+}
+],
+"currentGreen": [
+"BCS1L",
+"CYC1",
+"LYRM7",
+"TTC19",
+"UQCC2",
+"UQCRB",
+"UQCRC2",
+"UQCRFS1"
+]
+}

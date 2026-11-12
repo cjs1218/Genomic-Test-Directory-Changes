@@ -1,0 +1,27 @@
+{
+"id": 552,
+"name": "Familial tumoral calcinosis",
+"current": "1.13",
+"signoffs": [
+{
+"v": "1.2",
+"date": "2020-02-19",
+"green": [
+"FGF23",
+"GALNT3"
+]
+},
+{
+"v": "1.12",
+"date": "2026-08-12",
+"green": [
+"FGF23",
+"GALNT3"
+]
+}
+],
+"currentGreen": [
+"FGF23",
+"GALNT3"
+]
+}

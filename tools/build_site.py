@@ -147,6 +147,7 @@ def main():
         r_out = {k: r[k] for k in ('id', 'label', 'published', 'inForceFrom', 'directory', 'criteria', 'links', 'parsedFrom') if r.get(k)}
         r_out['counts'] = {'indications': len(cur), 'tests': sum(len(e['tests']) for e in cur.values())}
         if p.get('problems'): r_out['problems'] = len(p['problems'])
+        if not any(e.get('criteria') for e in p['indications']): r_out['noCriteria'] = True
         r['_out'] = r_out
         prev = cur
 
