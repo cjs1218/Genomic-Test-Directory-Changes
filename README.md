@@ -9,23 +9,22 @@ style and reading the directory the same way. Independent: not an NHS website. N
 
 ## What it shows
 
-Enter an R code (or a condition: old and retired names are searched too) and the date the patient was seen:
+Type an R code, a condition (old and retired names too) or a gene, choose it from the suggestions, and enter the date the
+patient was seen. The page then shows, in this order:
 
-- **Versions**: the release in force on that date, and the release you're comparing with (latest by default), with
-  links to the original documents (PDF opens at the right page).
-- **Summary for a reply**: a plain-English paragraph to copy, e.g. "Seen on 12 March 2020: the directory in force was
-  v1.2… The entry for R208 changed in 3 of the 9 versions published since: • v4 (1 October 2022): eligibility criteria
-  changed…". It also covers codes that didn't exist yet, codes since removed (with likely replacements) and renames.
-- **When it changed**: a timeline of every release, with what changed for this code in each one, plus the
-  spreadsheet's own change notes.
-- **Eligibility criteria**: then vs now, word by word (side by side or inline). Whole added criteria stay whole lines.
-- **Tests**: tests added, removed and changed (target, method, commissioning, family structure, scope).
-- **Genes**: green genes on each PanelApp panel named for the tests, at the GMS signed-off version in force on each
-  date, with the genes added and removed.
-- **Other sections**: overlapping indications, where in pathway, requesting specialties.
+- **Short answer**: plain English to copy into a reply. Which version applied then and which applies now, when the
+  criteria and tests changed (by month), and the criteria wording then and now, quoted. Retired codes say what replaced
+  them, citing NHS England's change log where that is the source. A *detailed record* (every change, with genes) sits
+  underneath for notes.
+- **Eligibility criteria: what changed**: each changed line as a "then / now" pair with the changed words marked
+  (changes only in spacing, punctuation or list numbering are ignored). Also available side by side or as full text.
+- **When it changed**: the versions that changed the criteria, tests, name or code, each dated. Each criteria change
+  opens to show that step's wording change. "Show every version" adds the minor ones.
+- **Tests**, **Genes** (PanelApp genes signed off for NHS testing on each date) and the other criteria sections.
 
-There's also a **What changed in a version** view: every code that changed in one release, filterable by criteria,
-tests, new, removed or renamed. Every view has a shareable link (e.g. `#R208&seen=2020-03-12`) and prints cleanly.
+When a version's criteria document isn't held (currently v9.2), its criteria are taken from the nearest version that is,
+and the page says so. There is also a **What changed in a version** view and a list of the **Versions held**. Every view
+has a shareable link (e.g. `#R208&seen=2019-06-01`) and prints cleanly.
 
 **Dates.** A change is dated by the release it first appears in, and a release is taken to be in force from its
 publication date (or `inForceFrom` in the manifest, when a release says otherwise) until the next one.

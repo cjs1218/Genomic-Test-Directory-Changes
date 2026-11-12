@@ -90,3 +90,38 @@ test('retired codes: documented replacement cites its source; no replacement say
   const s3 = C.summary({ ...base, code: 'R59', links: [{ from: 'R59', to: ['R27'], note: 'x', source: 'confirmed by the clinical team' }] });
   assert.doesNotMatch(s3, /clinical team/, 'internal confirmations are not quoted in a reply');
 });
+
+test('lineChanges: reworded, removed and added lines; renumbering and punctuation ignored', () => {
+  const a = '1. Intro:\n  a. Breast cancer (age < 30 years), OR\n  b. Bilateral, OR\n  c. Old criterion\nNOTES';
+  const b = '1. Intro:\n  a. Breast cancer (age < 40 years), OR\n  b. Bilateral,  OR.\n  c. Brand new criterion text here\n  d. Old criterion\nNOTES';
+  const ch = C.lineChanges(a, b);
+  assert.deepEqual(ch.map(c => c.kind), ['changed', 'added']);
+  assert.deepEqual(ch[0].ops.filter(o => o[0]), [[-1, '30'], [1, '40']]);
+  assert.match(ch[1].b, /Brand new criterion/);   // "c. Old criterion" → "d. Old criterion" is renumbering only
+  assert.equal(ch[0].after, '1. Intro:');
+  assert.deepEqual(C.lineChanges('x\ny', 'x\ny'), []);
+});
+
+test('criteriaSource: a release without its criteria document uses the nearest one that has it', () => {
+  const R = [{ id: 'a', noCriteria: true }, { id: 'b' }, { id: 'c' }, { id: 'd', noCriteria: true }];
+  assert.equal(C.criteriaSource(R, R[2]).id, 'c');
+  assert.equal(C.criteriaSource(R, R[3]).id, 'c', 'latest without criteria: the latest earlier one');
+  assert.equal(C.criteriaSource(R, R[0]).id, 'b', 'earliest without criteria: the next one');
+});
+
+test('shortAnswer: plain English, dated changes, quoted wording, substitution noted', () => {
+  const R = [{ id: 'a', label: '2019/20', published: '2019-03-01', datePrecision: 'month' }, { id: 'b', label: 'v3', published: '2022-04-01', datePrecision: 'month' },
+    { id: 'c', label: 'v9.2', published: '2026-11-09', noCriteria: true }];
+  const changes = C.lineChanges('  a. Breast cancer (age < 30 years), OR\n  b. Gone', '  a. Breast cancer (age < 40 years), OR');
+  const s = C.shortAnswer({ code: 'R208', name: 'Inherited breast cancer', seen: '2019-06-01', relA: R[0], relB: R[2], releases: R,
+    events: [{ r: 'b', k: ['criteria', 'tests'] }], entA: { name: 'X' }, entB: { name: 'X' }, links: [], critA: R[0], critB: R[1], changes });
+  assert.match(s, /Seen on 1 June 2019, when the directory published in March 2019 \(2019\/20\) applied\. The current version was published 9 November 2026 \(v9\.2\)\./);
+  assert.match(s, /criteria changed 1 time: April 2022\./);
+  assert.match(s, /tests offered changed 1 time: April 2022\./);
+  assert.match(s, /the v9\.2 criteria document is not held yet, so v3 is used/);
+  assert.match(s, /Then: “Breast cancer \(age < 30 years\), OR”\n  Now: “Breast cancer \(age < 40 years\), OR”/);
+  assert.match(s, /No longer included: “Gone”/);
+  const retired = C.shortAnswer({ code: 'R59', name: 'Epilepsy', seen: '2021-03-01', relA: R[0], relB: R[2], releases: R, events: [{ r: 'b', k: ['removed'] }],
+    entA: { name: 'Epilepsy' }, entB: undefined, links: [{ to: ['R27 (Paediatric disorders)'], note: 'epilepsy now under R27' }], critA: R[0], critB: R[1], changes: [] });
+  assert.match(retired, /R59 has since been retired \(April 2022, v3\)\.\nIt is now covered by R27 \(Paediatric disorders\): epilepsy now under R27\./);
+});

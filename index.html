@@ -24,39 +24,58 @@
   </header>
 
   <main class="wrap">
-    <p class="intro"><strong>Independent – not an NHS website.</strong> Why wasn't a test offered then? Compare an R code in the rare and inherited
-      disease National Genomic Test Directory on the date a patient was seen with the current version (or any other version), and see when each change was published.</p>
+    <p class="intro"><strong>Independent – not an NHS website.</strong> Why wasn't a genetic test offered then? Find what the
+      rare and inherited disease National Genomic Test Directory said on the date a patient was seen, what it says now, and when each change was made.</p>
 
     <nav class="tabs" aria-label="Views">
       <a href="#" data-view="compare" class="tab">Compare an R code</a>
       <a href="#view=release" data-view="release" class="tab">What changed in a version</a>
-      <a href="#view=versions" data-view="versions" class="tab">Versions loaded</a>
+      <a href="#view=versions" data-view="versions" class="tab">Versions held</a>
     </nav>
 
     <section id="compare-view">
-      <form id="compare-form" class="card form-grid" autocomplete="off">
-        <div class="field wide">
-          <label for="code">R code or condition</label>
-          <input id="code" list="codes" placeholder="e.g. R208, hearing loss, cardiomyopathy" required aria-describedby="code-hint">
-          <datalist id="codes"></datalist>
-          <p id="code-hint" class="hint">Old and retired codes and names are included.</p>
+      <form id="compare-form" class="card" autocomplete="off" novalidate>
+        <div class="form-row">
+          <div class="field grow combo">
+            <label for="code">R code, condition or gene</label>
+            <input id="code" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="code-list"
+              placeholder="e.g. R208, breast cancer, BRCA1" aria-describedby="code-hint" spellcheck="false">
+            <ul id="code-list" role="listbox" hidden></ul>
+            <p id="code-hint" class="hint">Old and retired codes and names are included.</p>
+          </div>
+          <div class="field">
+            <label for="seen">Date the patient was seen</label>
+            <input id="seen" type="date" aria-describedby="seen-hint">
+            <p id="seen-hint" class="hint">Leave blank to start from the earliest version.</p>
+          </div>
+          <div class="field actions"><button type="submit">Compare with now</button></div>
         </div>
-        <div class="field">
-          <label for="seen">Date the patient was seen</label>
-          <input id="seen" type="date" aria-describedby="seen-hint">
-          <p id="seen-hint" class="hint">Or pick a version below.</p>
-        </div>
-        <div class="field">
-          <label for="from">Version then</label>
-          <select id="from"></select>
-        </div>
-        <div class="field">
-          <label for="to">Compare with</label>
-          <select id="to"></select>
-        </div>
-        <div class="field actions"><button type="submit">Compare</button></div>
+        <details id="more-options">
+          <summary>More options: compare two particular versions</summary>
+          <div class="form-row">
+            <div class="field"><label for="from">Version then</label><select id="from"></select></div>
+            <div class="field"><label for="to">Compare with</label><select id="to"></select></div>
+          </div>
+        </details>
+        <p id="form-error" class="error" role="alert" hidden></p>
       </form>
       <div id="choices" hidden></div>
+      <div id="start" class="start">
+        <div class="card">
+          <h2>How it works</h2>
+          <ol class="steps">
+            <li><strong>Enter the R code</strong>, condition or gene the patient would have been tested under. Old and retired codes work too.</li>
+            <li><strong>Enter the date they were seen.</strong> The version of the directory in force on that date is found for you.</li>
+            <li><strong>See what has changed since</strong>: a short answer you can copy into a reply, then the wording, tests and genes, each change dated by the version that brought it in.</li>
+          </ol>
+          <p class="examples-title">Try an example:</p>
+          <ul class="examples">
+            <li><a href="#R208&amp;seen=2019-06-01">R208 Inherited breast and ovarian cancer, seen June 2019</a></li>
+            <li><a href="#R210&amp;seen=2020-09-15">R210 Lynch syndrome, seen September 2020</a></li>
+            <li><a href="#R59&amp;seen=2021-03-01">R59 Epilepsy, a code that has since been retired</a></li>
+          </ul>
+        </div>
+      </div>
       <div id="result" aria-live="polite"></div>
     </section>
 

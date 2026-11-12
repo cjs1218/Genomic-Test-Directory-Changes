@@ -138,6 +138,54 @@
     return merged.filter(o => o[1]);
   }
 
+  /** Letters and digits only: two lines that agree on these differ only in spacing or punctuation. */
+  const MARKER = /^\s*(?:\d{1,2}[.)]|[a-z][.)]|\(?[ivx]+[.)]|\([a-z0-9]+\)|[•\-])\s*/;
+  /** Letters and digits only, without the list marker: two lines that agree on these differ only in spacing,
+      punctuation or numbering ("e." becoming "f." when an item is added above). */
+  function wordsOnly(s) { return norm(String(s).replace(MARKER, '')).replace(/[^a-z0-9<>≥≤%]+/g, ''); }
+
+  /**
+   * What changed, line by line, between two multi-line texts: [{kind: 'changed'|'removed'|'added', a, b, ops, after}].
+   * 'changed' pairs a removed line with a similar added one (ops: word differences); 'after' is the unchanged line just
+   * before, for context. Changes only in spacing or punctuation are left out.
+   */
+  function lineChanges(a, b) {
+    const la = a ? String(a).split('\n') : [], lb = b ? String(b).split('\n') : [];
+    const lineOps = diffTokens(la.map(l => l + '\n'), lb.map(l => l + '\n'))
+      .flatMap(([op, t]) => t.split(/(?<=\n)/).filter(Boolean).map(l => [op, l.replace(/\n$/, '')]));
+    const out = [];
+    let i = 0, after = '';
+    while (i < lineOps.length) {
+      if (lineOps[i][0] === 0) { if (lineOps[i][1].trim()) after = lineOps[i][1]; i++; continue; }
+      const dels = [], ins = [];
+      while (i < lineOps.length && lineOps[i][0] !== 0) { (lineOps[i][0] < 0 ? dels : ins).push(lineOps[i][1]); i++; }
+      let ctx = after;
+      const used = new Set();
+      const start = out.length;
+      for (const d of dels) {
+        const k = ins.findIndex((x, n) => !used.has(n) && similar(d, x));
+        if (k < 0) { if (d.trim()) out.push({ kind: 'removed', a: d, after: ctx }); continue; }
+        used.add(k);
+        if (wordsOnly(d) !== wordsOnly(ins[k])) out.push({ kind: 'changed', a: d, b: ins[k], ops: diffText(d.trim(), ins[k].trim()), after: ctx });
+      }
+      ins.forEach((x, n) => { if (!used.has(n) && x.trim()) out.push({ kind: 'added', b: x, after: ctx }); });
+      for (let n = start + 1; n < out.length; n++) out[n].after = '';  // context only for the first change in a run
+    }
+    // a line moved elsewhere shows as removed + added with the same words: not a change in wording
+    const rem = out.filter(c => c.kind === 'removed').map(c => wordsOnly(c.a));
+    const add = out.filter(c => c.kind === 'added').map(c => wordsOnly(c.b));
+    return out.filter(c => !(c.kind === 'removed' && add.includes(wordsOnly(c.a))) && !(c.kind === 'added' && rem.includes(wordsOnly(c.b))));
+  }
+
+  /** The release whose criteria are used for a release: itself if its criteria are loaded, else the nearest earlier one, else the nearest later one. */
+  function criteriaSource(releases, rel) {
+    if (!rel || !rel.noCriteria) return rel;
+    const i = releases.indexOf(rel);
+    for (let j = i - 1; j >= 0; j--) if (!releases[j].noCriteria) return releases[j];
+    for (let j = i + 1; j < releases.length; j++) if (!releases[j].noCriteria) return releases[j];
+    return null;
+  }
+
   /** Criteria rows [level, marker, text] as text: one line each, indented by level. */
   function criteriaText(items) {
     return (items || []).map(([lv, m, t]) => '  '.repeat(lv || 0) + (m ? m + ' ' : '') + t).join('\n');
@@ -235,6 +283,70 @@
     return L.join('\n');
   }
 
-  const api = { longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
+  const quote = s => `“${String(s).replace(MARKER, '').trim()}”`;
+  /** "March 2019 (2019/20)" or "8 April 2026 (v9)": when a release was published, then its name. */
+  const relSays = r => `${relDate(r)} (${r.label})`;
+  const monthOf = r => r.datePrecision === 'month' ? relDate(r) : relDate(r).replace(/^\d+ /, '');
+
+  /**
+   * The short answer for a reply, in plain English. o: {code, name, seen, relA (null if before all), relB, releases,
+   * events, entA, entB, links (with named codes), critA, critB (releases the criteria came from), changes (lineChanges
+   * of the criteria), maxChanges}
+   */
+  function shortAnswer(o) {
+    const L = [], relA = o.relA || o.releases[0];
+    L.push(`${o.code}${o.name ? ' – ' + o.name : ''}`);
+    const latest = o.relB === o.releases[o.releases.length - 1] ? 'The current version was' : 'It is compared with the version';
+    if (o.seen) L.push(o.relA ? `Seen on ${longDate(o.seen)}, when the directory published in ${relSays(o.relA)} applied. ${latest} published ${relSays(o.relB)}.`
+      : `Seen on ${longDate(o.seen)}, before the earliest version held here (${relSays(o.releases[0])}). ${latest} published ${relSays(o.relB)}.`);
+    else L.push(`Comparing the directory published ${relSays(relA)} with the one published ${relSays(o.relB)}.`);
+    if (o.seen && sameMonthUnsure(o.relA, o.seen)) L.push(`(${o.relA.label} was published in ${relDate(o.relA)} and the exact day is not stated, so the previous version may still have applied.)`);
+    const span = between(o.releases, relA.id, o.relB.id).map(r => r.id);
+    const evs = o.events.filter(e => span.includes(e.r));
+    const rel = id => o.releases.find(r => r.id === id);
+    const when = list => list.map(e => monthOf(rel(e.r))).join(', ');
+    if (!o.entA && o.entB) {
+      const first = o.events.find(e => e.k.includes('added'));
+      L.push(`${o.code} did not exist then${first ? `: it was first published in ${monthOf(rel(first.r))} (${rel(first.r).label})` : ''}.`);
+    }
+    if (o.entA && !o.entB) {
+      const gone = o.events.find(e => e.k.includes('removed'));
+      L.push(`${o.code} has since been retired${gone ? ` (${monthOf(rel(gone.r))}, ${rel(gone.r).label})` : ''}.`);
+      for (const l of o.links || []) {
+        const cite = l.source && /NHS England/.test(l.source) ? ` (${l.source})` : '';
+        if (l.to && l.to.length) L.push(`${l.auto ? 'It may now be covered by' : 'It is now covered by'} ${l.to.join(' and ')}${l.note ? ': ' + l.note : ''}${cite}.`);
+        else if (l.note) L.push(`${l.note[0].toUpperCase()}${l.note.slice(1)}${cite}.`);
+      }
+    }
+    if (o.entA && o.entB && norm(o.entA.name) !== norm(o.entB.name)) L.push(`It was then called “${o.entA.name}”.`);
+    const crit = evs.filter(e => e.k.includes('criteria'));
+    const tests = evs.filter(e => e.k.includes('tests'));
+    if (o.entA && o.entB) {
+      if (!span.length) L.push('No new version was published between these dates.');
+      else if (!crit.length && !tests.length) L.push(`The eligibility criteria and tests have not changed in the ${span.length} version${span.length > 1 ? 's' : ''} published since.`);
+      else {
+        L.push(crit.length ? `The eligibility criteria changed ${crit.length} time${crit.length > 1 ? 's' : ''}: ${when(crit)}.` : 'The eligibility criteria wording has not changed.');
+        if (tests.length) L.push(`The tests offered changed ${tests.length} time${tests.length > 1 ? 's' : ''}: ${when(tests)}.`);
+      }
+      const ch = o.changes || [];
+      if (ch.length && o.critA && o.critB) {
+        const sub = [];
+        if (o.critA !== relA) sub.push(`the ${relA.label} criteria document is not held, so ${o.critA.label} is used`);
+        if (o.critB !== o.relB) sub.push(`the ${o.relB.label} criteria document is not held yet, so ${o.critB.label} is used`);
+        const via = sub.length ? ` (${sub.join('; ')})` : '';
+        L.push(`What the criteria said then and say now${via}:`);
+        for (const c of ch.slice(0, o.maxChanges || 6)) {
+          if (c.kind === 'changed') L.push(`• Then: ${quote(c.a)}\n  Now: ${quote(c.b)}`);
+          else if (c.kind === 'removed') L.push(`• No longer included: ${quote(c.a)}`);
+          else L.push(`• Added: ${quote(c.b)}`);
+        }
+        if (ch.length > (o.maxChanges || 6)) L.push(`• … and ${ch.length - (o.maxChanges || 6)} more change${ch.length - (o.maxChanges || 6) > 1 ? 's' : ''} to the wording.`);
+      }
+    }
+    L.push('Dates are when each version was published. Please check the full wording in the linked documents before replying.');
+    return L.join('\n');
+  }
+
+  const api = { lineChanges, criteriaSource, shortAnswer, longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.TDHCore = api;
 })(typeof self !== 'undefined' ? self : this);

@@ -165,6 +165,25 @@ def main():
         r['_out'] = r_out
         prev, prev_id = cur, r['id']
 
+    # gene index for search: which R codes in the latest release test each gene (named in the target, or a green gene on
+    # the test's PanelApp panel at its latest sign-off)
+    genes = {}
+    def panel_now(pid):
+        f = os.path.join(OUT, 'panels', f'{pid}.js')
+        if not os.path.exists(f): return set()
+        d = json.loads(re.search(r'TDH\.addPanel\(\d+,(.*)\);', open(f, encoding='utf-8').read(), re.S).group(1))
+        g = set()
+        for so in d['signoffs']: g |= set(so['add']); g -= set(so['rem'])
+        return {x for x in g if '(' not in x}
+    for e in prev.values():
+        found = set()
+        for t in e['tests']:
+            found |= {w for w in re.findall(r'\b[A-Z][A-Z0-9]{1,9}(?:-[A-Z0-9]+)?\b', t.get('target', '')) if re.search(r'\d', w) or len(w) >= 3}
+            for pid in t.get('panels', []): found |= panel_now(pid)
+        for gname in found - {'WGS', 'WES', 'MLPA', 'STR', 'CNV', 'DNA', 'FISH', 'NIPD', 'NHS', 'GLH', 'HBS'}:
+            genes.setdefault(gname, []).append(e['code'])
+    write_js(os.path.join(OUT, 'genes.js'), 'Genes tested by each R code in the latest release (search index).',
+             f'TDH.addGenes({dump(dict(sorted(genes.items())))})')
     # curated links win over automatic suggestions for the same code
     cur_from = {(l['from'], l.get('release')) for l in curated}
     links = curated + [l for l in links if (l['from'], l['release']) not in cur_from]
