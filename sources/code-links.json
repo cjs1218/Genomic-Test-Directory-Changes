@@ -211,6 +211,109 @@
       "to": [],
       "note": "Retired; the directory names no replacement code",
       "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R152",
+      "release": "v3",
+      "to": [
+        "R151"
+      ],
+      "note": "R151 and R152 were merged into a single indication, R151",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R393",
+      "release": "v3",
+      "to": [
+        "R221"
+      ],
+      "note": "schwannomatosis (R393) was merged into R221",
+      "source": "NHS England change log, v3 (April 2022) eligibility criteria"
+    },
+    {
+      "from": "R147",
+      "release": "v7",
+      "to": [
+        "R452",
+        "R453"
+      ],
+      "note": "growth failure testing is now split between Silver Russell / Temple syndrome and monogenic short stature",
+      "source": "NHS England change log, v7 (July 2024) eligibility criteria"
+    },
+    {
+      "from": "R58",
+      "release": "v9",
+      "to": [
+        "R458",
+        "R459",
+        "R460",
+        "R461"
+      ],
+      "note": "each condition now has its own indication",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R297",
+      "release": "v9",
+      "to": [
+        "R463",
+        "R464",
+        "R465",
+        "R466",
+        "R467",
+        "R468"
+      ],
+      "note": "new indications created due to the retirement of R297",
+      "source": "NHS England change log, v9 (April 2026) eligibility criteria"
+    },
+    {
+      "from": "R192",
+      "release": "v9",
+      "to": [
+        "R462"
+      ],
+      "note": "R462 Childhood interstitial lung disease is a new indication replacing R192",
+      "source": "NHS England directory spreadsheet change notes, v9 (April 2026)"
+    },
+    {
+      "from": "R220",
+      "release": "v9",
+      "to": [
+        "R456"
+      ],
+      "note": "R456 Embryonal tumour of possible germline origin replaces R220 and includes Wilms tumour testing",
+      "source": "NHS England directory spreadsheet change notes, v9 (April 2026)"
+    },
+    {
+      "from": "R358",
+      "release": "v9",
+      "to": [
+        "R456"
+      ],
+      "note": "R456 Embryonal tumour of possible germline origin replaces R358",
+      "source": "NHS England directory spreadsheet change notes, v9 (April 2026)"
+    },
+    {
+      "from": "R359",
+      "release": "v9",
+      "to": [
+        "R456",
+        "R457"
+      ],
+      "note": "childhood solid tumour testing is now split between embryonal tumours and sarcomas",
+      "source": "NHS England directory spreadsheet change notes, v9 (April 2026)"
+    },
+    {
+      "from": "R266",
+      "release": "2021-10",
+      "to": [
+        "R83"
+      ],
+      "auto": true,
+      "why": [
+        "similar name only: neither the change log nor the spreadsheet says where R266 went, and the October 2021 criteria still refer to R266"
+      ],
+      "note": "arthrogryposis testing continues under R83"
     }
   ]
 }
