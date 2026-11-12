@@ -1,0 +1,7933 @@
+{
+"id": "2020-08",
+"meta": {
+"sheetVersion": "August 2020",
+"pdfVersion": "",
+"changeColumn": ""
+},
+"changeLog": [],
+"indications": [
+{
+"code": "R14",
+"name": "Acutely unwell children with a likely monogenic disorder",
+"part": "",
+"group": "Acutely unwell children",
+"change": "",
+"tests": [
+{
+"id": "R14.1",
+"target": "Paediatric disorders (486)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Acutely unwell children",
+"panels": [
+486
+],
+"comment": "Delivered by designated GLHs"
+},
+{
+"id": "R14.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Acutely unwell children",
+"panels": []
+}
+]
+},
+{
+"code": "R15",
+"name": "Primary immunodeficiency",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R15.1",
+"target": "Primary immunodeficiency (398)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Immunology",
+"panels": [
+398
+]
+},
+{
+"id": "R15.2",
+"target": "Primary immunodeficiency (398)",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Immunology",
+"panels": [
+398
+]
+},
+{
+"id": "R15.3",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R16",
+"name": "Severe combined immunodeficiency with adenosine deaminase deficiency",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R16.1",
+"target": "ADA",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R17",
+"name": "Lymphoproliferative syndrome with absent SAP expression",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R17.1",
+"target": "SH2D1A",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+},
+{
+"id": "R17.2",
+"target": "SH2D1A",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R18",
+"name": "Haemophagocytic syndrome with absent XIAP expression",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R18.1",
+"target": "XIAP",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+},
+{
+"id": "R18.2",
+"target": "XIAP",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R19",
+"name": "Autoimmune lymphoproliferative syndrome with defective apoptosis",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R19.1",
+"target": "FAS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R20",
+"name": "Wiskott-Aldrich syndrome",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R20.1",
+"target": "WAS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R21",
+"name": "Fetal anomalies with a likely genetic cause",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R21.1",
+"target": "Genomewide",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+},
+{
+"id": "R21.2",
+"target": "Fetal anomalies (478)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": [
+478
+],
+"comment": "Rapid prenatal exome sequencing service go-live autumn 2020. Delivered by designated GLHs"
+},
+{
+"id": "R21.3",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R22",
+"name": "Fetus with a likely chromosomal abnormality",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R22.1",
+"target": "Genomewide",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+},
+{
+"id": "R22.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R23",
+"name": "Apert syndrome",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R23.1",
+"target": "FGFR2 c.755 and c.758",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R24",
+"name": "Achondroplasia",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R24.1",
+"target": "FGFR3 c.1138",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R25",
+"name": "Thanatophoric dysplasia",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R25.1",
+"target": "FGFR3",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R26",
+"name": "Likely common aneuploidy",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R26.1",
+"target": "Genomewide",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R27",
+"name": "Congenital malformation and dysmorphism syndromes - microarray and sequencing",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R27.1",
+"target": "Relevant panel(s) in PanelApp",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R27.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R27.3",
+"target": "Relevant panel(s) in PanelApp",
+"method": "WGS",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": [],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R28",
+"name": "Congenital malformation and dysmorphism syndromes – microarray only",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R28.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R29",
+"name": "Intellectual disability – microarray, fragile X and sequencing",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R29.1",
+"target": "Intellectual disability (285)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": [
+285
+]
+},
+{
+"id": "R29.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R29.3",
+"target": "FMR1 STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R29.4",
+"target": "Intellectual disability (285)",
+"method": "WGS",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": [
+285
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R31",
+"name": "Bilateral congenital or childhood onset cataracts",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R31.1",
+"target": "Cataracts (230)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+230
+]
+},
+{
+"id": "R31.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+}
+]
+},
+{
+"code": "R32",
+"name": "Retinal disorders",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R32.1",
+"target": "Retinal disorders (307)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+307
+]
+}
+]
+},
+{
+"code": "R33",
+"name": "Possible X-linked retinitis pigmentosa",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R33.1",
+"target": "RPGR exon ORF15",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R33.2",
+"target": "Retinal disorders (307)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+307
+]
+}
+]
+},
+{
+"code": "R34",
+"name": "Sorsby retinal dystrophy",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R34.1",
+"target": "TIMP3 hotspot exon",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R34.2",
+"target": "Retinal disorders (307)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+307
+]
+}
+]
+},
+{
+"code": "R35",
+"name": "Doyne retinal dystrophy",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R35.1",
+"target": "EFEMP1 hotspot",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R35.2",
+"target": "Retinal disorders (307)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+307
+]
+}
+]
+},
+{
+"code": "R36",
+"name": "Structural eye disease",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R36.1",
+"target": "Structural eye disease (509)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+509
+]
+}
+]
+},
+{
+"code": "R38",
+"name": "Sporadic aniridia",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R38.1",
+"target": "PAX6;WT1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R38.2",
+"target": "Aniridia (510)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+510
+]
+}
+]
+},
+{
+"code": "R39",
+"name": "Albinism or congenital nystagmus",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R39.1",
+"target": "Albinism or congenital nystagmus (511)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+511
+]
+}
+]
+},
+{
+"code": "R41",
+"name": "Optic neuropathy",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R41.1",
+"target": "Optic neuropathy (186)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+186
+]
+}
+]
+},
+{
+"code": "R42",
+"name": "Leber hereditary optic neuropathy",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R42.1",
+"target": "Three common LHON variants",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R42.2",
+"target": "Optic neuropathy (186)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+186
+]
+}
+]
+},
+{
+"code": "R43",
+"name": "Blepharophimosis ptosis and epicanthus inversus",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R43.1",
+"target": "FOXL2",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R43.2",
+"target": "FOXL2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+},
+{
+"id": "R43.3",
+"target": "FOXL2 STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+}
+]
+},
+{
+"code": "R45",
+"name": "Stickler syndrome",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R45.1",
+"target": "Stickler syndrome (3)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+3
+],
+"comment": "Highly specialised service."
+},
+{
+"id": "R45.2",
+"target": "COL2A1;COL11A1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Eyes",
+"panels": []
+}
+]
+},
+{
+"code": "R46",
+"name": "Congenital fibrosis of the extraocular muscles",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R46.1",
+"target": "Congenital fibrosis of the extraocular muscles (512)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+512
+]
+}
+]
+},
+{
+"code": "R47",
+"name": "Angelman syndrome",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R47.1",
+"target": "AS/PWS critical region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R47.2",
+"target": "AS/PWS critical region",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R48",
+"name": "Prader-Willi syndrome",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R48.1",
+"target": "AS/PWS critical region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R48.2",
+"target": "AS/PWS critical region",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R49",
+"name": "Beckwith-Wiedemann syndrome",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R49.1",
+"target": "11p15 imprinted growth regulatory region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R49.2",
+"target": "11p15 imprinted growth regulatory region",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R49.3",
+"target": "CDKN1C",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R50",
+"name": "Isolated hemihypertrophy or macroglossia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R50.1",
+"target": "11p15 imprinted growth regulatory region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R50.2",
+"target": "11p15 imprinted growth regulatory region",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R52",
+"name": "Short stature - SHOX deficiency",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R52.1",
+"target": "SHOX",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+},
+{
+"id": "R52.2",
+"target": "SHOX",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R53",
+"name": "Fragile X",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R53.1",
+"target": "FMR1 STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R54",
+"name": "Hereditary ataxia with onset in adulthood",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R54.1",
+"target": "Hereditary ataxia - adult onset (466)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+466
+]
+},
+{
+"id": "R54.2",
+"target": "Hereditary ataxia - adult onset (466) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+466
+]
+},
+{
+"id": "R54.3",
+"target": "Hereditary ataxia - adult onset (466)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+466
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R55",
+"name": "Hereditary ataxia with onset in childhood",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R55.1",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+]
+},
+{
+"id": "R55.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R55.3",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+]
+},
+{
+"id": "R55.4",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R56",
+"name": "Adult onset dystonia, chorea or related movement disorder",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R56.1",
+"target": "Adult onset movement disorder (540)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+540
+]
+},
+{
+"id": "R56.2",
+"target": "Adult onset movement disorder (540) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+540
+]
+}
+]
+},
+{
+"code": "R57",
+"name": "Childhood onset dystonia, chorea or related movement disorder",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R57.1",
+"target": "Childhood onset dystonia or chorea or related movement disorder (847)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+847
+]
+},
+{
+"id": "R57.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R57.3",
+"target": "Childhood onset dystonia or chorea or related movement disorder (847) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+847
+]
+},
+{
+"id": "R57.4",
+"target": "GCH1;SGCE;TH",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R58",
+"name": "Adult onset neurodegenerative disorder",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R58.1",
+"target": "Neurodegenerative disorders - adult onset (474)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+474
+]
+},
+{
+"id": "R58.2",
+"target": "Neurodegenerative disorders - adult onset (474)",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+474
+]
+},
+{
+"id": "R58.3",
+"target": "Neurodegenerative disorders - adult onset (474) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+474
+]
+}
+]
+},
+{
+"code": "R59",
+"name": "Early onset or syndromic epilepsy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R59.1",
+"target": "Genetic epilepsy syndromes (402)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+402
+]
+},
+{
+"id": "R59.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R59.3",
+"target": "Epilepsy - early onset or syndromic (489)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+489
+],
+"comment": "WGS go-live expected autumn 2020"
+},
+{
+"id": "R59.4",
+"target": "SLC2A1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R60",
+"name": "Adult onset hereditary spastic paraplegia",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R60.1",
+"target": "Hereditary spastic paraplegia - adult onset (567)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+567
+]
+},
+{
+"id": "R60.2",
+"target": "Hereditary spastic paraplegia - adult onset (567) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+567
+]
+}
+]
+},
+{
+"code": "R61",
+"name": "Childhood onset hereditary spastic paraplegia",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R61.1",
+"target": "Hereditary spastic paraplegia - adult onset (567)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+567
+]
+},
+{
+"id": "R61.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R61.3",
+"target": "Hereditary spastic paraplegia - adult onset (567) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+567
+]
+},
+{
+"id": "R61.4",
+"target": "Hereditary spastic paraplegia - Childhood onset (568)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+568
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R62",
+"name": "Adult onset leukodystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R62.1",
+"target": "White matter disorders - adult onset (579)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+579
+]
+}
+]
+},
+{
+"code": "R63",
+"name": "Possible mitochondrial disorder - nuclear genes",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R63.1",
+"target": "Possible mitochondrial disorder - nuclear genes (539)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+539
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R64",
+"name": "MELAS or MIDD",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R64.1",
+"target": "MTTL1 3243A>G",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R65",
+"name": "Aminoglycoside exposure posing risk to hearing",
+"part": "",
+"group": "Hearing",
+"change": "",
+"tests": [
+{
+"id": "R65.1",
+"target": "MT-RNR1 1555A>G",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Hearing",
+"panels": []
+}
+]
+},
+{
+"code": "R66",
+"name": "Paroxysmal central nervous system disorders",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R66.1",
+"target": "Paroxysmal neurological disorders, pain disorders and sleep disorders (541)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+541
+]
+}
+]
+},
+{
+"code": "R67",
+"name": "Non-syndromic hearing loss",
+"part": "",
+"group": "Hearing",
+"change": "",
+"tests": [
+{
+"id": "R67.1",
+"target": "Hearing loss (126)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Hearing",
+"panels": [
+126
+]
+},
+{
+"id": "R67.2",
+"target": "Hearing loss (126)",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Hearing",
+"panels": [
+126
+]
+}
+]
+},
+{
+"code": "R68",
+"name": "Huntington disease",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R68.1",
+"target": "HTT STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R69",
+"name": "Hypotonic infant",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R69.1",
+"target": "SNRPN DMR",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R69.2",
+"target": "Hypotonic infant (490)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": [
+490
+]
+},
+{
+"id": "R69.3",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R69.4",
+"target": "DMPK STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+},
+{
+"id": "R69.5",
+"target": "Hypotonic infant (490)",
+"method": "WGS",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": [
+490
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R70",
+"name": "Spinal muscular atrophy type 1 diagnostic test",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R70.1",
+"target": "SMN1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R71",
+"name": "Spinal muscular atrophy type 1 rare mutation testing",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R71.1",
+"target": "SMN1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R72",
+"name": "Myotonic dystrophy type 1",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R72.1",
+"target": "DMPK STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R73",
+"name": "Duchenne or Becker muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R73.1",
+"target": "DMD",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R73.2",
+"target": "DMD",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R74",
+"name": "Facioscapulohumeral muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R74.1",
+"target": "DUX4",
+"method": "Other",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R75",
+"name": "Oculopharyngeal muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R75.1",
+"target": "PABPN1 STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R76",
+"name": "Skeletal muscle channelopathy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R76.1",
+"target": "Skeletal muscle channelopathy (542)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+542
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R77",
+"name": "Hereditary neuropathy - PMP22 copy number",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R77.1",
+"target": "PMP22",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R78",
+"name": "Hereditary neuropathy or pain disorder – NOT PMP22 copy number",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R78.1",
+"target": "Hereditary neuropathy NOT PMP22 copy number (846)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+846
+]
+},
+{
+"id": "R78.2",
+"target": "SMAX1 (AR_CAG) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R78.3",
+"target": "GJB1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R79",
+"name": "Congenital muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R79.1",
+"target": "Congenital muscular dystrophy (207)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+207
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R80",
+"name": "Congenital myaesthenic syndrome",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R80.1",
+"target": "Congenital myaesthenic syndrome (232)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+232
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R81",
+"name": "Congenital myopathy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R81.1",
+"target": "Congenital myopathy (225)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+225
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R82",
+"name": "Limb girdle muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R82.1",
+"target": "Limb girdle muscular dystrophy (185)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+185
+]
+}
+]
+},
+{
+"code": "R83",
+"name": "Arthrogryposis",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R83.1",
+"target": "Arthrogryposis (258)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+258
+]
+},
+{
+"id": "R83.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R83.3",
+"target": "Arthrogryposis (258)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+258
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R84",
+"name": "Cerebellar anomalies",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R84.1",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+]
+},
+{
+"id": "R84.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R84.3",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+]
+},
+{
+"id": "R84.4",
+"target": "Hereditary ataxia and cerebellar anomalies - childhood onset (488)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+488
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R85",
+"name": "Holoprosencephaly - NOT chromosomal",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R85.1",
+"target": "Holoprosencephaly (78)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+78
+]
+},
+{
+"id": "R85.2",
+"target": "Holoprosencephaly (78)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+78
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R86",
+"name": "Hydrocephalus",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R86.1",
+"target": "Hydrocephalus (179)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+179
+]
+},
+{
+"id": "R86.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R86.3",
+"target": "Hydrocephalus (179)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+179
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R87",
+"name": "Cerebral malformation",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R87.1",
+"target": "Cerebral malformations (491)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+491
+]
+},
+{
+"id": "R87.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R87.3",
+"target": "Cerebral malformations (491)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+491
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R88",
+"name": "Severe microcephaly",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R88.1",
+"target": "Severe microcephaly (162)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+162
+]
+},
+{
+"id": "R88.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R88.3",
+"target": "Severe microcephaly (162)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+162
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R89",
+"name": "Ultra-rare and atypical monogenic disorders",
+"part": "",
+"group": "Ultra-rare and atypical monogenic disorders",
+"change": "",
+"tests": [
+{
+"id": "R89.1",
+"target": "Relevant panel(s) in PanelApp",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Ultra-rare and atypical monogenic disorders",
+"panels": []
+},
+{
+"id": "R89.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Ultra-rare and atypical monogenic disorders",
+"panels": []
+},
+{
+"id": "R89.3",
+"target": "Relevant panel(s) in PanelApp",
+"method": "WGS",
+"commissioning": "",
+"group": "Ultra-rare and atypical monogenic disorders",
+"panels": [],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R90",
+"name": "Bleeding and platelet disorders",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R90.1",
+"target": "Bleeding and platelet disorders (545)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+545
+]
+},
+{
+"id": "R90.2",
+"target": "F5;F11;MYH9;ENG;ACVRL1;BMPR2;F7;F8;F9;F10;VWF",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R91",
+"name": "Cytopenia - NOT Fanconi anaemia",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R91.1",
+"target": "Cytopenia - NOT Fanconi anaemia (519)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+519
+]
+},
+{
+"id": "R91.2",
+"target": "RPL11;RPL35A;RPS17;RPS19;RPS26;RPL5;DKC1;TERT;TERC",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R92",
+"name": "Rare anaemia",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R92.1",
+"target": "HBA1; HBA2; HBG1; HBG2; HBB; RPL11;RPL35A;RPS17;RPS19;RPS26;RPL5;PKLR",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R92.2",
+"target": "HBA1; HBA2; HBG1; HBG2; HBB",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R92.3",
+"target": "Rare anaemia (518)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+518
+]
+}
+]
+},
+{
+"code": "R93",
+"name": "Thalassaemia and other haemoglobinopathies",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R93.1",
+"target": "HBA1;HBB",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R93.2",
+"target": "HBA1;HBB",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R94",
+"name": "HbSS sickle cell anaemia",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R94.1",
+"target": "HbS variant",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R95",
+"name": "Iron overload - hereditary haemochromatosis testing",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R95.1",
+"target": "HFE common variants",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R96",
+"name": "Iron metabolism disorders - NOT common HFE mutations",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R96.1",
+"target": "Iron metabolism disorders (515)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+515
+]
+},
+{
+"id": "R96.2",
+"target": "HFE;SLC40A1;TFR2;HFE2;HAMP;ATP7B",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R97",
+"name": "Thrombophilia with a likely monogenic cause",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R97.1",
+"target": "Thrombophilia (516)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+516
+]
+},
+{
+"id": "R97.2",
+"target": "PROS1;PROC;SERPINC1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R98",
+"name": "Likely inborn error of metabolism - targeted testing not possible",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R98.1",
+"target": "Inborn errors of metabolism (467)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+467
+]
+},
+{
+"id": "R98.2",
+"target": "Inborn errors of metabolism (467)",
+"method": "WGS",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+467
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R99",
+"name": "Common craniosynostosis syndromes",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R99.1",
+"target": "Common craniosynostosis syndromes (507)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+507
+],
+"comment": "Highly specialised service."
+},
+{
+"id": "R99.2",
+"target": "Common craniosynostosis syndromes (507)",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+507
+]
+}
+]
+},
+{
+"code": "R100",
+"name": "Rare syndromic craniosynostosis or isolated multisuture synostosis",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R100.1",
+"target": "Craniosynostosis (168)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+168
+],
+"comment": "Highly specialised service."
+},
+{
+"id": "R100.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+},
+{
+"id": "R100.3",
+"target": "Craniosynostosis (168)",
+"method": "WGS",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+168
+]
+}
+]
+},
+{
+"code": "R101",
+"name": "Ehlers Danlos syndrome with a likely monogenic cause",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R101.1",
+"target": "Ehlers Danlos syndromes (53)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+53
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R102",
+"name": "Osteogenesis imperfecta",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R102.1",
+"target": "Osteogenesis imperfecta (196)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+196
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R104",
+"name": "Skeletal dysplasia",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R104.1",
+"target": "Skeletal dysplasia (309)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+309
+]
+},
+{
+"id": "R104.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+},
+{
+"id": "R104.3",
+"target": "Skeletal dysplasia (309)",
+"method": "WGS",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+309
+],
+"comment": "WGS go-live expected autumn 2020"
+},
+{
+"id": "R104.4",
+"target": "Osteopetrosis (943)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+943
+]
+}
+]
+},
+{
+"code": "R105",
+"name": "MCADD - Medium-chain acyl-CoA dehydrogenase deficiency – common variant",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R105.1",
+"target": "ACADM common pathogenic variants",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Newborn screening programme"
+}
+]
+},
+{
+"code": "R106",
+"name": "Alstrom syndrome",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R106.1",
+"target": "ALMS1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R107",
+"name": "Bardet-Biedl syndrome",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R107.1",
+"target": "Bardet Biedl syndrome (543)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+543
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R109",
+"name": "Childhood onset leukodystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R109.1",
+"target": "White matter disorders - childhood onset (496)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+496
+]
+},
+{
+"id": "R109.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R109.3",
+"target": "White matter disorders - childhood onset (496)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+496
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R110",
+"name": "Segmental overgrowth disorders",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R110.1",
+"target": "Segmental overgrowth disorders (98)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+98
+]
+}
+]
+},
+{
+"code": "R111",
+"name": "X-inactivation testing",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R111.1",
+"target": "Other",
+"method": "X-inactivation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R112",
+"name": "Factor II deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R112.1",
+"target": "F2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R115",
+"name": "Factor V deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R115.1",
+"target": "F5",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R115.2",
+"target": "F5",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R116",
+"name": "Factor VII deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R116.1",
+"target": "F7",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R116.2",
+"target": "F7",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R117",
+"name": "Factor VIII deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R117.1",
+"target": "F8",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R117.2",
+"target": "F8",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R117.3",
+"target": "F8",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R118",
+"name": "Factor IX deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R118.1",
+"target": "F9",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R118.2",
+"target": "F9",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R119",
+"name": "Factor X deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R119.1",
+"target": "F10",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R119.2",
+"target": "F10",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R120",
+"name": "Factor XI deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R120.1",
+"target": "F11",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R120.2",
+"target": "F11",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R121",
+"name": "von Willebrand disease",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R121.1",
+"target": "VWF",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R121.2",
+"target": "VWF",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R122",
+"name": "Factor XIII deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R122.1",
+"target": "F13A1;F13B",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R123",
+"name": "Combined vitamin K-dependent clotting factor deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R123.1",
+"target": "VKORC1;GGCX",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R124",
+"name": "Combined factor V and VIII deficiency",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R124.1",
+"target": "Combined factor V and VIII deficiency (517)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+517
+]
+}
+]
+},
+{
+"code": "R125",
+"name": "Thoracic aortic aneurysm or dissection",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R125.1",
+"target": "Thoracic aortic aneurysm or dissection (700)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+700
+]
+},
+{
+"id": "R125.2",
+"target": "Thoracic aortic aneurysm or dissection (700)",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+700
+]
+}
+]
+},
+{
+"code": "R127",
+"name": "Long QT syndrome",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R127.1",
+"target": "Long QT syndrome (76)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+76
+]
+}
+]
+},
+{
+"code": "R128",
+"name": "Brugada syndrome and cardiac sodium channel disease",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R128.1",
+"target": "Brugada syndrome (13)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+13
+]
+}
+]
+},
+{
+"code": "R129",
+"name": "Catecholaminergic polymorphic VT",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R129.1",
+"target": "Catecholaminergic polymorphic VT (214)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+214
+]
+}
+]
+},
+{
+"code": "R130",
+"name": "Short QT syndrome",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R130.1",
+"target": "Short QT syndrome (224)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+224
+]
+}
+]
+},
+{
+"code": "R131",
+"name": "Hypertrophic cardiomyopathy",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R131.1",
+"target": "Hypertrophic cardiomyopathy - teen and adult (49)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+49
+]
+}
+]
+},
+{
+"code": "R132",
+"name": "Dilated and Arrhythmogenic cardiomyopathy",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R132.1",
+"target": "Dilated cardiomyopathy - teen and adult (652)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+652
+]
+}
+]
+},
+{
+"code": "R133",
+"name": "Arrhythmogenic right ventricular cardiomyopathy",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R133.1",
+"target": "Arrhythmogenic cardiomyopathy (134)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+134
+]
+}
+]
+},
+{
+"code": "R134",
+"name": "Familial hypercholesterolaemia",
+"part": "",
+"group": "Lipids",
+"change": "",
+"tests": [
+{
+"id": "R134.1",
+"target": "Familial hypercholesterolaemia – targeted panel (772)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Lipids",
+"panels": [
+772
+]
+},
+{
+"id": "R134.2",
+"target": "LDLR",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Lipids",
+"panels": []
+}
+]
+},
+{
+"code": "R135",
+"name": "Paediatric or syndromic cardiomyopathy",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R135.1",
+"target": "Cardiomyopathies - including childhood onset (749)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+749
+]
+}
+]
+},
+{
+"code": "R136",
+"name": "Primary lymphoedema",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R136.1",
+"target": "Primary lymphoedema (65)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+65
+]
+}
+]
+},
+{
+"code": "R137",
+"name": "Congenital heart disease - microarray",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R137.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Cardiology",
+"panels": []
+}
+]
+},
+{
+"code": "R138",
+"name": "Molecular autopsy following sudden unexplained death",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R138.1",
+"target": "Sudden cardiac death (841)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+841
+]
+}
+]
+},
+{
+"code": "R139",
+"name": "Laterality disorders and isomerism",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R139.1",
+"target": "Laterality disorders and isomerism (549)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+549
+]
+}
+]
+},
+{
+"code": "R140",
+"name": "Elastin-related phenotypes",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R140.1",
+"target": "ELN",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Cardiology",
+"panels": []
+}
+]
+},
+{
+"code": "R141",
+"name": "Monogenic diabetes",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R141.1",
+"target": "Monogenic diabetes (472)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+472
+]
+},
+{
+"id": "R141.2",
+"target": "GCK;HNF1A;HNF4A;HNF1B",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R142",
+"name": "Glucokinase-related fasting hyperglycaemia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R142.1",
+"target": "GCK",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R143",
+"name": "Neonatal diabetes",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R143.1",
+"target": "ABCC8; KCNJ11",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R143.2",
+"target": "Diabetes - neonatal onset (293)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+293
+]
+},
+{
+"id": "R143.3",
+"target": "6q24",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R143.4",
+"target": "Diabetes - neonatal onset (293)",
+"method": "WGS",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+293
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R144",
+"name": "Congenital hyperinsulinism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R144.1",
+"target": "ABCC8;KCNJ11",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R144.2",
+"target": "Congenital hyperinsulinism (308)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+308
+]
+}
+]
+},
+{
+"code": "R145",
+"name": "Congenital hypothyroidism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R145.1",
+"target": "Congenital hypothyroidism (31)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+31
+]
+}
+]
+},
+{
+"code": "R146",
+"name": "Disorders of sex development",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R146.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R146.2",
+"target": "Disorders of sex development (9)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+9
+]
+}
+]
+},
+{
+"code": "R147",
+"name": "Growth failure in early childhood",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R147.1",
+"target": "Growth failure in early childhood (473)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+473
+]
+},
+{
+"id": "R147.2",
+"target": "11p15 imprinted growth regulatory region and UPD7 growth regulatory critical region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R147.3",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R148",
+"name": "Hypogonadotropic hypogonadism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R148.1",
+"target": "Hypogonadotropic hypogonadism idiopathic (650)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+650
+]
+}
+]
+},
+{
+"code": "R149",
+"name": "Severe early-onset obesity",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R149.1",
+"target": "Severe early-onset obesity (130)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+130
+]
+}
+]
+},
+{
+"code": "R150",
+"name": "Congenital adrenal hypoplasia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R150.1",
+"target": "Congenital adrenal hypoplasia (145)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+145
+]
+}
+]
+},
+{
+"code": "R151",
+"name": "Familial hyperparathyroidism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R151.1",
+"target": "Familial hyperparathyroidism (480)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+480
+]
+}
+]
+},
+{
+"code": "R152",
+"name": "Hypocalciuric hypercalcaemia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R152.1",
+"target": "Hypocalciuric hypercalcaemia (481)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+481
+]
+}
+]
+},
+{
+"code": "R153",
+"name": "Familial hypoparathyroidism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R153.1",
+"target": "Familial hypoparathyroidism (312)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+312
+]
+},
+{
+"id": "R153.2",
+"target": "GATA3",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R154",
+"name": "Hypophosphataemia or rickets",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R154.1",
+"target": "Hypophosphataemia or rickets (482)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+482
+]
+}
+]
+},
+{
+"code": "R155",
+"name": "Autoimmune Polyendocrine Syndrome",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R155.1",
+"target": "AIRE",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R156",
+"name": "Carney complex",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R156.1",
+"target": "PRKAR1A",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R157",
+"name": "IPEX - Immunodysregulation Polyendocrinopathy and Enteropathy, X-Linked",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R157.1",
+"target": "FOXP3",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R158",
+"name": "Lipodystrophy - childhood onset",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R158.1",
+"target": "Lipodystrophy - childhood onset (546)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+546
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R159",
+"name": "Pituitary hormone deficiency",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R159.1",
+"target": "Pituitary hormone deficiency (483)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+483
+]
+}
+]
+},
+{
+"code": "R160",
+"name": "Primary pigmented nodular adrenocortical disease",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R160.1",
+"target": "Primary pigmented nodular adrenocortical disease (566)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+566
+]
+}
+]
+},
+{
+"code": "R162",
+"name": "Familial tumoral calcinosis",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R162.1",
+"target": "Familial tumoral calcinosis (552)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+552
+]
+}
+]
+},
+{
+"code": "R163",
+"name": "Ectodermal dysplasia",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R163.1",
+"target": "Ectodermal dysplasia (553)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+553
+]
+}
+]
+},
+{
+"code": "R164",
+"name": "Epidermolysis bullosa and congenital skin fragility",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R164.1",
+"target": "Epidermolysis bullosa and congenital skin fragility (554)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+554
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R165",
+"name": "Ichthyosis and erythrokeratoderma",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R165.1",
+"target": "Ichthyosis and erythrokeratoderma (555)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+555
+]
+}
+]
+},
+{
+"code": "R166",
+"name": "Palmoplantar keratodermas",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R166.1",
+"target": "Palmoplantar keratodermas (556)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+556
+]
+}
+]
+},
+{
+"code": "R167",
+"name": "Autosomal recessive primary hypertrophic osteoarthropathy",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R167.1",
+"target": "Autosomal recessive primary hypertrophic osteoarthropathy (557)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+557
+]
+}
+]
+},
+{
+"code": "R168",
+"name": "Non-acute porphyrias",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R168.1",
+"target": "Non-acute porphyrias (513)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": [
+513
+]
+}
+]
+},
+{
+"code": "R169",
+"name": "Acute intermittent porphyria",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R169.1",
+"target": "HMBS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R170",
+"name": "Variegate porphyria",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R170.1",
+"target": "PPOX",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R171",
+"name": "Cholestasis",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R171.1",
+"target": "Cholestasis (544)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": [
+544
+]
+}
+]
+},
+{
+"code": "R172",
+"name": "Wilson disease",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R172.1",
+"target": "ATP7B",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R173",
+"name": "Polycystic liver disease",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R173.1",
+"target": "Polycystic liver disease interim (653)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": [
+653
+]
+}
+]
+},
+{
+"code": "R175",
+"name": "Pancreatitis",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R175.1",
+"target": "Pancreatitis (386)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": [
+386
+]
+},
+{
+"id": "R175.2",
+"target": "CFTR common mutations",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R176",
+"name": "Gilbert syndrome",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R176.1",
+"target": "UGT1A1",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R177",
+"name": "Hirschsprung disease - familial",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R177.1",
+"target": "RET",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": []
+}
+]
+},
+{
+"code": "R180",
+"name": "Congenital adrenal hyperplasia diagnostic test",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R180.1",
+"target": "CYP21A2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R180.2",
+"target": "CYP21A2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R181",
+"name": "Congenital adrenal hyperplasia carrier testing",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R181.1",
+"target": "CYP21A2",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R181.2",
+"target": "CYP21A2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R182",
+"name": "Hyperthyroidism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R182.1",
+"target": "Hyperthyroidism (236)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+236
+]
+}
+]
+},
+{
+"code": "R183",
+"name": "Glucocorticoid-remediable aldosteronism (GRA)",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R183.1",
+"target": "CYP11B1/CYP11B2 gene fusion",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R184",
+"name": "Cystic fibrosis diagnostic test",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R184.1",
+"target": "CFTR",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+},
+{
+"id": "R184.2",
+"target": "CFTR",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+},
+{
+"id": "R184.3",
+"target": "CFTR",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R185",
+"name": "Cystic fibrosis carrier testing",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R185.1",
+"target": "CFTR",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R186",
+"name": "Hereditary haemorrhagic telangiectasia",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R186.1",
+"target": "Hereditary haemorrhagic telangiectasia (123)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+123
+]
+}
+]
+},
+{
+"code": "R188",
+"name": "Pulmonary arterial hypertension",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R188.1",
+"target": "Pulmonary arterial hypertension (193)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+193
+]
+}
+]
+},
+{
+"code": "R189",
+"name": "Respiratory ciliopathies including non-CF bronchiectasis",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R189.1",
+"target": "Respiratory ciliopathies including non-CF bronchiectasis (550)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+550
+]
+}
+]
+},
+{
+"code": "R190",
+"name": "Pneumothorax - familial",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R190.1",
+"target": "Pneumothorax - familial (105)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+105
+]
+},
+{
+"id": "R190.2",
+"target": "FLCN",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R191",
+"name": "Alpha-1-antitrypsin deficiency",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R191.1",
+"target": "SERPINA1 common mutations",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R192",
+"name": "Surfactant deficiency",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R192.1",
+"target": "Surfactant deficiency (551)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [
+551
+]
+}
+]
+},
+{
+"code": "R193",
+"name": "Cystic renal disease",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R193.1",
+"target": "PKD1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+},
+{
+"id": "R193.2",
+"target": "PKD1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+},
+{
+"id": "R193.3",
+"target": "Cystic renal disease (487)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+487
+]
+},
+{
+"id": "R193.4",
+"target": "Cystic renal disease (487)",
+"method": "WGS",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+487
+],
+"comment": "WGS go-live expected autumn 2020"
+}
+]
+},
+{
+"code": "R194",
+"name": "Haematuria",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R194.1",
+"target": "Haematuria (99)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+99
+]
+}
+]
+},
+{
+"code": "R195",
+"name": "Proteinuric renal disease",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R195.1",
+"target": "Proteinuric renal disease (106)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+106
+]
+}
+]
+},
+{
+"code": "R196",
+"name": "CFHR5 nephropathy",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R196.1",
+"target": "CFHR5",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+}
+]
+},
+{
+"code": "R197",
+"name": "Membranoproliferative glomerulonephritis including C3 glomerulopathy",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R197.1",
+"target": "Membranoproliferative glomerulonephritis (83)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+83
+]
+},
+{
+"id": "R197.2",
+"target": "CFH;CFHR",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+}
+]
+},
+{
+"code": "R198",
+"name": "Renal tubulopathies",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R198.1",
+"target": "Renal tubulopathies (292)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+292
+]
+}
+]
+},
+{
+"code": "R199",
+"name": "Congenital anomalies of the kidney and urinary tract - familial",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R199.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+}
+]
+},
+{
+"code": "R201",
+"name": "Atypical haemolytic uraemic syndrome",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R201.1",
+"target": "Atypical haemolytic uraemic syndrome (139)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+139
+],
+"comment": "Highly specialised service."
+},
+{
+"id": "R201.3",
+"target": "CFH; CFHR1; CFHR3; CD46; CFI",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Renal",
+"panels": []
+}
+]
+},
+{
+"code": "R202",
+"name": "Tubulointerstitial kidney disease",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R202.1",
+"target": "Tubulointerstitial kidney disease (548)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+548
+]
+}
+]
+},
+{
+"code": "R204",
+"name": "Hereditary Systemic Amyloidosis",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R204.1",
+"target": "Amyloidosis (502)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+502
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R207",
+"name": "Inherited ovarian cancer (without breast cancer)",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R207.1",
+"target": "Inherited ovarian cancer (without breast cancer) (143)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+143
+]
+},
+{
+"id": "R207.2",
+"target": "BRCA1;BRCA2;MLH1;MSH2;MSH6;PMS2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R208",
+"name": "Inherited breast cancer and ovarian cancer",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R208.1",
+"target": "BRCA1;BRCA2;PALB2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R208.2",
+"target": "BRCA1;BRCA2;PALB2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R209",
+"name": "Inherited colorectal cancer (with or without polyposis)",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R209.1",
+"target": "Inherited polyposis (504)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+504
+]
+},
+{
+"id": "R209.2",
+"target": "MLH1;MSH2;MSH6;PMS2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R210",
+"name": "Inherited MMR deficiency (Lynch syndrome)",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R210.1",
+"target": "Inherited MMR deficiency (Lynch syndrome) (503)",
+"method": "Microsatellite instability",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+503
+]
+},
+{
+"id": "R210.2",
+"target": "Inherited MMR deficiency (Lynch syndrome) (503)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+503
+]
+},
+{
+"id": "R210.3",
+"target": "BRAF V600E",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R210.4",
+"target": "MLH1 hypermethylation",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R210.5",
+"target": "MLH1;MSH2;MSH6;PMS2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R211",
+"name": "Inherited polyposis - germline test",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R211.1",
+"target": "Inherited polyposis (504)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+504
+]
+},
+{
+"id": "R211.2",
+"target": "APC",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R212",
+"name": "Peutz Jegher Syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R212.1",
+"target": "STK11",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R212.2",
+"target": "STK11",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R213",
+"name": "PTEN Hamartoma Tumor Syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R213.1",
+"target": "PTEN",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R213.2",
+"target": "PTEN",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R214",
+"name": "Nevoid Basal Cell Carcinoma Syndrome or Gorlin syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R214.1",
+"target": "PTCH1;SUFU",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R214.2",
+"target": "PTCH1;SUFU",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R215",
+"name": "CDH1-related cancer syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R215.1",
+"target": "CDH1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R215.2",
+"target": "CDH1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R216",
+"name": "Li Fraumeni Syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R216.1",
+"target": "TP53",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R216.2",
+"target": "TP53",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R217",
+"name": "Endocrine neoplasia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R217.1",
+"target": "Endocrine neoplasms (648)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+648
+]
+},
+{
+"id": "R217.2",
+"target": "MEN1;AIP;CDKN1B;CDC73",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R218",
+"name": "Multiple endocrine neoplasia type 2",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R218.1",
+"target": "RET",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R219",
+"name": "Retinoblastoma",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R219.1",
+"target": "RB1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R219.2",
+"target": "RB1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R220",
+"name": "Wilms tumour with features suggestive of predisposition",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R220.1",
+"target": "WT1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R220.2",
+"target": "WT1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R220.3",
+"target": "11p15 imprinted growth regulatory region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R220.4",
+"target": "11p15 imprinted growth regulatory region",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R221",
+"name": "Neurofibromatosis type 2",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R221.1",
+"target": "NF2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R221.2",
+"target": "NF2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R222",
+"name": "Neurofibromatosis type 1",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R222.1",
+"target": "NF1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R222.2",
+"target": "NF1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R223",
+"name": "Inherited phaeochromocytoma and paraganglioma",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R223.1",
+"target": "Inherited phaeochromocytoma and paraganglioma excluding NF1 (649)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": [
+649
+]
+},
+{
+"id": "R223.2",
+"target": "SDHB;SDHC;SDHD",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R224",
+"name": "Inherited renal cancer",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R224.1",
+"target": "Inherited renal cancer (521)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+521
+]
+},
+{
+"id": "R224.2",
+"target": "FLCN;VHL",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R225",
+"name": "Von Hippel Lindau syndrome",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R225.1",
+"target": "VHL",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R225.2",
+"target": "VHL",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R226",
+"name": "Inherited parathyroid cancer",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R226.1",
+"target": "CDC73",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R227",
+"name": "Xeroderma pigmentosum, Trichothiodystrophy or Cockayne syndrome",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R227.1",
+"target": "Xeroderma pigmentosum, Trichothiodystrophy or Cockayne syndrome (77)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+77
+],
+"comment": "Highly specialised service."
+},
+{
+"id": "R227.2",
+"target": "Genomewide",
+"method": "DNA repair defect testing",
+"commissioning": "",
+"group": "Skin",
+"panels": []
+}
+]
+},
+{
+"code": "R228",
+"name": "Tuberous sclerosis",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R228.1",
+"target": "TSC1;TSC2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R228.2",
+"target": "TSC1;TSC2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R229",
+"name": "Confirmed Fanconi anaemia or Bloom syndrome - mutation testing",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R229.1",
+"target": "Confirmed Fanconi anaemia or Bloom syndrome (508)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+508
+]
+},
+{
+"id": "R229.2",
+"target": "FANCA;FANCB;FANCD2;PALB2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R230",
+"name": "Multiple monogenic benign skin tumours",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R230.1",
+"target": "Multiple monogenic benign skin tumours (558)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+558
+]
+},
+{
+"id": "R230.2",
+"target": "FLCN",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Skin",
+"panels": []
+}
+]
+},
+{
+"code": "R231",
+"name": "Neuronal ceroid lipofuscinosis",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R231.1",
+"target": "CLN3",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+},
+{
+"id": "R231.2",
+"target": "Neuronal ceroid lipofuscinosis (526)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+526
+]
+}
+]
+},
+{
+"code": "R232",
+"name": "Haemophagocytic syndrome with absent perforin expression",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R232.1",
+"target": "PRF1",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R233",
+"name": "Agammaglobulinaemia with absent BTK expression",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R233.1",
+"target": "BTK",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R234",
+"name": "Severe combined immunodeficiency with PNP deficiency",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R234.1",
+"target": "PNP",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R235",
+"name": "SCID with features of gamma chain deficiency",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R235.1",
+"target": "IL2RG",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R236",
+"name": "Pigmentary skin disorders",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R236.1",
+"target": "Pigmentary skin disorders (559)",
+"method": "Large panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+559
+]
+},
+{
+"id": "R236.2",
+"target": "SPRED1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Skin",
+"panels": []
+}
+]
+},
+{
+"code": "R237",
+"name": "Cutaneous photosensitivity with a likely genetic cause",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R237.1",
+"target": "Cutaneous photosensitivity with a likely genetic cause (560)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+560
+]
+}
+]
+},
+{
+"code": "R239",
+"name": "Incontinentia pigmenti",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R239.1",
+"target": "IKBKG",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Skin",
+"panels": []
+}
+]
+},
+{
+"code": "R240",
+"name": "Diagnostic testing for known mutation(s)",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R240.1",
+"target": "Specific Target",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R242",
+"name": "Predictive testing for known familial mutation(s)",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R242.1",
+"target": "Specific Target",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R244",
+"name": "Carrier testing for known familial mutation(s)",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R244.1",
+"target": "Specific Target",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R246",
+"name": "Carrier testing at population risk for partners of known carriers of nationally agreed autosomal recessive disorders (tbc)",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R246.1",
+"target": "Relevant single gene",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R249",
+"name": "NIPD using paternal exclusion testing for very rare conditions where familial mutation is known",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R249.1",
+"target": "As per tested relative",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R250",
+"name": "NIPD for congenital adrenal hyperplasia - CYP21A2 haplotype testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R250.1",
+"target": "CYP21A2",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R251",
+"name": "Non-invasive prenatal sexing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R251.1",
+"target": "Other",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R252",
+"name": "SMA carrier testing at population risk for partners of known carriers",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R252.1",
+"target": "SMN1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R253",
+"name": "Cystic fibrosis newborn screening follow-up",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R253.1",
+"target": "CFTR 4 commonest mutations",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Respiratory",
+"panels": [],
+"comment": "Newborn screening programme"
+}
+]
+},
+{
+"code": "R254",
+"name": "Familial melanoma",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R254.1",
+"target": "Familial melanoma (522)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+522
+]
+}
+]
+},
+{
+"code": "R255",
+"name": "Epidermodysplasia verruciformis",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R255.1",
+"target": "Epidermodysplasia verruciformis (562)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+562
+]
+}
+]
+},
+{
+"code": "R256",
+"name": "Nephrocalcinosis or nephrolithiasis",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R256.1",
+"target": "Nephrocalcinosis or nephrolithiasis (149)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+149
+]
+}
+]
+},
+{
+"code": "R257",
+"name": "Unexplained paediatric onset end-stage renal disease",
+"part": "",
+"group": "Renal",
+"change": "",
+"tests": [
+{
+"id": "R257.1",
+"target": "Unexplained paediatric onset end-stage renal disease (678)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Renal",
+"panels": [
+678
+]
+}
+]
+},
+{
+"code": "R258",
+"name": "Cytopenia - Fanconi breakage testing indicated",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R258.1",
+"target": "Fanconi breakage",
+"method": "DNA repair defect testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R258.2",
+"target": "Confirmed Fanconi anaemia or Bloom syndrome (508)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+508
+]
+}
+]
+},
+{
+"code": "R259",
+"name": "Nijmegen breakage syndrome",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R259.1",
+"target": "Nijmegen breakage",
+"method": "DNA repair defect testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R259.2",
+"target": "NBN",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R260",
+"name": "Fanconi anaemia or Bloom syndrome - chromosome breakage testing",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R260.1",
+"target": "Fanconi breakage",
+"method": "DNA repair defect testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R262",
+"name": "Corneal dystrophy",
+"part": "",
+"group": "Eyes",
+"change": "",
+"tests": [
+{
+"id": "R262.1",
+"target": "Corneal dystrophies (658)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Eyes",
+"panels": [
+658
+]
+}
+]
+},
+{
+"code": "R263",
+"name": "Confirmation of uniparental disomy",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R263.1",
+"target": "As relevant to clinical setting",
+"method": "UPD testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R264",
+"name": "Identity testing",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R264.1",
+"target": "Other",
+"method": "Identity testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R265",
+"name": "Chromosomal mosaicism - karyotype",
+"part": "",
+"group": "Mosaic and structural chromosomal disorders",
+"change": "",
+"tests": [
+{
+"id": "R265.1",
+"target": "Genomewide",
+"method": "Karyotype",
+"commissioning": "",
+"group": "Mosaic and structural chromosomal disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R266",
+"name": "Neuromuscular arthrogryposis",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R266.1",
+"target": "Neuromuscular arthrogryposis (547)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+547
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R267",
+"name": "Temple syndrome - maternal uniparental disomy 14",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R267.1",
+"target": "UPD14 critical region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R268",
+"name": "Kagami-Ogata syndrome - paternal uniparental disomy 14",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R268.1",
+"target": "UPD14 critical region",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R270",
+"name": "Smith-Lemli-Opitz syndrome",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R270.1",
+"target": "DHCR7",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+},
+{
+"id": "R270.2",
+"target": "DHCR7",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R271",
+"name": "Neuronal ceroid lipofuscinosis type 2",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R271.1",
+"target": "TPP1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R272",
+"name": "Gaucher disease type I",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R272.1",
+"target": "GBA",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R273",
+"name": "Glycogen storage disease V",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R273.1",
+"target": "PYGM",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R274",
+"name": "Glycogen storage disease",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R274.1",
+"target": "Glycogen storage disease (528)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+528
+]
+}
+]
+},
+{
+"code": "R275",
+"name": "Glutaric acidaemia I",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R275.1",
+"target": "GCDH",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Newborn screening programme"
+}
+]
+},
+{
+"code": "R276",
+"name": "Lysosomal storage disorder",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R276.1",
+"target": "Lysosomal storage disorder (529)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+529
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R277",
+"name": "Mucopolysaccharidosis type IH/S",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R277.1",
+"target": "IDUA",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R278",
+"name": "Mucopolysaccharidosis type II",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R278.1",
+"target": "IDS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R278.2",
+"target": "IDS",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R279",
+"name": "Isovaleric acidaemia",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R279.1",
+"target": "IVD common pseudodeficiency variant",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Newborn screening programme"
+}
+]
+},
+{
+"code": "R280",
+"name": "Krabbe disease – GALC deficiency",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R280.1",
+"target": "GALC",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R280.2",
+"target": "GALC",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R281",
+"name": "Krabbe disease - Saposin A deficiency",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R281.1",
+"target": "PSAP",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R282",
+"name": "Niemann-Pick disease type A or B",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R282.1",
+"target": "SMPD1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R283",
+"name": "Phenylketonuria",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R283.1",
+"target": "PAH",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Newborn screening programme"
+},
+{
+"id": "R283.2",
+"target": "PAH",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R284",
+"name": "Van der Woude syndrome",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R284.1",
+"target": "IRF6",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R285",
+"name": "Sandhoff disease",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R285.1",
+"target": "HEXB",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R286",
+"name": "Tay-Sachs disease",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R286.1",
+"target": "HEXA",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R287",
+"name": "Mucopolysaccharidosis type IVA",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R287.1",
+"target": "GALNS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R288",
+"name": "GM1 Gangliosidosis and Mucopolysaccharidosis Type IVB",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R288.1",
+"target": "GLB1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R289",
+"name": "Mucolipidosis II and III Alpha/Beta",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R289.1",
+"target": "GNPTAB",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R290",
+"name": "Mucopolysaccharidosis type VI",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R290.1",
+"target": "ARSB",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R291",
+"name": "Mucopolysaccharidosis type IIIA",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R291.1",
+"target": "SGSH",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R292",
+"name": "Mucopolysaccharidosis type IIIB",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R292.1",
+"target": "NAGLU",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R293",
+"name": "Albright hereditary osteodystrophy, pseudohypoparathyroidism and pseudopseudohypoparathyroidism",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R293.1",
+"target": "GNAS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R293.2",
+"target": "GNAS DMRs",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R293.3",
+"target": "STX16",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R294",
+"name": "Ataxia telangiectasia - DNA repair testing",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R294.1",
+"target": "Genomewide",
+"method": "DNA repair defect testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R295",
+"name": "Ataxia telangiectasia - mutation testing",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R295.1",
+"target": "ATM",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R296",
+"name": "RNA analysis of variants",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R296.1",
+"target": "As dictated by variant under investigation",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R297",
+"name": "Possible structural chromosomal rearrangement - karyotype",
+"part": "",
+"group": "Mosaic and structural chromosomal disorders",
+"change": "",
+"tests": [
+{
+"id": "R297.1",
+"target": "As determined by indication",
+"method": "Karyotype",
+"commissioning": "",
+"group": "Mosaic and structural chromosomal disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R298",
+"name": "Possible structural or mosaic chromosomal abnormality - FISH",
+"part": "",
+"group": "Mosaic and structural chromosomal disorders",
+"change": "",
+"tests": [
+{
+"id": "R298.1",
+"target": "As determined by indication",
+"method": "FISH",
+"commissioning": "",
+"group": "Mosaic and structural chromosomal disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R299",
+"name": "Possible mitochondrial disorder - mitochondrial DNA rearrangement testing",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R299.1",
+"target": "Mitochondrial genome",
+"method": "Other",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R300",
+"name": "Possible mitochondrial disorder - whole mitochondrial genome sequencing",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R300.1",
+"target": "Mitochondrial genome",
+"method": "Other",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R301",
+"name": "Possible mitochondrial disorder - mitochondrial DNA depletion testing",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R301.1",
+"target": "Mitochondrial genome",
+"method": "Other",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R304",
+"name": "NIPD for cystic fibrosis - haplotype testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R304.1",
+"target": "CFTR",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R305",
+"name": "NIPD for cystic fibrosis - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R305.1",
+"target": "CFTR",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R306",
+"name": "NIPD for Apert syndrome - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R306.1",
+"target": "FGFR2",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R307",
+"name": "NIPD for Crouzon syndrome with acanthosis nigricans - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R307.1",
+"target": "FGFR3",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R308",
+"name": "NIPD for FGFR2-related craniosynostosis syndromes - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R308.1",
+"target": "FGFR2",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R309",
+"name": "NIPD for FGFR3-related skeletal dysplasias - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R309.1",
+"target": "FGFR3",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R310",
+"name": "NIPD for Duchenne and Becker muscular dystrophy - haplotype testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R310.1",
+"target": "Dystrophin",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R311",
+"name": "NIPD for spinal muscular atrophy - mutation testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R311.1",
+"target": "SMN1",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R312",
+"name": "Parental sequencing for lethal autosomal recessive disorders",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R312.1",
+"target": "Relevant panel(s) in PanelApp",
+"method": "WES",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R313",
+"name": "Neutropaenia consistent with ELANE mutations",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R313.1",
+"target": "ELANE",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R314",
+"name": "Ambiguous genitalia presenting neonatally",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R314.1",
+"target": "Sex chromosomes",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R314.2",
+"target": "Sex chromosomes",
+"method": "Karyotype",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R315",
+"name": "POLG-related disorder",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R315.1",
+"target": "Common POLG mutations",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R315.2",
+"target": "POLG",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R316",
+"name": "Pyruvate dehydrogenase (PDH) deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R316.1",
+"target": "Pyruvate dehydrogenase (PDH) deficiency (531)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+531
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R317",
+"name": "Mitochondrial liver disease, including transient infantile liver failure",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R317.1",
+"target": "Mitochondrial liver disease (532)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+532
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R318",
+"name": "Recurrent miscarriage with products of conception available for testing",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R318.1",
+"target": "Genomewide",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+},
+{
+"id": "R318.2",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R319",
+"name": "Calcium-sensing receptor phenotypes",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R319.1",
+"target": "CASR",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R320",
+"name": "Invasive prenatal diagnosis requiring fetal sexing",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R320.1",
+"target": "Other",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R321",
+"name": "Maternal cell contamination testing",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R321.1",
+"target": "Genomewide",
+"method": "Identity testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R322",
+"name": "Skin fibroblasts to be cultured and stored",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R322.1",
+"target": "No target identified at this stage",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R323",
+"name": "Sitosterolaemia",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R323.1",
+"target": "ABCG5;ABCG8",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R324",
+"name": "Familial Chylomicronaemia Syndrome (FCS)",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R324.1",
+"target": "Lipoprotein lipase deficiency (527)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [
+527
+]
+}
+]
+},
+{
+"code": "R325",
+"name": "Lysosomal acid lipase deficiency",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R325.1",
+"target": "LIPA",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R326",
+"name": "Vascular skin disorders",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R326.1",
+"target": "Vascular skin disorders (563)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+563
+]
+}
+]
+},
+{
+"code": "R327",
+"name": "Mosaic skin disorders - deep sequencing",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R327.1",
+"target": "Mosaic skin disorders - deep sequencing (564)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+564
+]
+}
+]
+},
+{
+"code": "R328",
+"name": "Progressive cardiac conduction disease",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R328.1",
+"target": "Progressive cardiac conduction disease (506)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+506
+]
+}
+]
+},
+{
+"code": "R329",
+"name": "Familial dysalbuminaemic hyperthyroxinaemia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R329.1",
+"target": "ALB",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R330",
+"name": "Alveolar capillary dysplasia with misalignment of pulmonary veins",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R330.1",
+"target": "FOXF1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R331",
+"name": "Intestinal failure",
+"part": "",
+"group": "Gastrohepatology",
+"change": "",
+"tests": [
+{
+"id": "R331.1",
+"target": "Intestinal failure (514)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Gastrohepatology",
+"panels": [
+514
+]
+}
+]
+},
+{
+"code": "R332",
+"name": "Rare genetic inflammatory skin disorders",
+"part": "",
+"group": "Skin",
+"change": "",
+"tests": [
+{
+"id": "R332.1",
+"target": "Rare genetic inflammatory skin disorders (565)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Skin",
+"panels": [
+565
+]
+}
+]
+},
+{
+"code": "R333",
+"name": "Central congenital hypoventilation",
+"part": "",
+"group": "Respiratory",
+"change": "",
+"tests": [
+{
+"id": "R333.1",
+"target": "PHOX2B STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+},
+{
+"id": "R333.2",
+"target": "PHOX2B",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Respiratory",
+"panels": []
+}
+]
+},
+{
+"code": "R334",
+"name": "Cystinosis",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R334.1",
+"target": "CTNS",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+},
+{
+"id": "R334.2",
+"target": "CTNS",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R335",
+"name": "Fabry disease",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R335.1",
+"target": "GLA",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+},
+{
+"id": "R335.2",
+"target": "GLA",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R336",
+"name": "Cerebral vascular malformations",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R336.1",
+"target": "Cerebral vascular malformations (147)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+147
+]
+}
+]
+},
+{
+"code": "R337",
+"name": "CADASIL",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R337.1",
+"target": "NOTCH3",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R338",
+"name": "Monitoring for G(M)CSF escape mutations",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R338.1",
+"target": "CSF3R",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R340",
+"name": "Amelogenesis imperfecta",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R340.1",
+"target": "Amelogenesis imperfecta (269)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": [
+269
+]
+}
+]
+},
+{
+"code": "R341",
+"name": "Hereditary angioedema types I and II",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R341.1",
+"target": "SERPING1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+},
+{
+"id": "R341.2",
+"target": "SERPING1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R343",
+"name": "Chromosomal mosaicism - microarray",
+"part": "",
+"group": "Mosaic and structural chromosomal disorders",
+"change": "",
+"tests": [
+{
+"id": "R343.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Mosaic and structural chromosomal disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R344",
+"name": "Primary hyperaldosteronism - KCNJ5",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R344.1",
+"target": "KCNJ5",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R345",
+"name": "Facioscapulohumeral muscular dystrophy - extended testing",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R345.1",
+"target": "DUX4",
+"method": "Methylation testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R345.2",
+"target": "SMCHD1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+},
+{
+"id": "R345.3",
+"target": "4q",
+"method": "Other",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R346",
+"name": "DNA to be stored",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R346.1",
+"target": "No target identified at this stage",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R347",
+"name": "Inherited predisposition to acute myeloid leukaemia (AML)",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R347.1",
+"target": "Inherited predisposition to acute myeloid leukaemia (AML) (525)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+525
+]
+},
+{
+"id": "R347.2",
+"target": "RUNX1 21q22.12;CEBPA 19q13.11;GATA2 3q21.3;TERT 5p15.33;TERC 3q26.2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R350",
+"name": "MERRF syndrome",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R350.1",
+"target": "Common MERRF mutations",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R351",
+"name": "NARP syndrome or maternally inherited Leigh syndrome",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R351.1",
+"target": "MT-ATP6;MT-ND6",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R351.2",
+"target": "m.8993T>C/G",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R352",
+"name": "Mitochondrial DNA maintenance disorder",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R352.1",
+"target": "Mitochondrial DNA maintenance disorder (533)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+533
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R353",
+"name": "Mitochondrial disorder with complex I deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R353.1",
+"target": "Mitochondrial disorder with complex I deficiency (534)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+534
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R354",
+"name": "Mitochondrial disorder with complex II deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R354.1",
+"target": "Mitochondrial disorder with complex II deficiency (535)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+535
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R355",
+"name": "Mitochondrial disorder with complex III deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R355.1",
+"target": "Mitochondrial disorder with complex III deficiency (536)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+536
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R356",
+"name": "Mitochondrial disorder with complex IV deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R356.1",
+"target": "Mitochondrial disorder with complex IV deficiency (537)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+537
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R357",
+"name": "Mitochondrial disorder with complex V deficiency",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R357.1",
+"target": "Mitochondrial disorder with complex V deficiency (538)",
+"method": "WES or Small panel",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": [
+538
+],
+"comment": "Highly specialised service."
+}
+]
+},
+{
+"code": "R358",
+"name": "Familial rhabdoid tumours",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R358.1",
+"target": "Rhabdoid tumour predisposition (600)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+600
+]
+}
+]
+},
+{
+"code": "R359",
+"name": "Childhood solid tumours",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R359.1",
+"target": "Tumour predisposition - childhood onset (243)",
+"method": "Medium panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+243
+]
+}
+]
+},
+{
+"code": "R361",
+"name": "Haemoglobinopathy trait or carrier testing",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R361.1",
+"target": "HBA1;HBB",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+},
+{
+"id": "R361.2",
+"target": "HBA1;HBB",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R362",
+"name": "Carrier testing for sickle cell disease",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R362.1",
+"target": "HbS variant",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R363",
+"name": "Inherited predisposition to GIST",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R363.1",
+"target": "Inherited predisposition to GIST (523)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+523
+]
+},
+{
+"id": "R363.2",
+"target": "SDHA; SDHC; SDHD",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R364",
+"name": "DICER1-related cancer predisposition",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R364.1",
+"target": "DICER1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R365",
+"name": "Fumarate hydratase-related tumour syndromes",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R365.1",
+"target": "FH",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R366",
+"name": "Inherited susceptibility to acute lymphoblastoid leukaemia (ALL)",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R366.1",
+"target": "PAX5;ETV6",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Haematology",
+"panels": []
+}
+]
+},
+{
+"code": "R367",
+"name": "Inherited pancreatic cancer",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R367.1",
+"target": "Inherited pancreatic cancer (524)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": [
+524
+]
+}
+]
+},
+{
+"code": "R368",
+"name": "Hereditary angioedema type III",
+"part": "",
+"group": "Immunology",
+"change": "",
+"tests": [
+{
+"id": "R368.1",
+"target": "F12 hotspot",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Immunology",
+"panels": []
+}
+]
+},
+{
+"code": "R370",
+"name": "Validation test",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R370.1",
+"target": "Specific Target",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R371",
+"name": "Malignant hyperthermia",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R371.1",
+"target": "RYR1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R372",
+"name": "Newborn screening for sickle cell disease in a transfused baby",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R372.1",
+"target": "HbS variant",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Haematology",
+"panels": [],
+"comment": "Newborn screening programme"
+}
+]
+},
+{
+"code": "R373",
+"name": "RNA to be stored",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R373.1",
+"target": "No target identified at this stage",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R374",
+"name": "Other sample to be stored",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R374.1",
+"target": "No target identified at this stage",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R375",
+"name": "Family follow-up testing to aid variant interpretation",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R375.1",
+"target": "Specific Target",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R376",
+"name": "Segmental or atypical neurofibromatosis type 1 testing",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R376.1",
+"target": "NF1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Neurology",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R376.2",
+"target": "NF1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R377",
+"name": "Intellectual disability – microarray only",
+"part": "",
+"group": "Developmental disorders",
+"change": "",
+"tests": [
+{
+"id": "R377.1",
+"target": "Genomewide",
+"method": "Microarray",
+"commissioning": "",
+"group": "Developmental disorders",
+"panels": []
+}
+]
+},
+{
+"code": "R378",
+"name": "Linkage testing for Duchenne or Becker muscular dystrophy",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R378.1",
+"target": "Dystrophin",
+"method": "Other",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R380",
+"name": "Niemann Pick disease type C",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R380.1",
+"target": "NPC1;NPC2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": [],
+"comment": "Highly specialised service."
+},
+{
+"id": "R380.2",
+"target": "NPC1;NPC2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R381",
+"name": "Other rare neuromuscular disorders",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R381.1",
+"target": "Neuromuscular disorders (465)",
+"method": "WES or Large panel",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+465
+]
+},
+{
+"id": "R381.2",
+"target": "Neuromuscular disorders (465)",
+"method": "WGS",
+"commissioning": "",
+"group": "Neurology",
+"panels": [
+465
+],
+"comment": "WGS go-live expected autumn 2020"
+},
+{
+"id": "R381.3",
+"target": "AR_CAG;DMPK_CTG STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R382",
+"name": "Hypochondroplasia",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R382.1",
+"target": "FGFR3 c.1620",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R383",
+"name": "Linkage testing for Huntington disease",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R383.1",
+"target": "HTT",
+"method": "Other",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R384",
+"name": "Generalised arterial calcification in infancy",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R384.1",
+"target": "ABCC6;ENPP1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Cardiology",
+"panels": []
+}
+]
+},
+{
+"code": "R387",
+"name": "Reanalysis of existing data",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R387.1",
+"target": "As per updated indication",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R388",
+"name": "Linkage testing for congenital adrenal hyperplasia",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R388.1",
+"target": "CYP21A2",
+"method": "Other",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R389",
+"name": "NIPD - pre-pregnancy test work-up",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R389.1",
+"target": "As per familial diagnosis",
+"method": "NIPD",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R390",
+"name": "Multiple exostoses",
+"part": "",
+"group": "Musculoskeletal",
+"change": "",
+"tests": [
+{
+"id": "R390.1",
+"target": "EXT1;EXT2",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+},
+{
+"id": "R390.2",
+"target": "EXT1;EXT2",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Musculoskeletal",
+"panels": []
+}
+]
+},
+{
+"code": "R391",
+"name": "Barth syndrome",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R391.1",
+"target": "TAZ",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Cardiology",
+"panels": []
+}
+]
+},
+{
+"code": "R393",
+"name": "Schwannomatosis",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R393.1",
+"target": "SMARCB1;LZTFL1",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R393.2",
+"target": "SMARCB1;LZTFL1",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R394",
+"name": "Mitochondrial neurogastrointestinal encephalopathy",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R394.1",
+"target": "TYMP",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R395",
+"name": "Thiamine metabolism dysfunction syndrome 2",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R395.1",
+"target": "SLC19A3",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R396",
+"name": "Mitochondrial Complex V deficiency, TMEM70 type",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R396.1",
+"target": "TMEM70",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R397",
+"name": "Maternally inherited cardiomyopathy",
+"part": "",
+"group": "Mitochondrial",
+"change": "",
+"tests": [
+{
+"id": "R397.1",
+"target": "m.4300A>G",
+"method": "Targeted mutation testing",
+"commissioning": "",
+"group": "Mitochondrial",
+"panels": []
+}
+]
+},
+{
+"code": "R398",
+"name": "INTERIM INDICATION for urgent single gene testing",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R398.1",
+"target": "Relevant single gene",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R401",
+"name": "Common aneuploidy testing - prenatal",
+"part": "",
+"group": "Fetal & NIPD",
+"change": "",
+"tests": [
+{
+"id": "R401.1",
+"target": "Genomewide",
+"method": "Common aneuploidy testing",
+"commissioning": "",
+"group": "Fetal & NIPD",
+"panels": []
+}
+]
+},
+{
+"code": "R402",
+"name": "Premature ovarian insufficiency",
+"part": "",
+"group": "Endocrinology",
+"change": "",
+"tests": [
+{
+"id": "R402.1",
+"target": "Genomewide",
+"method": "Karyotype or equivalent",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+},
+{
+"id": "R402.2",
+"target": "FMR1 STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Endocrinology",
+"panels": []
+}
+]
+},
+{
+"code": "R403",
+"name": "MCADD - Medium-chain acyl-CoA dehydrogenase deficiency – full ACADM sequencing",
+"part": "",
+"group": "Metabolic",
+"change": "",
+"tests": [
+{
+"id": "R403.1",
+"target": "ACADM",
+"method": "Single gene sequencing <10 amplicons",
+"commissioning": "",
+"group": "Metabolic",
+"panels": []
+}
+]
+},
+{
+"code": "R404",
+"name": "Testing of unaffected individuals for inherited cancer predisposition syndromes",
+"part": "",
+"group": "Inherited cancer",
+"change": "",
+"tests": [
+{
+"id": "R404.1",
+"target": "As dictated by clinical indication",
+"method": "Single gene sequencing >=10 amplicons",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R404.2",
+"target": "As per appropriate inherited cancer indication",
+"method": "MLPA or equivalent",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+},
+{
+"id": "R404.3",
+"target": "Relevant inherited cancer panel",
+"method": "Small panel",
+"commissioning": "",
+"group": "Inherited cancer",
+"panels": []
+}
+]
+},
+{
+"code": "R405",
+"name": "Hereditary Erythrocytosis",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R405.1",
+"target": "Hereditary Erythrocytosis (157)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+157
+]
+}
+]
+},
+{
+"code": "R406",
+"name": "Thrombocythaemia",
+"part": "",
+"group": "Haematology",
+"change": "",
+"tests": [
+{
+"id": "R406.1",
+"target": "Thrombocythaemia (945)",
+"method": "Small panel",
+"commissioning": "",
+"group": "Haematology",
+"panels": [
+945
+]
+}
+]
+},
+{
+"code": "R407",
+"name": "Any patient undergoing Allogeneic Haematopoietic Stem Cell transplantation",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R407.1",
+"target": "Relevant gene(s) or loci",
+"method": "STR testing",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R408",
+"name": "Idiopathic ventricular fibrillation",
+"part": "",
+"group": "Cardiology",
+"change": "",
+"tests": [
+{
+"id": "R408.1",
+"target": "Sudden cardiac death (841)",
+"method": "WES or Medium panel",
+"commissioning": "",
+"group": "Cardiology",
+"panels": [
+841
+]
+}
+]
+},
+{
+"code": "R409",
+"name": "Linkage testing for other recognisable Mendelian disorders",
+"part": "",
+"group": "Multi-purpose tests",
+"change": "",
+"tests": [
+{
+"id": "R409.1",
+"target": "Relevant gene(s) or loci",
+"method": "Other",
+"commissioning": "",
+"group": "Multi-purpose tests",
+"panels": []
+}
+]
+},
+{
+"code": "R410",
+"name": "Myotonic dystrophy type 2 (DM2)",
+"part": "",
+"group": "Neurology",
+"change": "",
+"tests": [
+{
+"id": "R410.1",
+"target": "CNBP (ZNF9) STR",
+"method": "STR testing",
+"commissioning": "",
+"group": "Neurology",
+"panels": []
+}
+]
+},
+{
+"code": "R411",
+"name": "Y chromosome microdeletion",
+"part": "",
+"group": "Mosaic and structural chromosomal disorders",
+"change": "",
+"tests": [
+{
+"id": "R411.1",
+"target": "Y chromosome AZF regions",
+"method": "Targeted mutation testing or equivalent",
+"commissioning": "",
+"group": "Mosaic and structural chromosomal disorders",
+"panels": [],
+"comment": "Delivered by designated GLHs"
+}
+]
+}
+],
+"problems": [
+"spreadsheet: no commissioning column",
+"spreadsheet: no part column",
+"no eligibility criteria PDF: criteria come from the spreadsheet only"
+]
+}

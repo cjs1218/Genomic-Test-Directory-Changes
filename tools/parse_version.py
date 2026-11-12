@@ -29,9 +29,12 @@ COLUMNS = {
     'id': ['test id', 'test code'],
     'name': ['clinical indication', 'clinical indication name', 'clinical indication title'],
     'target': ['target/genes', 'targets/genes', 'target genes', 'target', 'targets', 'genes'],
-    'method': ['test method', 'method'],
+    'method': ['test method', 'method', 'test method interim'],  # 2018-19: interim = what labs offered then
+    'planned': ['test method phase 3'],  # 2018-19: the method planned once WGS was in place
     'commissioning': ['commissioning category', 'commissioning'],
-    'group': ['specialist test group', 'test group', 'specialist service group'],
+    'group': ['specialist test group', 'test group', 'specialist service group', 'clinical group'],
+    'family': ['optimal family structure'],
+    'comment': ['comments'],
     'part': ['part in the eligibility criteria document', 'part'],
     'scope': ['test scope', 'scope', 'scope(s)'],
     'criteria': ['eligibility criteria', 'testing criteria', 'eligibility criteria for testing'],
@@ -69,7 +72,7 @@ def find_table(wb):
                 for i, h in enumerate(heads):
                     if h in names and key not in col: col[key] = i
             if all(k in col for k in REQUIRED):
-                change = next((clean(row[i]) for i, h in enumerate(heads) if h.startswith('changes since') or h == 'change'), None)
+                change = next((clean(row[i]) for i, h in enumerate(heads) if h.startswith('changes') or h.startswith('amendments') or h == 'change'), None)
                 score = len(col) + (5 if 'r&id' in ws.title.lower() or 'rare' in ws.title.lower() else 0)
                 if not best or score > best[0]: best = (score, ws, n, col, change)
                 break
@@ -77,13 +80,22 @@ def find_table(wb):
     return best[1:]
 
 
+MONTH = r'(January|February|March|April|May|June|July|August|September|October|November|December)'
+
+
 def sheet_version(wb):
-    """Version and date written in the spreadsheet's front sheet, e.g. 'v9 (8 April 2026)', or ''."""
-    for ws in wb.worksheets[:2]:
-        for row in ws.iter_rows(max_row=30, values_only=True):
+    """Version and date written on the spreadsheet's front sheet, e.g. 'v9 (8 April 2026)', 'v8.1 (9 July 2025)',
+    'v3 (April 2022)' or 'October 2018', or ''."""
+    for ws in wb.worksheets[:1]:
+        for row in ws.iter_rows(max_row=5, values_only=True):
             for c in row or []:
-                m = re.search(r'(\d{1,2})(?:st|nd|rd|th)? (\w+) (20\d\d)\W+(?:v|version )([\d.]+)', clean(c), re.I)
-                if m: return f'v{m.group(4).rstrip(".")} ({m.group(1)} {m.group(2)} {m.group(3)})'
+                t = clean(c)
+                m = re.search(rf'(\d{{1,2}})(?:st|nd|rd|th)? {MONTH} (20\d\d)\W+(?:v|version )([\d.]+)', t, re.I)
+                if m: return f'v{m.group(4).rstrip(".").removesuffix(".0")} ({m.group(1)} {m.group(2)} {m.group(3)})'
+                m = re.search(rf'\bv([\d.]+),? (?:(\d{{1,2}})(?:st|nd|rd|th)? )?{MONTH} (20\d\d)', t, re.I)
+                if m: return f'v{m.group(1).rstrip(".")} ({(m.group(2) + " ") if m.group(2) else ""}{m.group(3)} {m.group(4)})'
+                m = re.search(rf'{MONTH} (20\d\d)(?: (v[\d.]+))?', t)
+                if m: return (m.group(3) + ' ' if m.group(3) else '') + f'({m.group(1)} {m.group(2)})' if m.group(3) else f'{m.group(1)} {m.group(2)}'
     return ''
 
 
@@ -93,7 +105,7 @@ def read_sheet(path, problems):
     head = next(ws.iter_rows(min_row=hrow, max_row=hrow, values_only=True))
     change_i = next((i for i, h in enumerate(head) if change and clean(h) == change), None)
     for key in COLUMNS:
-        if key not in col and key not in ('criteria', 'scope'): problems.append(f'spreadsheet: no {key} column')
+        if key not in col and key not in ('criteria', 'scope', 'family', 'planned', 'comment'): problems.append(f'spreadsheet: no {key} column')
     rows, last_ci = [], None
     for r in ws.iter_rows(min_row=hrow + 1, values_only=True):
         g = lambda k: clean(r[col[k]]) if k in col and col[k] < len(r) else ''
@@ -106,7 +118,8 @@ def read_sheet(path, problems):
         last_ci = ci
         rows.append({'ci': ci, 'id': tid, 'name': g('name'), 'target': g('target'), 'method': tidy_method(g('method')),
                      'commissioning': tidy_method(g('commissioning')), 'group': g('group'), 'part': g('part'),
-                     'scope': g('scope'), 'sheetCriteria': crit_lines,
+                     'scope': g('scope'), 'family': g('family'), 'planned': tidy_method(g('planned')), 'comment': g('comment'),
+                     'sheetCriteria': crit_lines,
                      'change': clean(r[change_i]) if change_i is not None and change_i < len(r) else ''})
     return sheet_version(wb), change, rows
 
@@ -242,6 +255,9 @@ def parse(rel):
             x['panels'] = panels
             x.update({k: v for k, v in tbl.get(t['id'], {}).items() if v})
             if t['scope'] and not x.get('scope'): x['scope'] = t['scope']
+            if t['family'] and not x.get('family'): x['family'] = t['family']
+            if t['planned'] and t['planned'] != t['method']: x['planned'] = t['planned']
+            if t['comment']: x['comment'] = t['comment']
             if t['change'] and t['change'].lower() != 'no change': x['change'] = t['change']
             if c in starts and t['id'] not in tbl: problems.append(f'{t["id"]}: not in the PDF Associated Tests table')
             e['tests'].append(x)

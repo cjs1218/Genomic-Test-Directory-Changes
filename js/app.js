@@ -59,7 +59,7 @@ function findCodes(q) {
 
 // ---------- form ----------
 function fillReleaseSelects() {
-  const opt = r => `<option value="${esc(r.id)}">${esc(r.label)} – ${esc(C.longDate(r.published))}</option>`;
+  const opt = r => `<option value="${esc(r.id)}">${esc(r.label)} – ${esc(C.relDate(r))}</option>`;
   $('#from').innerHTML = RELEASES.map(opt).join('');
   $('#to').innerHTML = RELEASES.map(opt).join('');
   $('#rel').innerHTML = RELEASES.slice().reverse().map(opt).join('');
@@ -139,14 +139,15 @@ async function renderCompare(s) {
   const name = (entB || entA || {}).name || latestName(code);
 
   const notices = [];
-  if (s.seen && !seenRel) notices.push(`${C.longDate(s.seen)} is earlier than the earliest version loaded (${relA.label}, published ${C.longDate(relA.published)}). Add the older version to compare from the right date.`);
+  if (s.seen && !seenRel) notices.push(`${C.longDate(s.seen)} is earlier than the earliest version loaded (${relA.label}, published ${C.relDate(relA)}). Add the older version to compare from the right date.`);
+  if (C.sameMonthUnsure(seenRel, s.seen)) notices.push(`${esc(seenRel.label)} was published in ${esc(C.relDate(seenRel))}; the exact day is not stated, so check whether the previous version still applied on ${esc(C.longDate(s.seen))}.`);
   if (backwards) notices.push('The “then” version is later than the “compare with” version.');
   if (!entA && entB) notices.push(`${code} was not in ${relA.label}.`);
   if (entA && !entB) notices.push(`${code} is not in ${relB.label}.` + (links.length ? ' ' + links.map(l => l.to.length ? `${l.auto ? 'Possibly replaced by' : 'Replaced by'} ${l.to.map(c => `<a href="#${c}">${c}</a>`).join(', ')}${l.why ? ' (' + esc(l.why.join('; ')) + ')' : ''}${l.note ? ' – ' + esc(l.note) : ''}.` : 'No replacement code found.').join(' ') : ''));
   if (!entA && !entB) notices.push(`${code} is in neither version. It appears in: ${rec.present.map(id => esc(relById(id).label)).join(', ')}.`);
 
   const verCard = (label, r, ent, extra) => `<div class="ver"><div class="label">${label}</div><strong>${esc(r.label)}</strong>
-    <div>Published ${esc(C.longDate(r.published))}${r.inForceFrom ? ', in force ' + esc(C.longDate(r.inForceFrom)) : ''}</div>
+    <div>Published ${esc(C.relDate(r))}${r.inForceFrom ? ', in force ' + esc(C.longDate(r.inForceFrom)) : ''}</div>
     ${extra ? `<div class="hint">${extra}</div>` : ''}
     <div class="small">${ent ? esc(ent.name) : '<em>Code not in this version</em>'}</div>
     <div class="hint no-print">${docLinks(r, ent)}</div></div>`;
@@ -206,7 +207,7 @@ function timeline(code, relA, relB) {
     if (!e && i > 0 && present) body = '<p class="note">No change.</p>';
     if (!present && !(e && e.k.includes('removed'))) body = '<p class="note">Code not in this version.</p>';
     if (i === 0 && !e) body = present ? '<p class="note">Earliest version loaded.</p>' : body;
-    return `<li class="${cls}"><span class="when">${esc(C.longDate(r.published))}</span> – ${esc(r.label)}${end ? ` <strong>(${end})</strong>` : ''}${chips(kinds)}${body}</li>`;
+    return `<li class="${cls}"><span class="when">${esc(C.relDate(r))}</span> – ${esc(r.label)}${end ? ` <strong>(${end})</strong>` : ''}${chips(kinds)}${body}</li>`;
   });
   return `<p class="hint">Every version loaded, oldest first. Changes are dated by the version they were first published in; changes between “then” and “compared with” are highlighted.</p><ol class="timeline">${items.join('')}</ol>`;
 }
@@ -286,14 +287,16 @@ async function renderGenes(entA, entB, dateA, dateB) {
   for (const pid of ids) {
     const p = await panel(pid);
     if (!p) { blocks.push(`<div class="notice">PanelApp panel ${pid}: no gene history saved yet (run tools/panel_history.py).</div>`); continue; }
-    const a = C.panelAt(p, dateA), b = C.panelAt(p, dateB);
+    // a panel only counts on a side whose tests named it (older releases often listed genes by name instead)
+    const inA = pa.has(pid), inB = pb.has(pid);
+    const a = inA ? C.panelAt(p, dateA) : null, b = inB ? C.panelAt(p, dateB) : null;
     const d = a && b ? C.setDiff(a.genes, b.genes) : { added: [], removed: [] };
-    genes.push({ panel: pid, name: p.name, a, b, diff: d });
-    const at = (x, dt) => x ? `signed-off v${esc(x.v)} (${esc(C.longDate(x.date))}): <b>${x.genes.size}</b> green genes` : `no GMS signed-off version on ${esc(C.longDate(dt))}${p.signoffs.length ? ` (first sign-off ${esc(C.longDate(p.signoffs[0].date))})` : ''}`;
+    genes.push({ panel: pid, name: p.name, a, b, inA, inB, diff: d });
+    const at = (x, dt, used) => !used ? 'not used for this code (see the test targets above)' : x ? `signed-off v${esc(x.v)} (${esc(C.longDate(x.date))}): <b>${x.genes.size}</b> green genes` : `no GMS signed-off version on ${esc(C.longDate(dt))}${p.signoffs.length ? ` (first sign-off ${esc(C.longDate(p.signoffs[0].date))})` : ''}`;
     const scope = pa.has(pid) && pb.has(pid) ? '' : pa.has(pid) ? ` <span class="chip removed">only in ${'then'}</span>` : ` <span class="chip added">only now</span>`;
     const list = (arr, tag) => arr.length ? `<p class="genes"><strong>${tag} (${arr.length}):</strong> ${arr.map(g => `<span>${tag === 'Added' ? '<ins>' : '<del>'}${esc(g)}${tag === 'Added' ? '</ins>' : '</del>'}</span>`).join('')}</p>` : '';
     blocks.push(`<div class="ver" style="margin-bottom:10px"><strong><a href="https://panelapp.genomicsengland.co.uk/panels/${pid}/">${esc(p.name)}</a> (${pid})</strong>${scope}
-      <div>Then (${esc(C.longDate(dateA))}): ${at(a, dateA)}</div><div>Now (${esc(C.longDate(dateB))}): ${at(b, dateB)}</div>
+      <div>Then (${esc(C.longDate(dateA))}): ${at(a, dateA, inA)}</div><div>Now (${esc(C.longDate(dateB))}): ${at(b, dateB, inB)}</div>
       ${a && b ? (d.added.length || d.removed.length ? list(d.added, 'Added') + list(d.removed, 'Removed') : '<p class="note">No change in green genes.</p>') : ''}</div>`);
   }
   box.innerHTML = `<h3>Genes (PanelApp green genes)</h3><p class="hint">Green genes on each panel named for the tests, at the GMS signed-off version in force on each date (the version laboratories test against).</p>${blocks.join('')}`;
@@ -313,8 +316,8 @@ function renderRelease(id, filter) {
     rows.push(`<li><a href="#${hashFor({ code: c, from: prev ? prev.id : r.id, to: r.id })}"><span class="code">${c}</span> – ${esc(latestName(c))}</a>${chips(e.k)}
       ${e.d ? `<ul class="details-list">${e.d.map(d => `<li>${esc(d)}</li>`).join('')}</ul>` : ''}${e.n ? `<p class="note">Spreadsheet: “${esc(e.n)}”</p>` : ''}</li>`);
   }
-  $('#release-result').innerHTML = `<div class="card"><h2>${esc(r.label)} – published ${esc(C.longDate(r.published))}</h2>
-    <p class="hint">${prev ? `Compared with the previous version loaded, ${esc(prev.label)} (${esc(C.longDate(prev.published))}).` : 'This is the earliest version loaded, so only the spreadsheet’s own change notes are listed.'} ${docLinks(r)}</p>
+  $('#release-result').innerHTML = `<div class="card"><h2>${esc(r.label)} – published ${esc(C.relDate(r))}</h2>
+    <p class="hint">${prev ? `Compared with the previous version loaded, ${esc(prev.label)} (${esc(C.relDate(prev))}).` : 'This is the earliest version loaded, so only the spreadsheet’s own change notes are listed.'} ${docLinks(r)}</p>
     <p>${rows.length} code${rows.length === 1 ? '' : 's'}.</p><ul class="choice-list">${rows.join('')}</ul></div>`;
 }
 $('#rel').addEventListener('change', () => { location.hash = `view=release&rel=${encodeURIComponent($('#rel').value)}${$('#rel-filter').value ? '&kind=' + $('#rel-filter').value : ''}`; });
@@ -324,7 +327,7 @@ $('#rel-filter').addEventListener('change', () => $('#rel').dispatchEvent(new Ev
 function renderVersions() {
   $('#versions-view').innerHTML = `<div class="card"><h2>Versions loaded</h2>
     <p>Each row is one publication of the rare and inherited disease directory (spreadsheet and eligibility criteria). A version is taken to be in force from the day it was published until the next one.</p>
-    ${RELEASES.slice().reverse().map(r => `<div class="rel-row"><strong>${esc(r.label)}</strong><div>Published ${esc(C.longDate(r.published))}${r.inForceFrom ? '; in force ' + esc(C.longDate(r.inForceFrom)) : ''}.
+    ${RELEASES.slice().reverse().map(r => `<div class="rel-row"><strong>${esc(r.label)}</strong><div>Published ${esc(C.relDate(r))}${r.inForceFrom ? '; in force ' + esc(C.longDate(r.inForceFrom)) : ''}.
       Directory ${esc(r.directory || '')}; criteria ${esc(r.criteria || '')}. ${r.counts.indications} R codes, ${r.counts.tests} tests.
       ${r.problems ? `<span class="chip removed">${r.problems} items to check from parsing</span>` : ''}<div class="hint">${docLinks(r)}${r.parsedFrom ? ' · ' + esc(r.parsedFrom) : ''}</div></div></div>`).join('')}
     <p class="hint">Older versions are being added from the <a href="https://webarchive.nationalarchives.gov.uk/ukgwa/timeline/https:/www.england.nhs.uk/publication/national-genomic-test-directories/">UK Government Web Archive</a>. Until they are, comparisons start from the earliest version listed here.</p></div>`;
@@ -345,7 +348,7 @@ function route() {
 
 function init() {
   fillCodeList(); fillReleaseSelects();
-  $('#stats').textContent = `${RELEASES.length} version${RELEASES.length === 1 ? '' : 's'} loaded: ${RELEASES[0].label} (${C.longDate(RELEASES[0].published)})${RELEASES.length > 1 ? ' to ' + LATEST.label + ' (' + C.longDate(LATEST.published) + ')' : ''}`;
+  $('#stats').textContent = `${RELEASES.length} version${RELEASES.length === 1 ? '' : 's'} loaded: ${RELEASES[0].label} (${C.relDate(RELEASES[0])})${RELEASES.length > 1 ? ' to ' + LATEST.label + ' (' + C.relDate(LATEST) + ')' : ''}`;
   $('#built').textContent = `Data built ${C.longDate(TDH_BUILT)}.`;
   window.addEventListener('hashchange', route);
   window.addEventListener('beforeprint', () => document.querySelectorAll('details').forEach(d => d.open = true));

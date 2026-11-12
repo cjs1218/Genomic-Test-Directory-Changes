@@ -10,6 +10,15 @@
     return d ? `${d} ${MONTHS[m - 1]} ${y}` : iso;
   }
 
+  /** A release's publication date as written: '8 April 2026', or 'October 2018' when only the month is stated. */
+  function relDate(r) {
+    if (r.datePrecision === 'month') { const [y, m] = r.published.split('-').map(Number); return `${MONTHS[m - 1]} ${y}`; }
+    return longDate(r.published);
+  }
+
+  /** True when a date falls in the month of a release whose exact publication day is not stated. */
+  function sameMonthUnsure(r, iso) { return !!(r && r.datePrecision === 'month' && iso && iso.slice(0, 7) === r.published.slice(0, 7)); }
+
   function inForce(r) { return r.inForceFrom || r.published; }
 
   /** The release in force on an ISO date (the latest one in force on or before it), or null if the date is earlier than all. */
@@ -161,7 +170,7 @@
     pathway: '“where in pathway” changed', specialties: 'requesting specialties changed', noted: 'change noted in the spreadsheet'
   };
 
-  function relText(r) { return `${r.label} (published ${longDate(r.published)}${r.inForceFrom ? ', in force from ' + longDate(r.inForceFrom) : ''})`; }
+  function relText(r) { return `${r.label} (published ${relDate(r)}${r.inForceFrom ? ', in force from ' + longDate(r.inForceFrom) : ''})`; }
 
   /**
    * opts: {code, seen (ISO date or ''), relA, relB (release objects; relA may be null), releases, events (this code's events),
@@ -175,6 +184,7 @@
     if (o.seen) {
       L.push(o.relA ? `Seen on ${longDate(o.seen)}: the rare and inherited disease National Genomic Test Directory in force was ${relText(o.relA)}.`
         : `Seen on ${longDate(o.seen)}: this is earlier than the earliest version loaded here (${relText(o.releases[0])}), which is used for the comparison below.`);
+      if (sameMonthUnsure(o.relA, o.seen)) L.push(`The patient was seen in the month ${o.relA.label} was published, and the exact publication day is not stated: check whether the previous version still applied on that date.`);
     } else if (o.relA) L.push(`Compared from ${relText(o.relA)}.`);
     const relA = o.relA || o.releases[0];
     L.push(`Compared with ${relText(o.relB)}.`);
@@ -200,7 +210,7 @@
       L.push(`The entry for ${o.code} changed in ${evs.length} of the ${span.length} version${span.length > 1 ? 's' : ''} published since:`);
       for (const e of evs) {
         const r = o.releases.find(x => x.id === e.r);
-        let s = `• ${r.label} (${longDate(r.published)}): ${e.k.filter(k => k !== 'noted').map(k => KIND_TEXT[k] || k).join('; ')}`;
+        let s = `• ${r.label} (${relDate(r)}): ${e.k.filter(k => k !== 'noted').map(k => KIND_TEXT[k] || k).join('; ')}`;
         const tests = (e.d || []).filter(d => /^R\d+\.\d+ /.test(d));
         if (tests.length) s += ` (${tests.join('; ')})`;
         if (e.n) s += `. Directory note: “${e.n}”`;
@@ -209,8 +219,8 @@
     }
     for (const g of o.genes || []) {
       if (!g.a && !g.b) continue;
-      const at = x => x ? `${x.genes.size} green genes (signed-off v${x.v}, ${longDate(x.date)})` : 'no GMS signed-off version';
-      let s = `Genes – ${g.name} (PanelApp ${g.panel}): then ${at(g.a)}; now ${at(g.b)}`;
+      const at = (x, used) => used === false ? 'panel not used for this code (genes listed in the test target)' : x ? `${x.genes.size} green genes (signed-off v${x.v}, ${longDate(x.date)})` : 'no GMS signed-off version';
+      let s = `Genes – ${g.name} (PanelApp ${g.panel}): then ${at(g.a, g.inA)}; now ${at(g.b, g.inB)}`;
       if (g.a && g.b) {
         const parts = [];
         if (g.diff.added.length) parts.push(`${g.diff.added.length} added${g.diff.added.length <= 12 ? ' (' + g.diff.added.join(', ') + ')' : ''}`);
@@ -223,6 +233,6 @@
     return L.join('\n');
   }
 
-  const api = { longDate, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
+  const api = { longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.TDHCore = api;
 })(typeof self !== 'undefined' ? self : this);

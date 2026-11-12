@@ -52,8 +52,8 @@ def diff_tests(a, b):
         else:
             for key, label in TEST_FIELDS:
                 x, y = ta[tid].get(key, ''), tb[tid].get(key, '')
-                if norm(x) != norm(y) and x and y: out.append(f'{tid} {label}: {x} → {y}')
-                elif norm(x) != norm(y) and y: out.append(f'{tid} {label} now given: {y}')
+                # a field only one release has (a column added later, or family/scope from a PDF not loaded) is not a change
+                if x and y and norm(x) != norm(y): out.append(f'{tid} {label}: {x} → {y}')
     return out
 
 
@@ -63,9 +63,6 @@ def compare(a, b):
     if b is None: return ['removed'], []
     kinds, det = [], []
     if norm(a['name']) != norm(b['name']): kinds.append('name'); det.append(f'Renamed from “{a["name"]}” to “{b["name"]}”')
-    if crit_text(a) != crit_text(b):
-        if a.get('criteria') and b.get('criteria'): kinds.append('criteria')
-        elif b.get('criteria'): kinds.append('criteria'); det.append('Criteria now published for this code')
     td = diff_tests(a, b)
     if td: kinds.append('tests'); det += td
     pa = sorted({p for t in a.get('tests', []) for p in t.get('panels', [])})
@@ -118,12 +115,16 @@ def main():
 
     os.makedirs(os.path.join(OUT, 'v'), exist_ok=True)
     codes, prev, links, summary = {}, None, [], []
+    # Criteria come from the PDF, which not every release has: compare each code's criteria with the last release that had
+    # them, and say so when releases without criteria lie in between (the change was published somewhere in that span).
+    last_crit, prev_id = {}, None
     for r in rels:
         p = json.load(open(os.path.join(SRC, 'parsed', r['id'] + '.json'), encoding='utf-8'))
         cur = {e['code']: e for e in p['indications']}
         write_js(os.path.join(OUT, 'v', r['id'] + '.js'), f'Release {r["label"]} of the rare and inherited disease test directory, verbatim.',
                  f'TDH.addRelease({dump(r["id"])},{dump({"changeLog": p.get("changeLog", []), "indications": p["indications"]})})')
         changed = 0
+        has_crit = any(e.get('criteria') for e in p['indications'])
         for c in sorted(set(cur) | set(prev or {}), key=lambda c: int(c[1:])):
             a = prev.get(c) if prev is not None else None
             b = cur.get(c)
@@ -131,12 +132,23 @@ def main():
             if b:
                 rec['present'].append(r['id'])
                 if not rec['names'] or norm(rec['names'][-1][1]) != norm(b['name']): rec['names'].append([r['id'], b['name']])
+            crit_ev = None
+            if has_crit and b and b.get('criteria'):
+                t = crit_text(b)
+                if c in last_crit and last_crit[c][1] != t:
+                    crit_ev = None if last_crit[c][0] == prev_id else f'Eligibility criteria compared with {last_crit[c][2]}, the most recent earlier version with its criteria loaded: the change was published between the two'
+                    crit_ev = crit_ev or True
+                last_crit[c] = (r['id'], t, r['label'])
             if prev is None:  # the first release is the baseline: nothing to compare with, but keep the spreadsheet's own change note
                 if b.get('change'): rec['events'].append({'r': r['id'], 'k': ['noted'], 'n': b['change']})
                 continue
             if a is None and b is None: continue
             kinds, det = compare(a, b)
-            note = (b or {}).get('change', '')
+            if crit_ev:
+                kinds.insert(1 if 'name' in kinds else 0, 'criteria')
+                if crit_ev is not True: det.insert(0, crit_ev)
+            # a note carried over unchanged from the previous release (same spreadsheet) is not news
+            note = (b or {}).get('change', '') if (b or {}).get('change', '') != (a or {}).get('change', '') else ''
             if kinds or note:
                 ev = {'r': r['id'], 'k': kinds}
                 if det: ev['d'] = det
@@ -144,12 +156,12 @@ def main():
                 rec['events'].append(ev); changed += 1
         if prev is not None: links += suggest_links(prev, cur, r['id'])
         summary.append(f'{r["id"]} ({release_date(r)}): {len(cur)} codes' + (f', {changed} with changes' if prev is not None else ' (baseline)'))
-        r_out = {k: r[k] for k in ('id', 'label', 'published', 'inForceFrom', 'directory', 'criteria', 'links', 'parsedFrom') if r.get(k)}
+        r_out = {k: r[k] for k in ('id', 'label', 'published', 'datePrecision', 'inForceFrom', 'directory', 'criteria', 'links', 'parsedFrom') if r.get(k)}
         r_out['counts'] = {'indications': len(cur), 'tests': sum(len(e['tests']) for e in cur.values())}
         if p.get('problems'): r_out['problems'] = len(p['problems'])
-        if not any(e.get('criteria') for e in p['indications']): r_out['noCriteria'] = True
+        if not has_crit: r_out['noCriteria'] = True
         r['_out'] = r_out
-        prev = cur
+        prev, prev_id = cur, r['id']
 
     # curated links win over automatic suggestions for the same code
     cur_from = {(l['from'], l.get('release')) for l in curated}

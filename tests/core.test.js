@@ -59,3 +59,23 @@ test('summary dates each change and handles a retired code', () => {
   assert.match(gone, /R9 is not in v3: it was removed in v2/);
   assert.match(gone, /Possibly replaced by R10/);
 });
+
+test('month-only releases show the month, and a same-month visit is flagged', () => {
+  const R = [{ id: 'a', label: '2018/19', published: '2018-10-01', datePrecision: 'month' }, { id: 'b', label: 'v4', published: '2022-10-31' }];
+  assert.equal(C.relDate(R[0]), 'October 2018');
+  assert.equal(C.relDate(R[1]), '31 October 2022');
+  assert.ok(C.sameMonthUnsure(R[0], '2018-10-12'));
+  assert.ok(!C.sameMonthUnsure(R[0], '2018-11-12'));
+  assert.ok(!C.sameMonthUnsure(R[1], '2022-10-31'));
+  const s = C.summary({ code: 'R1', seen: '2018-10-12', relA: R[0], relB: R[1], releases: R, events: [], entA: { name: 'X' }, entB: { name: 'X' }, links: [], genes: [] });
+  assert.match(s, /2018\/19 \(published October 2018\)/);
+  assert.match(s, /exact publication day is not stated/);
+});
+
+test('a panel the earlier tests did not use is not reported as unsigned', () => {
+  const R = [{ id: 'a', label: 'A', published: '2019-03-01' }, { id: 'b', label: 'B', published: '2024-01-01' }];
+  const s = C.summary({ code: 'R208', seen: '2019-06-01', relA: R[0], relB: R[1], releases: R, events: [], entA: { name: 'X' }, entB: { name: 'X' }, links: [],
+    genes: [{ panel: 635, name: 'Inherited breast cancer', a: null, b: { v: '3.2', date: '2026-08-12', genes: new Set(['BRCA1']) }, inA: false, inB: true, diff: { added: [], removed: [] } }] });
+  assert.match(s, /then panel not used for this code/);
+  assert.doesNotMatch(s, /then no GMS signed-off/);
+});
