@@ -6,6 +6,24 @@
 {
 "v": "1.2",
 "date": "2020-03-04",
+"ratings": {
+"BAP1": "G",
+"CDKN2B": "A",
+"FH": "G",
+"FLCN": "G",
+"MET": "G",
+"MITF": "A",
+"MLH1": "R",
+"MSH2": "R",
+"MSH6": "R",
+"PMS2": "R",
+"PTEN": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "A",
+"TMEM127": "A",
+"VHL": "G"
+},
 "green": [
 "BAP1",
 "FH",
@@ -18,6 +36,26 @@
 {
 "v": "1.28",
 "date": "2026-05-06",
+"ratings": {
+"BAP1": "G",
+"CDKN2B": "A",
+"ELOC": "R",
+"FH": "G",
+"FLCN": "G",
+"MET": "G",
+"MITF": "A",
+"MLH1": "R",
+"MSH2": "R",
+"MSH6": "R",
+"PMS2": "R",
+"PRDM10": "R",
+"PTEN": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "A",
+"TMEM127": "A",
+"VHL": "G"
+},
 "green": [
 "BAP1",
 "FH",
@@ -30,6 +68,26 @@
 {
 "v": "1.30",
 "date": "2026-08-12",
+"ratings": {
+"BAP1": "G",
+"CDKN2B": "A",
+"ELOC": "R",
+"FH": "G",
+"FLCN": "G",
+"MET": "G",
+"MITF": "A",
+"MLH1": "R",
+"MSH2": "R",
+"MSH6": "R",
+"PMS2": "R",
+"PRDM10": "R",
+"PTEN": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "A",
+"TMEM127": "A",
+"VHL": "G"
+},
 "green": [
 "BAP1",
 "FH",
@@ -40,6 +98,26 @@
 ]
 }
 ],
+"currentRatings": {
+"BAP1": "G",
+"CDKN2B": "A",
+"ELOC": "R",
+"FH": "G",
+"FLCN": "G",
+"MET": "G",
+"MITF": "A",
+"MLH1": "R",
+"MSH2": "R",
+"MSH6": "R",
+"PMS2": "R",
+"PRDM10": "R",
+"PTEN": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "A",
+"TMEM127": "A",
+"VHL": "G"
+},
 "currentGreen": [
 "BAP1",
 "FH",

@@ -6,6 +6,13 @@
 {
 "v": "1.0",
 "date": "2022-11-30",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -17,6 +24,13 @@
 {
 "v": "2.0",
 "date": "2023-03-22",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -28,6 +42,15 @@
 {
 "v": "2.5",
 "date": "2023-04-12",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G",
+"RAD51C": "G",
+"RAD51D": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -41,6 +64,16 @@
 {
 "v": "3.0",
 "date": "2026-05-06",
+"ratings": {
+"ATM": "G",
+"BARD1": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G",
+"RAD51C": "G",
+"RAD51D": "G"
+},
 "green": [
 "ATM",
 "BARD1",
@@ -55,6 +88,16 @@
 {
 "v": "3.2",
 "date": "2026-08-12",
+"ratings": {
+"ATM": "G",
+"BARD1": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G",
+"RAD51C": "G",
+"RAD51D": "G"
+},
 "green": [
 "ATM",
 "BARD1",
@@ -67,6 +110,16 @@
 ]
 }
 ],
+"currentRatings": {
+"ATM": "G",
+"BARD1": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"PALB2": "G",
+"RAD51C": "G",
+"RAD51D": "G"
+},
 "currentGreen": [
 "ATM",
 "BARD1",

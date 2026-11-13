@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"ABCG5": "G",
+"ABCG8": "G"
+},
 "green": [
 "ABCG5",
 "ABCG8"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"ABCG5": "G",
+"ABCG8": "G"
+},
 "green": [
 "ABCG5",
 "ABCG8"
 ]
 }
 ],
+"currentRatings": {
+"ABCG5": "G",
+"ABCG8": "G"
+},
 "currentGreen": [
 "ABCG5",
 "ABCG8"

@@ -6,6 +6,23 @@
 {
 "v": "1.2",
 "date": "2020-02-17",
+"ratings": {
+"BCS1L": "G",
+"CYC1": "G",
+"LYRM7": "G",
+"TTC19": "G",
+"UQCC1": "A",
+"UQCC2": "G",
+"UQCC3": "A",
+"UQCR10": "A",
+"UQCR11": "A",
+"UQCRB": "G",
+"UQCRC1": "A",
+"UQCRC2": "A",
+"UQCRFS1": "A",
+"UQCRH": "A",
+"UQCRQ": "A"
+},
 "green": [
 "BCS1L",
 "CYC1",
@@ -18,6 +35,23 @@
 {
 "v": "2.0",
 "date": "2023-03-22",
+"ratings": {
+"BCS1L": "G",
+"CYC1": "G",
+"LYRM7": "G",
+"TTC19": "G",
+"UQCC1": "R",
+"UQCC2": "G",
+"UQCC3": "A",
+"UQCR10": "R",
+"UQCR11": "R",
+"UQCRB": "G",
+"UQCRC1": "A",
+"UQCRC2": "G",
+"UQCRFS1": "G",
+"UQCRH": "A",
+"UQCRQ": "A"
+},
 "green": [
 "BCS1L",
 "CYC1",
@@ -32,6 +66,23 @@
 {
 "v": "2.8",
 "date": "2026-08-12",
+"ratings": {
+"BCS1L": "G",
+"CYC1": "G",
+"LYRM7": "G",
+"TTC19": "G",
+"UQCC1": "R",
+"UQCC2": "G",
+"UQCC3": "A",
+"UQCR10": "R",
+"UQCR11": "R",
+"UQCRB": "G",
+"UQCRC1": "A",
+"UQCRC2": "G",
+"UQCRFS1": "G",
+"UQCRH": "A",
+"UQCRQ": "A"
+},
 "green": [
 "BCS1L",
 "CYC1",
@@ -44,6 +95,23 @@
 ]
 }
 ],
+"currentRatings": {
+"BCS1L": "G",
+"CYC1": "G",
+"LYRM7": "G",
+"TTC19": "G",
+"UQCC1": "A",
+"UQCC2": "G",
+"UQCC3": "A",
+"UQCR10": "R",
+"UQCR11": "R",
+"UQCRB": "G",
+"UQCRC1": "A",
+"UQCRC2": "G",
+"UQCRFS1": "G",
+"UQCRH": "A",
+"UQCRQ": "A"
+},
 "currentGreen": [
 "BCS1L",
 "CYC1",

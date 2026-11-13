@@ -6,6 +6,15 @@
 {
 "v": "2.2",
 "date": "2020-03-03",
+"ratings": {
+"ELP4": "R",
+"FOXC1": "G",
+"ISCA-37401-Loss (region)": "G",
+"ITPR1": "G",
+"PAX6": "G",
+"PITX2": "A",
+"TRIM44": "R"
+},
 "green": [
 "FOXC1",
 "ISCA-37401-Loss (region)",
@@ -16,6 +25,15 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"ELP4": "R",
+"FOXC1": "G",
+"ISCA-37401-Loss (region)": "G",
+"ITPR1": "G",
+"PAX6": "G",
+"PITX2": "A",
+"TRIM44": "R"
+},
 "green": [
 "FOXC1",
 "ISCA-37401-Loss (region)",
@@ -26,6 +44,15 @@
 {
 "v": "3.2",
 "date": "2023-03-22",
+"ratings": {
+"ELP4": "R",
+"FOXC1": "G",
+"ISCA-37401-Loss (region)": "G",
+"ITPR1": "G",
+"PAX6": "G",
+"PITX2": "A",
+"TRIM44": "R"
+},
 "green": [
 "FOXC1",
 "ISCA-37401-Loss (region)",
@@ -36,6 +63,15 @@
 {
 "v": "3.7",
 "date": "2026-08-12",
+"ratings": {
+"ELP4": "R",
+"FOXC1": "G",
+"ISCA-37401-Loss (region)": "G",
+"ITPR1": "G",
+"PAX6": "G",
+"PITX2": "A",
+"TRIM44": "R"
+},
 "green": [
 "FOXC1",
 "ISCA-37401-Loss (region)",
@@ -44,6 +80,15 @@
 ]
 }
 ],
+"currentRatings": {
+"ELP4": "R",
+"FOXC1": "G",
+"ISCA-37401-Loss (region)": "G",
+"ITPR1": "G",
+"PAX6": "G",
+"PITX2": "A",
+"TRIM44": "R"
+},
 "currentGreen": [
 "FOXC1",
 "ISCA-37401-Loss (region)",

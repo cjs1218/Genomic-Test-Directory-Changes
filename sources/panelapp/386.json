@@ -6,6 +6,24 @@
 {
 "v": "2.2",
 "date": "2020-03-03",
+"ratings": {
+"CASR": "R",
+"CCL2": "R",
+"CEL": "R",
+"CFTR": "G",
+"CLDN2": "R",
+"CPA1": "A",
+"CTRB1": "R",
+"CTRB2": "R",
+"CTRC": "A",
+"CTSB": "R",
+"CXCL8": "R",
+"KRT8": "A",
+"MORC4": "R",
+"PRSS1": "G",
+"PRSS2": "R",
+"SPINK1": "G"
+},
 "green": [
 "CFTR",
 "PRSS1",
@@ -15,6 +33,26 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"CASR": "R",
+"CCL2": "R",
+"CEL": "A",
+"CELA3B": "G",
+"CFTR": "G",
+"CLDN2": "R",
+"CPA1": "A",
+"CTRB1": "R",
+"CTRB2": "R",
+"CTRC": "A",
+"CTSB": "R",
+"CXCL8": "R",
+"KRT8": "A",
+"MORC4": "R",
+"PRSS1": "G",
+"PRSS2": "R",
+"SPINK1": "G",
+"TRPV6": "A"
+},
 "green": [
 "CELA3B",
 "CFTR",
@@ -25,6 +63,26 @@
 {
 "v": "3.6",
 "date": "2026-08-12",
+"ratings": {
+"CASR": "R",
+"CCL2": "R",
+"CEL": "A",
+"CELA3B": "G",
+"CFTR": "G",
+"CLDN2": "R",
+"CPA1": "A",
+"CTRB1": "R",
+"CTRB2": "R",
+"CTRC": "A",
+"CTSB": "R",
+"CXCL8": "R",
+"KRT8": "A",
+"MORC4": "R",
+"PRSS1": "G",
+"PRSS2": "R",
+"SPINK1": "G",
+"TRPV6": "A"
+},
 "green": [
 "CELA3B",
 "CFTR",
@@ -33,6 +91,26 @@
 ]
 }
 ],
+"currentRatings": {
+"CASR": "R",
+"CCL2": "R",
+"CEL": "A",
+"CELA3B": "G",
+"CFTR": "G",
+"CLDN2": "R",
+"CPA1": "A",
+"CTRB1": "R",
+"CTRB2": "R",
+"CTRC": "A",
+"CTSB": "R",
+"CXCL8": "R",
+"KRT8": "A",
+"MORC4": "R",
+"PRSS1": "G",
+"PRSS2": "R",
+"SPINK1": "G",
+"TRPV6": "A"
+},
 "currentGreen": [
 "CELA3B",
 "CFTR",

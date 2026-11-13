@@ -1,0 +1,62 @@
+{
+"id": 1225,
+"name": "Hereditary isolated diabetes insipidus",
+"current": "2.4",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2023-03-22",
+"ratings": {
+"AQP1": "G",
+"AVP": "G",
+"AVPR2": "G"
+},
+"green": [
+"AQP1",
+"AVP",
+"AVPR2"
+]
+},
+{
+"v": "2.0",
+"date": "2023-12-20",
+"ratings": {
+"AQP1": "R",
+"AQP2": "G",
+"AVP": "G",
+"AVPR2": "G"
+},
+"green": [
+"AQP2",
+"AVP",
+"AVPR2"
+]
+},
+{
+"v": "2.3",
+"date": "2026-08-12",
+"ratings": {
+"AQP1": "R",
+"AQP2": "G",
+"AVP": "G",
+"AVPR2": "G"
+},
+"green": [
+"AQP2",
+"AVP",
+"AVPR2"
+]
+}
+],
+"currentRatings": {
+"AQP1": "R",
+"AQP2": "G",
+"AVP": "G",
+"AVPR2": "G"
+},
+"currentGreen": [
+"AQP2",
+"AVP",
+"AVPR2"
+]
+}

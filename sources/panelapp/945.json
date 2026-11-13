@@ -6,6 +6,13 @@
 {
 "v": "1.1",
 "date": "2020-09-30",
+"ratings": {
+"CALR": "A",
+"JAK2": "G",
+"MPL": "G",
+"SH2B3": "A",
+"THPO": "G"
+},
 "green": [
 "JAK2",
 "MPL",
@@ -15,6 +22,13 @@
 {
 "v": "2.0",
 "date": "2026-05-06",
+"ratings": {
+"CALR": "A",
+"JAK2": "G",
+"MPL": "G",
+"SH2B3": "G",
+"THPO": "G"
+},
 "green": [
 "JAK2",
 "MPL",
@@ -25,6 +39,13 @@
 {
 "v": "2.2",
 "date": "2026-08-12",
+"ratings": {
+"CALR": "A",
+"JAK2": "G",
+"MPL": "G",
+"SH2B3": "G",
+"THPO": "G"
+},
 "green": [
 "JAK2",
 "MPL",
@@ -33,6 +54,13 @@
 ]
 }
 ],
+"currentRatings": {
+"CALR": "A",
+"JAK2": "G",
+"MPL": "G",
+"SH2B3": "G",
+"THPO": "G"
+},
 "currentGreen": [
 "JAK2",
 "MPL",

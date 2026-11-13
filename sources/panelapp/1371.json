@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"TPP1": "G"
+},
 "green": [
 "TPP1"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"TPP1": "G"
+},
 "green": [
 "TPP1"
 ]
 }
 ],
+"currentRatings": {
+"TPP1": "G"
+},
 "currentGreen": [
 "TPP1"
 ]

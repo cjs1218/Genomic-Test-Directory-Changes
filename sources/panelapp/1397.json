@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"HBA1": "G",
+"HBB": "G"
+},
 "green": [
 "HBA1",
 "HBB"
@@ -14,6 +18,13 @@
 {
 "v": "2.0",
 "date": "2024-08-07",
+"ratings": {
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HBG1": "G",
+"HBG2": "G"
+},
 "green": [
 "HBA1",
 "HBA2",
@@ -25,6 +36,13 @@
 {
 "v": "2.2",
 "date": "2025-04-30",
+"ratings": {
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HBG1": "G",
+"HBG2": "G"
+},
 "green": [
 "HBA1",
 "HBA2",
@@ -36,6 +54,13 @@
 {
 "v": "2.11",
 "date": "2026-08-12",
+"ratings": {
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HBG1": "G",
+"HBG2": "G"
+},
 "green": [
 "HBA1",
 "HBA2",
@@ -45,6 +70,13 @@
 ]
 }
 ],
+"currentRatings": {
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HBG1": "G",
+"HBG2": "G"
+},
 "currentGreen": [
 "HBA1",
 "HBA2",

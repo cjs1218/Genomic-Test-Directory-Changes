@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"AIRE": "G"
+},
 "green": [
 "AIRE"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"AIRE": "G"
+},
 "green": [
 "AIRE"
 ]
 }
 ],
+"currentRatings": {
+"AIRE": "G"
+},
 "currentGreen": [
 "AIRE"
 ]

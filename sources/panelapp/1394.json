@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"HAVCR2": "G"
+},
 "green": [
 "HAVCR2"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"HAVCR2": "G"
+},
 "green": [
 "HAVCR2"
 ]
 }
 ],
+"currentRatings": {
+"HAVCR2": "G"
+},
 "currentGreen": [
 "HAVCR2"
 ]

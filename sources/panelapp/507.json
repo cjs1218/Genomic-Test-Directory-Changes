@@ -6,6 +6,15 @@
 {
 "v": "1.2",
 "date": "2020-02-13",
+"ratings": {
+"EFNB1": "G",
+"ERF": "G",
+"FGFR1": "G",
+"FGFR2": "G",
+"FGFR3": "G",
+"TCF12": "G",
+"TWIST1": "G"
+},
 "green": [
 "EFNB1",
 "ERF",
@@ -19,6 +28,15 @@
 {
 "v": "1.16",
 "date": "2026-05-06",
+"ratings": {
+"EFNB1": "G",
+"ERF": "G",
+"FGFR1": "G",
+"FGFR2": "G",
+"FGFR3": "G",
+"TCF12": "G",
+"TWIST1": "G"
+},
 "green": [
 "EFNB1",
 "ERF",
@@ -32,6 +50,15 @@
 {
 "v": "1.18",
 "date": "2026-08-12",
+"ratings": {
+"EFNB1": "G",
+"ERF": "G",
+"FGFR1": "G",
+"FGFR2": "G",
+"FGFR3": "G",
+"TCF12": "G",
+"TWIST1": "G"
+},
 "green": [
 "EFNB1",
 "ERF",
@@ -43,6 +70,15 @@
 ]
 }
 ],
+"currentRatings": {
+"EFNB1": "G",
+"ERF": "G",
+"FGFR1": "G",
+"FGFR2": "G",
+"FGFR3": "G",
+"TCF12": "G",
+"TWIST1": "G"
+},
 "currentGreen": [
 "EFNB1",
 "ERF",

@@ -6,6 +6,19 @@
 {
 "v": "1.2",
 "date": "2020-02-13",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "R",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -19,6 +32,19 @@
 {
 "v": "1.18",
 "date": "2023-03-22",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -32,6 +58,19 @@
 {
 "v": "1.22",
 "date": "2024-10-30",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -45,6 +84,19 @@
 {
 "v": "1.24",
 "date": "2025-04-30",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -58,6 +110,20 @@
 {
 "v": "1.28",
 "date": "2026-05-06",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOA4": "A",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -71,6 +137,20 @@
 {
 "v": "1.30",
 "date": "2026-08-12",
+"ratings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOA4": "A",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "green": [
 "APOA1",
 "APOA2",
@@ -82,6 +162,20 @@
 ]
 }
 ],
+"currentRatings": {
+"APOA1": "G",
+"APOA2": "G",
+"APOA4": "A",
+"APOC2": "G",
+"APOC3": "A",
+"B2M": "A",
+"CST3": "A",
+"FGA": "G",
+"GSN": "G",
+"LYZ": "G",
+"NLRP3": "A",
+"TTR": "G"
+},
 "currentGreen": [
 "APOA1",
 "APOA2",

@@ -6,6 +6,20 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"FH": "G",
+"MAX": "G",
+"MEN1": "G",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "FH",
 "MAX",
@@ -23,6 +37,20 @@
 {
 "v": "1.4",
 "date": "2020-11-11",
+"ratings": {
+"FH": "G",
+"MAX": "G",
+"MEN1": "G",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "FH",
 "MAX",
@@ -40,6 +68,25 @@
 {
 "v": "2.0",
 "date": "2022-11-30",
+"ratings": {
+"DLST": "G",
+"EPAS1": "A",
+"FH": "G",
+"MAX": "G",
+"MDH2": "G",
+"MEN1": "G",
+"NF1": "R",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"SLC25A11": "G",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "DLST",
 "FH",
@@ -60,6 +107,25 @@
 {
 "v": "3.0",
 "date": "2024-08-07",
+"ratings": {
+"DLST": "R",
+"EPAS1": "A",
+"FH": "G",
+"MAX": "G",
+"MDH2": "R",
+"MEN1": "G",
+"NF1": "R",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"SLC25A11": "R",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "FH",
 "MAX",
@@ -77,6 +143,26 @@
 {
 "v": "4.0",
 "date": "2026-05-06",
+"ratings": {
+"DLST": "R",
+"DNMT3A": "G",
+"EPAS1": "A",
+"FH": "G",
+"MAX": "G",
+"MDH2": "R",
+"MEN1": "G",
+"NF1": "R",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"SLC25A11": "R",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "DNMT3A",
 "FH",
@@ -95,6 +181,26 @@
 {
 "v": "5.0",
 "date": "2026-08-12",
+"ratings": {
+"DLST": "R",
+"DNMT3A": "R",
+"EPAS1": "A",
+"FH": "G",
+"MAX": "G",
+"MDH2": "R",
+"MEN1": "G",
+"NF1": "R",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"SLC25A11": "R",
+"TMEM127": "G",
+"VHL": "G"
+},
 "green": [
 "FH",
 "MAX",
@@ -110,6 +216,26 @@
 ]
 }
 ],
+"currentRatings": {
+"DLST": "R",
+"DNMT3A": "R",
+"EPAS1": "A",
+"FH": "G",
+"MAX": "G",
+"MDH2": "R",
+"MEN1": "G",
+"NF1": "R",
+"PRKAR1A": "A",
+"RET": "G",
+"SDHA": "G",
+"SDHAF2": "G",
+"SDHB": "G",
+"SDHC": "G",
+"SDHD": "G",
+"SLC25A11": "R",
+"TMEM127": "G",
+"VHL": "G"
+},
 "currentGreen": [
 "FH",
 "MAX",

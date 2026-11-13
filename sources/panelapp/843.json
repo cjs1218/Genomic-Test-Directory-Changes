@@ -1,0 +1,91 @@
+{
+"id": 843,
+"name": "Cardiac arrhythmias - additional genes",
+"current": "3.13",
+"signoffs": [
+{
+"v": "1.4",
+"date": "2020-03-03",
+"ratings": {
+"ANK2": "G"
+},
+"green": [
+"ANK2"
+]
+},
+{
+"v": "1.6",
+"date": "2020-03-04",
+"ratings": {
+"ANK2": "G"
+},
+"green": [
+"ANK2"
+]
+},
+{
+"v": "2.0",
+"date": "2022-11-30",
+"ratings": {
+"ANK2": "G",
+"GNB5": "A",
+"TANGO2": "A"
+},
+"green": [
+"ANK2"
+]
+},
+{
+"v": "3.0",
+"date": "2023-03-22",
+"ratings": {
+"ANK2": "R",
+"GNB5": "G",
+"MLIP": "R",
+"TANGO2": "A"
+},
+"green": [
+"GNB5"
+]
+},
+{
+"v": "3.11",
+"date": "2026-05-06",
+"ratings": {
+"ANK2": "R",
+"CACNA1D": "A",
+"GNB5": "G",
+"MLIP": "R",
+"TANGO2": "A"
+},
+"green": [
+"GNB5"
+]
+},
+{
+"v": "3.12",
+"date": "2026-08-12",
+"ratings": {
+"ANK2": "R",
+"CACNA1D": "A",
+"GNB5": "G",
+"MLIP": "R",
+"TANGO2": "A"
+},
+"green": [
+"GNB5"
+]
+}
+],
+"currentRatings": {
+"ANK2": "R",
+"CACNA1D": "A",
+"GNB5": "G",
+"MLIP": "R",
+"STS": "R",
+"TANGO2": "A"
+},
+"currentGreen": [
+"GNB5"
+]
+}

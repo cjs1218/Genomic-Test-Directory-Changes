@@ -6,6 +6,13 @@
 {
 "v": "1.2",
 "date": "2020-02-17",
+"ratings": {
+"APOB": "G",
+"APOE": "G",
+"LDLR": "G",
+"LDLRAP1": "G",
+"PCSK9": "G"
+},
 "green": [
 "APOB",
 "APOE",
@@ -17,6 +24,14 @@
 {
 "v": "2.0",
 "date": "2023-03-22",
+"ratings": {
+"APOB": "G",
+"APOE": "G",
+"GCKR": "R",
+"LDLR": "G",
+"LDLRAP1": "G",
+"PCSK9": "G"
+},
 "green": [
 "APOB",
 "APOE",
@@ -28,6 +43,14 @@
 {
 "v": "2.6",
 "date": "2026-08-12",
+"ratings": {
+"APOB": "G",
+"APOE": "G",
+"GCKR": "R",
+"LDLR": "G",
+"LDLRAP1": "G",
+"PCSK9": "G"
+},
 "green": [
 "APOB",
 "APOE",
@@ -37,6 +60,14 @@
 ]
 }
 ],
+"currentRatings": {
+"APOB": "G",
+"APOE": "G",
+"GCKR": "R",
+"LDLR": "G",
+"LDLRAP1": "G",
+"PCSK9": "G"
+},
 "currentGreen": [
 "APOB",
 "APOE",

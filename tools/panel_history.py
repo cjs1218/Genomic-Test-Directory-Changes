@@ -60,7 +60,9 @@ def ratings(d):
     for key, name in (('genes', lambda x: x['gene_data']['gene_symbol']), ('strs', lambda x: x['entity_name'] + ' (STR)'),
                       ('regions', lambda x: x['entity_name'] + ' (region)')):
         for x in d.get(key, []):
-            out[name(x)] = {'3': 'G', '2': 'A'}.get(str(x.get('confidence_level')), 'R')
+            # a super panel lists a gene once per child panel: keep its best rating (green on any child means tested)
+            lv = {'3': 'G', '2': 'A'}.get(str(x.get('confidence_level')), 'R')
+            if 'GAR'.index(lv) < 'GAR'.index(out.get(name(x), 'R')) or name(x) not in out: out[name(x)] = lv
     return dict(sorted(out.items()))
 
 

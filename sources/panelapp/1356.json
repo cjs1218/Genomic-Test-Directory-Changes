@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"TMEM70": "G"
+},
 "green": [
 "TMEM70"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"TMEM70": "G"
+},
 "green": [
 "TMEM70"
 ]
 }
 ],
+"currentRatings": {
+"TMEM70": "G"
+},
 "currentGreen": [
 "TMEM70"
 ]

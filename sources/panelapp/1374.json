@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"NPC1": "G",
+"NPC2": "G"
+},
 "green": [
 "NPC1",
 "NPC2"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"NPC1": "G",
+"NPC2": "G"
+},
 "green": [
 "NPC1",
 "NPC2"
 ]
 }
 ],
+"currentRatings": {
+"NPC1": "G",
+"NPC2": "G"
+},
 "currentGreen": [
 "NPC1",
 "NPC2"

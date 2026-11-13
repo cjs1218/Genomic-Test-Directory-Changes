@@ -6,6 +6,16 @@
 {
 "v": "1.2",
 "date": "2020-02-17",
+"ratings": {
+"SDHA": "G",
+"SDHAF1": "G",
+"SDHAF2": "A",
+"SDHAF3": "A",
+"SDHAF4": "A",
+"SDHB": "A",
+"SDHC": "A",
+"SDHD": "G"
+},
 "green": [
 "SDHA",
 "SDHAF1",
@@ -15,6 +25,16 @@
 {
 "v": "2.0",
 "date": "2022-03-22",
+"ratings": {
+"SDHA": "G",
+"SDHAF1": "G",
+"SDHAF2": "A",
+"SDHAF3": "A",
+"SDHAF4": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "G"
+},
 "green": [
 "SDHA",
 "SDHAF1",
@@ -25,6 +45,16 @@
 {
 "v": "2.2",
 "date": "2023-03-22",
+"ratings": {
+"SDHA": "G",
+"SDHAF1": "G",
+"SDHAF2": "A",
+"SDHAF3": "A",
+"SDHAF4": "A",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "G"
+},
 "green": [
 "SDHA",
 "SDHAF1",
@@ -35,6 +65,16 @@
 {
 "v": "2.12",
 "date": "2026-08-12",
+"ratings": {
+"SDHA": "G",
+"SDHAF1": "G",
+"SDHAF2": "A",
+"SDHAF3": "R",
+"SDHAF4": "R",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "G"
+},
 "green": [
 "SDHA",
 "SDHAF1",
@@ -43,6 +83,16 @@
 ]
 }
 ],
+"currentRatings": {
+"SDHA": "G",
+"SDHAF1": "G",
+"SDHAF2": "A",
+"SDHAF3": "R",
+"SDHAF4": "R",
+"SDHB": "G",
+"SDHC": "A",
+"SDHD": "G"
+},
 "currentGreen": [
 "SDHA",
 "SDHAF1",

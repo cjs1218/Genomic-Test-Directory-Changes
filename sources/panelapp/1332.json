@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"F13A1": "G",
+"F13B": "G"
+},
 "green": [
 "F13A1",
 "F13B"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"F13A1": "G",
+"F13B": "G"
+},
 "green": [
 "F13A1",
 "F13B"
 ]
 }
 ],
+"currentRatings": {
+"F13A1": "G",
+"F13B": "G"
+},
 "currentGreen": [
 "F13A1",
 "F13B"

@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"MT-ATP6": "G",
+"MT-ND6": "G"
+},
 "green": [
 "MT-ATP6",
 "MT-ND6"
@@ -14,6 +18,10 @@
 {
 "v": "2.0",
 "date": "2024-08-07",
+"ratings": {
+"MT-ATP6": "G",
+"MT-ND6": "R"
+},
 "green": [
 "MT-ATP6"
 ]
@@ -21,11 +29,19 @@
 {
 "v": "2.3",
 "date": "2026-08-12",
+"ratings": {
+"MT-ATP6": "G",
+"MT-ND6": "R"
+},
 "green": [
 "MT-ATP6"
 ]
 }
 ],
+"currentRatings": {
+"MT-ATP6": "G",
+"MT-ND6": "R"
+},
 "currentGreen": [
 "MT-ATP6"
 ]

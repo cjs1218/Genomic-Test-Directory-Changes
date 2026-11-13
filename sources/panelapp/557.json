@@ -6,6 +6,11 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"ACVR1": "A",
+"HPGD": "G",
+"SLCO2A1": "G"
+},
 "green": [
 "HPGD",
 "SLCO2A1"
@@ -14,6 +19,11 @@
 {
 "v": "2.0",
 "date": "2026-05-06",
+"ratings": {
+"ACVR1": "A",
+"HPGD": "G",
+"SLCO2A1": "G"
+},
 "green": [
 "HPGD",
 "SLCO2A1"
@@ -22,12 +32,22 @@
 {
 "v": "2.2",
 "date": "2026-08-12",
+"ratings": {
+"ACVR1": "A",
+"HPGD": "G",
+"SLCO2A1": "G"
+},
 "green": [
 "HPGD",
 "SLCO2A1"
 ]
 }
 ],
+"currentRatings": {
+"ACVR1": "A",
+"HPGD": "G",
+"SLCO2A1": "G"
+},
 "currentGreen": [
 "HPGD",
 "SLCO2A1"

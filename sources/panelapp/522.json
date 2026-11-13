@@ -6,6 +6,16 @@
 {
 "v": "1.2",
 "date": "2020-03-04",
+"ratings": {
+"ACD": "A",
+"BAP1": "G",
+"BRCA2": "A",
+"CDK4": "G",
+"CDKN2A": "G",
+"POT1": "A",
+"TERF2IP": "A",
+"TERT": "A"
+},
 "green": [
 "BAP1",
 "CDK4",
@@ -15,6 +25,16 @@
 {
 "v": "2.0",
 "date": "2022-11-30",
+"ratings": {
+"ACD": "A",
+"BAP1": "G",
+"BRCA2": "A",
+"CDK4": "G",
+"CDKN2A": "G",
+"POT1": "G",
+"TERF2IP": "A",
+"TERT": "A"
+},
 "green": [
 "BAP1",
 "CDK4",
@@ -25,6 +45,18 @@
 {
 "v": "2.15",
 "date": "2026-08-12",
+"ratings": {
+"ACD": "A",
+"BAP1": "G",
+"BRCA2": "A",
+"CDK4": "G",
+"CDKN2A": "G",
+"CHEK2": "A",
+"MITF": "A",
+"POT1": "G",
+"TERF2IP": "A",
+"TERT": "A"
+},
 "green": [
 "BAP1",
 "CDK4",
@@ -33,6 +65,18 @@
 ]
 }
 ],
+"currentRatings": {
+"ACD": "A",
+"BAP1": "G",
+"BRCA2": "A",
+"CDK4": "G",
+"CDKN2A": "G",
+"CHEK2": "A",
+"MITF": "A",
+"POT1": "G",
+"TERF2IP": "A",
+"TERT": "A"
+},
 "currentGreen": [
 "BAP1",
 "CDK4",

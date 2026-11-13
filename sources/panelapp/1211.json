@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"FOXF1": "G"
+},
 "green": [
 "FOXF1"
 ]
@@ -13,11 +16,21 @@
 {
 "v": "1.9",
 "date": "2026-08-12",
+"ratings": {
+"FOXF1": "G",
+"LINC01081": "A",
+"LINC01082": "A"
+},
 "green": [
 "FOXF1"
 ]
 }
 ],
+"currentRatings": {
+"FOXF1": "G",
+"LINC01081": "A",
+"LINC01082": "A"
+},
 "currentGreen": [
 "FOXF1"
 ]

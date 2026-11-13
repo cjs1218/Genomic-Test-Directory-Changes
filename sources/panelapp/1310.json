@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"FOXL2": "G"
+},
 "green": [
 "FOXL2"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"FOXL2": "G"
+},
 "green": [
 "FOXL2"
 ]
 }
 ],
+"currentRatings": {
+"FOXL2": "G"
+},
 "currentGreen": [
 "FOXL2"
 ]

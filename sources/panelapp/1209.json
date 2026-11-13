@@ -6,6 +6,11 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"GNAS": "G",
+"PDE4D": "G",
+"PRKAR1A": "G"
+},
 "green": [
 "GNAS",
 "PDE4D",
@@ -15,6 +20,12 @@
 {
 "v": "2.0",
 "date": "2026-08-12",
+"ratings": {
+"GNAS": "G",
+"PDE4D": "G",
+"PRKAR1A": "G",
+"STX16": "A"
+},
 "green": [
 "GNAS",
 "PDE4D",
@@ -22,6 +33,12 @@
 ]
 }
 ],
+"currentRatings": {
+"GNAS": "G",
+"PDE4D": "G",
+"PRKAR1A": "G",
+"STX16": "A"
+},
 "currentGreen": [
 "GNAS",
 "PDE4D",

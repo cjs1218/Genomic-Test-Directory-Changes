@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"PTCH1": "G",
+"SUFU": "G"
+},
 "green": [
 "PTCH1",
 "SUFU"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"PTCH1": "G",
+"SUFU": "G"
+},
 "green": [
 "PTCH1",
 "SUFU"
 ]
 }
 ],
+"currentRatings": {
+"PTCH1": "G",
+"SUFU": "G"
+},
 "currentGreen": [
 "PTCH1",
 "SUFU"

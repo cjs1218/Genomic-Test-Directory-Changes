@@ -6,6 +6,15 @@
 {
 "v": "1.0",
 "date": "2022-11-30",
+"ratings": {
+"GRB10": "A",
+"KHDC3L": "G",
+"NLRP2": "G",
+"NLRP5": "G",
+"NLRP7": "G",
+"PADI6": "G",
+"PLAGL1": "A"
+},
 "green": [
 "KHDC3L",
 "NLRP2",
@@ -17,6 +26,15 @@
 {
 "v": "1.2",
 "date": "2023-03-22",
+"ratings": {
+"GRB10": "A",
+"KHDC3L": "G",
+"NLRP2": "G",
+"NLRP5": "G",
+"NLRP7": "G",
+"PADI6": "G",
+"PLAGL1": "A"
+},
 "green": [
 "KHDC3L",
 "NLRP2",
@@ -28,6 +46,17 @@
 {
 "v": "2.0",
 "date": "2026-05-06",
+"ratings": {
+"GRB10": "A",
+"KHDC3L": "G",
+"NLRP2": "G",
+"NLRP5": "G",
+"NLRP7": "G",
+"OOEP": "R",
+"PADI6": "G",
+"PLAGL1": "A",
+"ZFP57": "A"
+},
 "green": [
 "KHDC3L",
 "NLRP2",
@@ -39,6 +68,17 @@
 {
 "v": "2.4",
 "date": "2026-08-12",
+"ratings": {
+"GRB10": "A",
+"KHDC3L": "G",
+"NLRP2": "G",
+"NLRP5": "G",
+"NLRP7": "G",
+"OOEP": "R",
+"PADI6": "G",
+"PLAGL1": "A",
+"ZFP57": "A"
+},
 "green": [
 "KHDC3L",
 "NLRP2",
@@ -48,6 +88,17 @@
 ]
 }
 ],
+"currentRatings": {
+"GRB10": "A",
+"KHDC3L": "G",
+"NLRP2": "G",
+"NLRP5": "G",
+"NLRP7": "G",
+"OOEP": "R",
+"PADI6": "G",
+"PLAGL1": "A",
+"ZFP57": "A"
+},
 "currentGreen": [
 "KHDC3L",
 "NLRP2",

@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"IL2RG": "G"
+},
 "green": [
 "IL2RG"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"IL2RG": "G"
+},
 "green": [
 "IL2RG"
 ]
 }
 ],
+"currentRatings": {
+"IL2RG": "G"
+},
 "currentGreen": [
 "IL2RG"
 ]

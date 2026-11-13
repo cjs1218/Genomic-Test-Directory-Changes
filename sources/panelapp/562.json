@@ -6,6 +6,15 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"CIB1": "G",
+"CORO1A": "A",
+"IL7": "A",
+"MST1": "A",
+"RHOH": "A",
+"TMC6": "G",
+"TMC8": "G"
+},
 "green": [
 "CIB1",
 "TMC6",
@@ -15,6 +24,15 @@
 {
 "v": "1.8",
 "date": "2026-08-12",
+"ratings": {
+"CIB1": "G",
+"CORO1A": "A",
+"IL7": "A",
+"MST1": "A",
+"RHOH": "A",
+"TMC6": "G",
+"TMC8": "G"
+},
 "green": [
 "CIB1",
 "TMC6",
@@ -22,6 +40,15 @@
 ]
 }
 ],
+"currentRatings": {
+"CIB1": "G",
+"CORO1A": "A",
+"IL7": "A",
+"MST1": "A",
+"RHOH": "A",
+"TMC6": "G",
+"TMC8": "G"
+},
 "currentGreen": [
 "CIB1",
 "TMC6",

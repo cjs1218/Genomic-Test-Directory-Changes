@@ -6,6 +6,17 @@
 {
 "v": "1.2",
 "date": "2020-03-03",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "A",
+"HMBS": "G",
+"PPOX": "G",
+"UROD": "G",
+"UROS": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -20,6 +31,17 @@
 {
 "v": "2.0",
 "date": "2026-08-12",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "A",
+"HMBS": "G",
+"PPOX": "G",
+"UROD": "G",
+"UROS": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -32,6 +54,17 @@
 ]
 }
 ],
+"currentRatings": {
+"ALAD": "G",
+"ALAS2": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "A",
+"HMBS": "G",
+"PPOX": "G",
+"UROD": "G",
+"UROS": "G"
+},
 "currentGreen": [
 "ALAD",
 "ALAS2",

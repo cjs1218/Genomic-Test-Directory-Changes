@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"NOTCH3": "G"
+},
 "green": [
 "NOTCH3"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.8",
 "date": "2026-08-12",
+"ratings": {
+"NOTCH3": "G"
+},
 "green": [
 "NOTCH3"
 ]
 }
 ],
+"currentRatings": {
+"NOTCH3": "G"
+},
 "currentGreen": [
 "NOTCH3"
 ]

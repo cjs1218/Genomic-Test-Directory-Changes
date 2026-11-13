@@ -6,6 +6,15 @@
 {
 "v": "2.2",
 "date": "2020-02-19",
+"ratings": {
+"ALB": "G",
+"SECISBP2": "G",
+"SLC16A2": "G",
+"THRA": "G",
+"THRB": "G",
+"TRU-TCA1-1": "R",
+"TSHR": "G"
+},
 "green": [
 "ALB",
 "SECISBP2",
@@ -18,6 +27,16 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"ALB": "G",
+"SECISBP2": "G",
+"SLC16A2": "G",
+"THRA": "G",
+"THRB": "G",
+"TRU-TCA1-1": "R",
+"TSHR": "G",
+"TTR": "G"
+},
 "green": [
 "ALB",
 "SECISBP2",
@@ -31,6 +50,16 @@
 {
 "v": "3.5",
 "date": "2026-05-06",
+"ratings": {
+"ALB": "G",
+"SECISBP2": "G",
+"SLC16A2": "G",
+"THRA": "G",
+"THRB": "G",
+"TRU-TCA1-1": "R",
+"TSHR": "G",
+"TTR": "G"
+},
 "green": [
 "ALB",
 "SECISBP2",
@@ -44,6 +73,16 @@
 {
 "v": "3.7",
 "date": "2026-08-12",
+"ratings": {
+"ALB": "G",
+"SECISBP2": "G",
+"SLC16A2": "G",
+"THRA": "G",
+"THRB": "G",
+"TRU-TCA1-1": "R",
+"TSHR": "G",
+"TTR": "G"
+},
 "green": [
 "ALB",
 "SECISBP2",
@@ -55,6 +94,16 @@
 ]
 }
 ],
+"currentRatings": {
+"ALB": "G",
+"SECISBP2": "G",
+"SLC16A2": "G",
+"THRA": "G",
+"THRB": "G",
+"TRU-TCA1-1": "R",
+"TSHR": "G",
+"TTR": "G"
+},
 "currentGreen": [
 "ALB",
 "SECISBP2",

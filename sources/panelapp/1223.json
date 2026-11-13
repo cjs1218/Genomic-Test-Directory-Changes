@@ -6,6 +6,16 @@
 {
 "v": "1.0",
 "date": "2023-03-22",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PALB2": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -20,6 +30,16 @@
 {
 "v": "1.5",
 "date": "2026-05-06",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PALB2": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -34,6 +54,16 @@
 {
 "v": "1.7",
 "date": "2026-08-12",
+"ratings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PALB2": "G"
+},
 "green": [
 "ATM",
 "BRCA1",
@@ -46,6 +76,16 @@
 ]
 }
 ],
+"currentRatings": {
+"ATM": "G",
+"BRCA1": "G",
+"BRCA2": "G",
+"CHEK2": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PALB2": "G"
+},
 "currentGreen": [
 "ATM",
 "BRCA1",

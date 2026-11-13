@@ -6,6 +6,9 @@
 {
 "v": "0.3",
 "date": "2023-09-14",
+"ratings": {
+"SH2D1A": "G"
+},
 "green": [
 "SH2D1A"
 ]
@@ -13,6 +16,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"SH2D1A": "G"
+},
 "green": [
 "SH2D1A"
 ]
@@ -20,11 +26,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"SH2D1A": "G"
+},
 "green": [
 "SH2D1A"
 ]
 }
 ],
+"currentRatings": {
+"SH2D1A": "G"
+},
 "currentGreen": [
 "SH2D1A"
 ]

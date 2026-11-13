@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"F8": "G"
+},
 "green": [
 "F8"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"F8": "G"
+},
 "green": [
 "F8"
 ]
 }
 ],
+"currentRatings": {
+"F8": "G"
+},
 "currentGreen": [
 "F8"
 ]

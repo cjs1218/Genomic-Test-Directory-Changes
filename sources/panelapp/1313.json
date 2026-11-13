@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"PRKAR1A": "G"
+},
 "green": [
 "PRKAR1A"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"PRKAR1A": "G"
+},
 "green": [
 "PRKAR1A"
 ]
 }
 ],
+"currentRatings": {
+"PRKAR1A": "G"
+},
 "currentGreen": [
 "PRKAR1A"
 ]

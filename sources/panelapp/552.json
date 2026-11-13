@@ -6,6 +6,12 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"FGF23": "G",
+"GALNT3": "G",
+"KL": "R",
+"SAMD9": "A"
+},
 "green": [
 "FGF23",
 "GALNT3"
@@ -14,12 +20,24 @@
 {
 "v": "1.12",
 "date": "2026-08-12",
+"ratings": {
+"FGF23": "G",
+"GALNT3": "G",
+"KL": "R",
+"SAMD9": "A"
+},
 "green": [
 "FGF23",
 "GALNT3"
 ]
 }
 ],
+"currentRatings": {
+"FGF23": "G",
+"GALNT3": "G",
+"KL": "R",
+"SAMD9": "A"
+},
 "currentGreen": [
 "FGF23",
 "GALNT3"

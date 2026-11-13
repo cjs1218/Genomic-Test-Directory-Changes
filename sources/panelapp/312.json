@@ -6,6 +6,17 @@
 {
 "v": "2.2",
 "date": "2020-02-25",
+"ratings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"TBCE": "G",
+"TBX1": "R"
+},
 "green": [
 "AIRE",
 "CASR",
@@ -19,6 +30,17 @@
 {
 "v": "2.3",
 "date": "2020-02-25",
+"ratings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"TBCE": "G",
+"TBX1": "R"
+},
 "green": [
 "AIRE",
 "CASR",
@@ -32,6 +54,18 @@
 {
 "v": "2.14",
 "date": "2024-05-01",
+"ratings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"STX16": "A",
+"TBCE": "G",
+"TBX1": "A"
+},
 "green": [
 "AIRE",
 "CASR",
@@ -45,6 +79,18 @@
 {
 "v": "3.0",
 "date": "2025-04-30",
+"ratings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"STX16": "A",
+"TBCE": "G",
+"TBX1": "G"
+},
 "green": [
 "AIRE",
 "CASR",
@@ -59,6 +105,18 @@
 {
 "v": "3.6",
 "date": "2026-08-12",
+"ratings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"STX16": "A",
+"TBCE": "G",
+"TBX1": "G"
+},
 "green": [
 "AIRE",
 "CASR",
@@ -71,6 +129,18 @@
 ]
 }
 ],
+"currentRatings": {
+"AIRE": "G",
+"CASR": "G",
+"GATA3": "G",
+"GCM2": "G",
+"GNA11": "G",
+"PTH": "G",
+"SOX3": "R",
+"STX16": "A",
+"TBCE": "G",
+"TBX1": "G"
+},
 "currentGreen": [
 "AIRE",
 "CASR",

@@ -1,0 +1,33 @@
+{
+"id": 1505,
+"name": "Glutaric acidaemia type 1 - Diagnostic",
+"current": "1.6",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2024-08-07",
+"ratings": {
+"GCDH": "G"
+},
+"green": [
+"GCDH"
+]
+},
+{
+"v": "1.5",
+"date": "2026-08-12",
+"ratings": {
+"GCDH": "G"
+},
+"green": [
+"GCDH"
+]
+}
+],
+"currentRatings": {
+"GCDH": "G"
+},
+"currentGreen": [
+"GCDH"
+]
+}

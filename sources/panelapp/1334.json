@@ -6,6 +6,14 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"DGCR8": "G",
+"LZTFL1": "G",
+"NF2": "G",
+"SMARCB1": "G",
+"SMARCE1": "G",
+"SUFU": "G"
+},
 "green": [
 "DGCR8",
 "LZTFL1",
@@ -18,6 +26,15 @@
 {
 "v": "2.0",
 "date": "2023-12-20",
+"ratings": {
+"DGCR8": "G",
+"LZTFL1": "R",
+"LZTR1": "G",
+"NF2": "G",
+"SMARCB1": "G",
+"SMARCE1": "G",
+"SUFU": "G"
+},
 "green": [
 "DGCR8",
 "LZTR1",
@@ -30,6 +47,16 @@
 {
 "v": "3.0",
 "date": "2026-05-06",
+"ratings": {
+"CDKN2A": "G",
+"DGCR8": "G",
+"LZTFL1": "R",
+"LZTR1": "G",
+"NF2": "G",
+"SMARCB1": "G",
+"SMARCE1": "G",
+"SUFU": "G"
+},
 "green": [
 "CDKN2A",
 "DGCR8",
@@ -43,6 +70,16 @@
 {
 "v": "3.2",
 "date": "2026-08-12",
+"ratings": {
+"CDKN2A": "G",
+"DGCR8": "G",
+"LZTFL1": "R",
+"LZTR1": "G",
+"NF2": "G",
+"SMARCB1": "G",
+"SMARCE1": "G",
+"SUFU": "G"
+},
 "green": [
 "CDKN2A",
 "DGCR8",
@@ -54,6 +91,16 @@
 ]
 }
 ],
+"currentRatings": {
+"CDKN2A": "G",
+"DGCR8": "G",
+"LZTFL1": "R",
+"LZTR1": "G",
+"NF2": "G",
+"SMARCB1": "G",
+"SMARCE1": "G",
+"SUFU": "G"
+},
 "currentGreen": [
 "CDKN2A",
 "DGCR8",

@@ -6,6 +6,19 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "G",
+"HMBS": "G",
+"PPOX": "G",
+"RECQL4": "G",
+"UROD": "G",
+"UROS": "G",
+"UVSSA": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -23,6 +36,20 @@
 {
 "v": "2.0",
 "date": "2022-11-30",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"ANAPC1": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "G",
+"HMBS": "G",
+"PPOX": "G",
+"RECQL4": "G",
+"UROD": "G",
+"UROS": "G",
+"UVSSA": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -41,6 +68,20 @@
 {
 "v": "3.0",
 "date": "2023-03-22",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"ANAPC1": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "G",
+"HMBS": "A",
+"PPOX": "G",
+"RECQL4": "G",
+"UROD": "G",
+"UROS": "G",
+"UVSSA": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -58,6 +99,20 @@
 {
 "v": "3.17",
 "date": "2026-08-12",
+"ratings": {
+"ALAD": "G",
+"ALAS2": "G",
+"ANAPC1": "G",
+"CPOX": "G",
+"FECH": "G",
+"GATA1": "G",
+"HMBS": "A",
+"PPOX": "G",
+"RECQL4": "G",
+"UROD": "G",
+"UROS": "G",
+"UVSSA": "G"
+},
 "green": [
 "ALAD",
 "ALAS2",
@@ -73,6 +128,21 @@
 ]
 }
 ],
+"currentRatings": {
+"ALAD": "G",
+"ALAS2": "G",
+"ANAPC1": "G",
+"CPOX": "G",
+"DNA2": "A",
+"FECH": "G",
+"GATA1": "G",
+"HMBS": "A",
+"PPOX": "G",
+"RECQL4": "G",
+"UROD": "G",
+"UROS": "G",
+"UVSSA": "G"
+},
 "currentGreen": [
 "ALAD",
 "ALAS2",

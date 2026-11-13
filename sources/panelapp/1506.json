@@ -1,0 +1,33 @@
+{
+"id": 1506,
+"name": "Medium-chain acyl-CoA dehydrogenase deficiency (MCADD) - Diagnostic",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2024-08-07",
+"ratings": {
+"ACADM": "G"
+},
+"green": [
+"ACADM"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"ratings": {
+"ACADM": "G"
+},
+"green": [
+"ACADM"
+]
+}
+],
+"currentRatings": {
+"ACADM": "G"
+},
+"currentGreen": [
+"ACADM"
+]
+}

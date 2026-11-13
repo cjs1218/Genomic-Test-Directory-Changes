@@ -6,6 +6,12 @@
 {
 "v": "1.2",
 "date": "2020-02-19",
+"ratings": {
+"ARMC5": "G",
+"PDE11A": "G",
+"PDE8B": "G",
+"PRKAR1A": "G"
+},
 "green": [
 "ARMC5",
 "PDE11A",
@@ -16,6 +22,12 @@
 {
 "v": "1.12",
 "date": "2026-08-12",
+"ratings": {
+"ARMC5": "G",
+"PDE11A": "G",
+"PDE8B": "G",
+"PRKAR1A": "G"
+},
 "green": [
 "ARMC5",
 "PDE11A",
@@ -24,6 +36,12 @@
 ]
 }
 ],
+"currentRatings": {
+"ARMC5": "G",
+"PDE11A": "G",
+"PDE8B": "G",
+"PRKAR1A": "G"
+},
 "currentGreen": [
 "ARMC5",
 "PDE11A",

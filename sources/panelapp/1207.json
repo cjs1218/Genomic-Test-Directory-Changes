@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"HMBS": "G"
+},
 "green": [
 "HMBS"
 ]
@@ -13,6 +16,9 @@
 {
 "v": "2.0",
 "date": "2026-05-06",
+"ratings": {
+"HMBS": "G"
+},
 "green": [
 "HMBS"
 ]
@@ -20,11 +26,17 @@
 {
 "v": "2.2",
 "date": "2026-08-12",
+"ratings": {
+"HMBS": "G"
+},
 "green": [
 "HMBS"
 ]
 }
 ],
+"currentRatings": {
+"HMBS": "G"
+},
 "currentGreen": [
 "HMBS"
 ]

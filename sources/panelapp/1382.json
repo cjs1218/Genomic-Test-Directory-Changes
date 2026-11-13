@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"PTEN": "G"
+},
 "green": [
 "PTEN"
 ]
@@ -13,6 +16,9 @@
 {
 "v": "1.2",
 "date": "2025-04-30",
+"ratings": {
+"PTEN": "G"
+},
 "green": [
 "PTEN"
 ]
@@ -20,11 +26,17 @@
 {
 "v": "1.7",
 "date": "2026-08-12",
+"ratings": {
+"PTEN": "G"
+},
 "green": [
 "PTEN"
 ]
 }
 ],
+"currentRatings": {
+"PTEN": "G"
+},
 "currentGreen": [
 "PTEN"
 ]

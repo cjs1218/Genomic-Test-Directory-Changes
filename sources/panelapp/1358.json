@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"CSF3R": "G"
+},
 "green": [
 "CSF3R"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"CSF3R": "G"
+},
 "green": [
 "CSF3R"
 ]
 }
 ],
+"currentRatings": {
+"CSF3R": "G"
+},
 "currentGreen": [
 "CSF3R"
 ]

@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"DICER1": "G"
+},
 "green": [
 "DICER1"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"DICER1": "G"
+},
 "green": [
 "DICER1"
 ]
 }
 ],
+"currentRatings": {
+"DICER1": "G"
+},
 "currentGreen": [
 "DICER1"
 ]

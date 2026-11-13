@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"SMN1": "G"
+},
 "green": [
 "SMN1"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"SMN1": "G"
+},
 "green": [
 "SMN1"
 ]
 }
 ],
+"currentRatings": {
+"SMN1": "G"
+},
 "currentGreen": [
 "SMN1"
 ]

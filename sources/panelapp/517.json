@@ -6,6 +6,10 @@
 {
 "v": "1.2",
 "date": "2020-03-03",
+"ratings": {
+"LMAN1": "G",
+"MCFD2": "G"
+},
 "green": [
 "LMAN1",
 "MCFD2"
@@ -14,12 +18,20 @@
 {
 "v": "1.12",
 "date": "2026-08-12",
+"ratings": {
+"LMAN1": "G",
+"MCFD2": "G"
+},
 "green": [
 "LMAN1",
 "MCFD2"
 ]
 }
 ],
+"currentRatings": {
+"LMAN1": "G",
+"MCFD2": "G"
+},
 "currentGreen": [
 "LMAN1",
 "MCFD2"

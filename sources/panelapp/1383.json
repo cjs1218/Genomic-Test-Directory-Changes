@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"SLC34A2": "G"
+},
 "green": [
 "SLC34A2"
 ]
@@ -13,11 +16,17 @@
 {
 "v": "1.4",
 "date": "2026-08-12",
+"ratings": {
+"SLC34A2": "G"
+},
 "green": [
 "SLC34A2"
 ]
 }
 ],
+"currentRatings": {
+"SLC34A2": "G"
+},
 "currentGreen": [
 "SLC34A2"
 ]

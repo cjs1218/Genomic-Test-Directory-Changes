@@ -6,6 +6,11 @@
 {
 "v": "1.0",
 "date": "2022-11-30",
+"ratings": {
+"CACNA1S": "G",
+"RYR1": "G",
+"STAC3": "G"
+},
 "green": [
 "CACNA1S",
 "RYR1",
@@ -15,6 +20,11 @@
 {
 "v": "1.6",
 "date": "2026-08-12",
+"ratings": {
+"CACNA1S": "G",
+"RYR1": "G",
+"STAC3": "G"
+},
 "green": [
 "CACNA1S",
 "RYR1",
@@ -22,6 +32,11 @@
 ]
 }
 ],
+"currentRatings": {
+"CACNA1S": "G",
+"RYR1": "G",
+"STAC3": "G"
+},
 "currentGreen": [
 "CACNA1S",
 "RYR1",

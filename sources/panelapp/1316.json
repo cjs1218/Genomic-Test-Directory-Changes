@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"GGCX": "G",
+"VKORC1": "G"
+},
 "green": [
 "GGCX",
 "VKORC1"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"GGCX": "G",
+"VKORC1": "G"
+},
 "green": [
 "GGCX",
 "VKORC1"
 ]
 }
 ],
+"currentRatings": {
+"GGCX": "G",
+"VKORC1": "G"
+},
 "currentGreen": [
 "GGCX",
 "VKORC1"

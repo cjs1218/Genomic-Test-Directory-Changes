@@ -6,6 +6,21 @@
 {
 "v": "1.0",
 "date": "2026-05-06",
+"ratings": {
+"BUB1B": "G",
+"CBL": "G",
+"DICER1": "G",
+"HRAS": "G",
+"KRAS": "G",
+"NBN": "G",
+"NF1": "G",
+"PTPN11": "G",
+"RB1": "G",
+"RECQL4": "G",
+"T": "G",
+"TP53": "G",
+"WRN": "G"
+},
 "green": [
 "BUB1B",
 "CBL",
@@ -25,6 +40,21 @@
 {
 "v": "1.2",
 "date": "2026-08-12",
+"ratings": {
+"BUB1B": "G",
+"CBL": "G",
+"DICER1": "G",
+"HRAS": "G",
+"KRAS": "G",
+"NBN": "G",
+"NF1": "G",
+"PTPN11": "G",
+"RB1": "G",
+"RECQL4": "G",
+"T": "G",
+"TP53": "G",
+"WRN": "G"
+},
 "green": [
 "BUB1B",
 "CBL",
@@ -42,6 +72,21 @@
 ]
 }
 ],
+"currentRatings": {
+"BUB1B": "G",
+"CBL": "G",
+"DICER1": "G",
+"HRAS": "G",
+"KRAS": "G",
+"NBN": "G",
+"NF1": "G",
+"PTPN11": "G",
+"RB1": "G",
+"RECQL4": "G",
+"T": "G",
+"TP53": "G",
+"WRN": "G"
+},
 "currentGreen": [
 "BUB1B",
 "CBL",

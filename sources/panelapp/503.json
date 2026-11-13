@@ -6,6 +6,13 @@
 {
 "v": "1.2",
 "date": "2020-03-04",
+"ratings": {
+"EPCAM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G"
+},
 "green": [
 "EPCAM",
 "MLH1",
@@ -17,6 +24,13 @@
 {
 "v": "1.13",
 "date": "2026-05-06",
+"ratings": {
+"EPCAM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G"
+},
 "green": [
 "EPCAM",
 "MLH1",
@@ -28,6 +42,13 @@
 {
 "v": "1.15",
 "date": "2026-08-12",
+"ratings": {
+"EPCAM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G"
+},
 "green": [
 "EPCAM",
 "MLH1",
@@ -37,6 +58,13 @@
 ]
 }
 ],
+"currentRatings": {
+"EPCAM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G"
+},
 "currentGreen": [
 "EPCAM",
 "MLH1",

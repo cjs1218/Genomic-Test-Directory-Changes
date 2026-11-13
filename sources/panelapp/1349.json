@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"ETV6": "G",
+"PAX5": "G"
+},
 "green": [
 "ETV6",
 "PAX5"
@@ -14,12 +18,20 @@
 {
 "v": "1.5",
 "date": "2026-08-12",
+"ratings": {
+"ETV6": "G",
+"PAX5": "G"
+},
 "green": [
 "ETV6",
 "PAX5"
 ]
 }
 ],
+"currentRatings": {
+"ETV6": "G",
+"PAX5": "G"
+},
 "currentGreen": [
 "ETV6",
 "PAX5"

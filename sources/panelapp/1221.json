@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-03-22",
+"ratings": {
+"CDH1": "G"
+},
 "green": [
 "CDH1"
 ]
@@ -13,6 +16,10 @@
 {
 "v": "2.0",
 "date": "2023-12-20",
+"ratings": {
+"CDH1": "G",
+"CTNNA1": "G"
+},
 "green": [
 "CDH1",
 "CTNNA1"
@@ -21,12 +28,20 @@
 {
 "v": "2.6",
 "date": "2026-08-12",
+"ratings": {
+"CDH1": "G",
+"CTNNA1": "G"
+},
 "green": [
 "CDH1",
 "CTNNA1"
 ]
 }
 ],
+"currentRatings": {
+"CDH1": "G",
+"CTNNA1": "G"
+},
 "currentGreen": [
 "CDH1",
 "CTNNA1"

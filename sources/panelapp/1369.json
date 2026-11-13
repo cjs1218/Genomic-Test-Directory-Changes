@@ -6,6 +6,10 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"ABCC8": "G",
+"KCNJ11": "G"
+},
 "green": [
 "ABCC8",
 "KCNJ11"
@@ -14,6 +18,10 @@
 {
 "v": "1.2",
 "date": "2023-09-26",
+"ratings": {
+"ABCC8": "G",
+"KCNJ11": "G"
+},
 "green": [
 "ABCC8",
 "KCNJ11"
@@ -22,12 +30,20 @@
 {
 "v": "1.7",
 "date": "2026-08-12",
+"ratings": {
+"ABCC8": "G",
+"KCNJ11": "G"
+},
 "green": [
 "ABCC8",
 "KCNJ11"
 ]
 }
 ],
+"currentRatings": {
+"ABCC8": "G",
+"KCNJ11": "G"
+},
 "currentGreen": [
 "ABCC8",
 "KCNJ11"

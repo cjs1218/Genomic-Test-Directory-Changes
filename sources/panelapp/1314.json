@@ -6,6 +6,9 @@
 {
 "v": "1.0",
 "date": "2023-09-14",
+"ratings": {
+"PHOX2B": "G"
+},
 "green": [
 "PHOX2B"
 ]
@@ -13,11 +16,19 @@
 {
 "v": "1.8",
 "date": "2026-08-12",
+"ratings": {
+"LBX1": "A",
+"PHOX2B": "G"
+},
 "green": [
 "PHOX2B"
 ]
 }
 ],
+"currentRatings": {
+"LBX1": "A",
+"PHOX2B": "G"
+},
 "currentGreen": [
 "PHOX2B"
 ]

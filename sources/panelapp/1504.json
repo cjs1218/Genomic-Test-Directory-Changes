@@ -1,0 +1,33 @@
+{
+"id": 1504,
+"name": "Isovaleric acidaemia - Diagnostic",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2024-08-07",
+"ratings": {
+"IVD": "G"
+},
+"green": [
+"IVD"
+]
+},
+{
+"v": "1.4",
+"date": "2026-08-12",
+"ratings": {
+"IVD": "G"
+},
+"green": [
+"IVD"
+]
+}
+],
+"currentRatings": {
+"IVD": "G"
+},
+"currentGreen": [
+"IVD"
+]
+}

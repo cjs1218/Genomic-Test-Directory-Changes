@@ -6,6 +6,18 @@
 {
 "v": "1.2",
 "date": "2020-02-18",
+"ratings": {
+"APOA5": "G",
+"APOB": "G",
+"APOC2": "G",
+"APOE": "G",
+"CREB3L3": "G",
+"GPD1": "G",
+"GPIHBP1": "G",
+"LIPI": "R",
+"LMF1": "G",
+"LPL": "G"
+},
 "green": [
 "APOA5",
 "APOB",
@@ -21,6 +33,18 @@
 {
 "v": "2.0",
 "date": "2022-11-30",
+"ratings": {
+"APOA5": "G",
+"APOB": "R",
+"APOC2": "G",
+"APOE": "G",
+"CREB3L3": "G",
+"GPD1": "G",
+"GPIHBP1": "G",
+"LIPI": "R",
+"LMF1": "G",
+"LPL": "G"
+},
 "green": [
 "APOA5",
 "APOC2",
@@ -35,6 +59,18 @@
 {
 "v": "3.0",
 "date": "2023-03-22",
+"ratings": {
+"APOA5": "G",
+"APOB": "R",
+"APOC2": "G",
+"APOE": "G",
+"CREB3L3": "G",
+"GPD1": "G",
+"GPIHBP1": "G",
+"LIPI": "R",
+"LMF1": "G",
+"LPL": "G"
+},
 "green": [
 "APOA5",
 "APOC2",
@@ -49,6 +85,18 @@
 {
 "v": "3.6",
 "date": "2026-08-12",
+"ratings": {
+"APOA5": "G",
+"APOB": "R",
+"APOC2": "G",
+"APOE": "G",
+"CREB3L3": "G",
+"GPD1": "G",
+"GPIHBP1": "G",
+"LIPI": "R",
+"LMF1": "G",
+"LPL": "G"
+},
 "green": [
 "APOA5",
 "APOC2",
@@ -61,6 +109,18 @@
 ]
 }
 ],
+"currentRatings": {
+"APOA5": "G",
+"APOB": "R",
+"APOC2": "G",
+"APOE": "G",
+"CREB3L3": "G",
+"GPD1": "G",
+"GPIHBP1": "G",
+"LIPI": "R",
+"LMF1": "G",
+"LPL": "G"
+},
 "currentGreen": [
 "APOA5",
 "APOC2",

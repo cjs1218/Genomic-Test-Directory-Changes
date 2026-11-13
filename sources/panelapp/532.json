@@ -6,6 +6,19 @@
 {
 "v": "1.2",
 "date": "2020-02-17",
+"ratings": {
+"ACAD9": "R",
+"BCS1L": "G",
+"DGUOK": "G",
+"MPV17": "G",
+"POLG": "G",
+"POLG2": "R",
+"RRM2B": "R",
+"SCO1": "R",
+"TFAM": "A",
+"TRMU": "G",
+"TWNK": "G"
+},
 "green": [
 "BCS1L",
 "DGUOK",
@@ -18,6 +31,19 @@
 {
 "v": "1.9",
 "date": "2023-03-22",
+"ratings": {
+"ACAD9": "R",
+"BCS1L": "G",
+"DGUOK": "G",
+"MPV17": "G",
+"POLG": "G",
+"POLG2": "R",
+"RRM2B": "R",
+"SCO1": "R",
+"TFAM": "A",
+"TRMU": "G",
+"TWNK": "G"
+},
 "green": [
 "BCS1L",
 "DGUOK",
@@ -30,6 +56,19 @@
 {
 "v": "1.16",
 "date": "2026-08-12",
+"ratings": {
+"ACAD9": "R",
+"BCS1L": "G",
+"DGUOK": "G",
+"MPV17": "G",
+"POLG": "G",
+"POLG2": "R",
+"RRM2B": "R",
+"SCO1": "R",
+"TFAM": "A",
+"TRMU": "G",
+"TWNK": "G"
+},
 "green": [
 "BCS1L",
 "DGUOK",
@@ -40,6 +79,19 @@
 ]
 }
 ],
+"currentRatings": {
+"ACAD9": "R",
+"BCS1L": "G",
+"DGUOK": "G",
+"MPV17": "G",
+"POLG": "G",
+"POLG2": "R",
+"RRM2B": "R",
+"SCO1": "R",
+"TFAM": "A",
+"TRMU": "G",
+"TWNK": "G"
+},
 "currentGreen": [
 "BCS1L",
 "DGUOK",
