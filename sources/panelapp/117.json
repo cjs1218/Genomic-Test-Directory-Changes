@@ -1,0 +1,78 @@
+{
+"id": 117,
+"name": "Ovarian cancer pertinent cancer susceptibility",
+"current": "2.4",
+"signoffs": [
+{
+"v": "1.3",
+"date": "2021-09-29",
+"ratings": {
+"BRCA1": "G",
+"BRCA2": "G",
+"BRIP1": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "R",
+"RAD51C": "G",
+"RAD51D": "G"
+},
+"green": [
+"BRCA1",
+"BRCA2",
+"BRIP1",
+"MLH1",
+"MSH2",
+"MSH6",
+"RAD51C",
+"RAD51D"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"ratings": {
+"BRCA1": "G",
+"BRCA2": "G",
+"BRIP1": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "R",
+"RAD51C": "G",
+"RAD51D": "G"
+},
+"green": [
+"BRCA1",
+"BRCA2",
+"BRIP1",
+"MLH1",
+"MSH2",
+"MSH6",
+"RAD51C",
+"RAD51D"
+]
+}
+],
+"currentRatings": {
+"BRCA1": "G",
+"BRCA2": "G",
+"BRIP1": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "R",
+"RAD51C": "G",
+"RAD51D": "G"
+},
+"currentGreen": [
+"BRCA1",
+"BRCA2",
+"BRIP1",
+"MLH1",
+"MSH2",
+"MSH6",
+"RAD51C",
+"RAD51D"
+]
+}

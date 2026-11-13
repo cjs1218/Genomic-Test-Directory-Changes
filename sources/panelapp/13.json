@@ -6,6 +6,31 @@
 {
 "v": "2.2",
 "date": "2020-02-17",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -13,6 +38,31 @@
 {
 "v": "2.4",
 "date": "2020-08-20",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -20,6 +70,31 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -27,6 +102,31 @@
 {
 "v": "3.2",
 "date": "2023-03-22",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -34,6 +134,31 @@
 {
 "v": "3.9",
 "date": "2024-05-01",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -41,6 +166,31 @@
 {
 "v": "3.10",
 "date": "2024-08-07",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -48,6 +198,31 @@
 {
 "v": "3.11",
 "date": "2024-10-30",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -55,6 +230,31 @@
 {
 "v": "3.12",
 "date": "2025-04-30",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "A",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -62,6 +262,31 @@
 {
 "v": "3.15",
 "date": "2026-05-06",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "R",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
@@ -69,11 +294,61 @@
 {
 "v": "3.17",
 "date": "2026-08-12",
+"ratings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "R",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "green": [
 "SCN5A"
 ]
 }
 ],
+"currentRatings": {
+"ABCC9": "R",
+"ANK2": "R",
+"CACNA1C": "R",
+"CACNA2D1": "R",
+"CACNB2": "R",
+"CAV3": "R",
+"DLG1": "R",
+"GPD1L": "R",
+"HCN4": "R",
+"KCND3": "R",
+"KCNE3": "R",
+"KCNE5": "R",
+"KCNH2": "R",
+"KCNJ8": "R",
+"PKP2": "R",
+"RANGRF": "R",
+"SCN10A": "R",
+"SCN1B": "R",
+"SCN2B": "R",
+"SCN3B": "R",
+"SCN5A": "G",
+"SLMAP": "R",
+"TRPM4": "R"
+},
 "currentGreen": [
 "SCN5A"
 ]

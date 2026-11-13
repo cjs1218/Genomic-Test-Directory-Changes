@@ -6,6 +6,25 @@
 {
 "v": "2.0",
 "date": "2023-03-22",
+"ratings": {
+"BPGM": "G",
+"EGLN1": "G",
+"EGLN2": "R",
+"EGLN3": "R",
+"EPAS1": "G",
+"EPO": "G",
+"EPOR": "G",
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HIF1A": "R",
+"JAK2": "A",
+"PIEZO1": "A",
+"PKLR": "R",
+"SH2B3": "A",
+"SLC30A10": "G",
+"VHL": "G"
+},
 "green": [
 "BPGM",
 "EGLN1",
@@ -22,6 +41,25 @@
 {
 "v": "3.0",
 "date": "2026-05-06",
+"ratings": {
+"BPGM": "G",
+"EGLN1": "G",
+"EGLN2": "R",
+"EGLN3": "R",
+"EPAS1": "G",
+"EPO": "G",
+"EPOR": "G",
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HIF1A": "R",
+"JAK2": "G",
+"PIEZO1": "A",
+"PKLR": "R",
+"SH2B3": "A",
+"SLC30A10": "G",
+"VHL": "G"
+},
 "green": [
 "BPGM",
 "EGLN1",
@@ -39,6 +77,25 @@
 {
 "v": "3.2",
 "date": "2026-08-12",
+"ratings": {
+"BPGM": "G",
+"EGLN1": "G",
+"EGLN2": "R",
+"EGLN3": "R",
+"EPAS1": "G",
+"EPO": "G",
+"EPOR": "G",
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HIF1A": "R",
+"JAK2": "G",
+"PIEZO1": "A",
+"PKLR": "R",
+"SH2B3": "A",
+"SLC30A10": "G",
+"VHL": "G"
+},
 "green": [
 "BPGM",
 "EGLN1",
@@ -54,6 +111,25 @@
 ]
 }
 ],
+"currentRatings": {
+"BPGM": "G",
+"EGLN1": "G",
+"EGLN2": "R",
+"EGLN3": "R",
+"EPAS1": "G",
+"EPO": "G",
+"EPOR": "G",
+"HBA1": "G",
+"HBA2": "G",
+"HBB": "G",
+"HIF1A": "R",
+"JAK2": "G",
+"PIEZO1": "A",
+"PKLR": "R",
+"SH2B3": "A",
+"SLC30A10": "G",
+"VHL": "G"
+},
 "currentGreen": [
 "BPGM",
 "EGLN1",

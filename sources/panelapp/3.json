@@ -6,6 +6,18 @@
 {
 "v": "2.2",
 "date": "2020-02-19",
+"ratings": {
+"BMP4": "A",
+"COL11A1": "G",
+"COL11A2": "G",
+"COL2A1": "G",
+"COL9A1": "G",
+"COL9A2": "G",
+"COL9A3": "G",
+"GZF1": "G",
+"LOXL3": "A",
+"LRP2": "A"
+},
 "green": [
 "COL11A1",
 "COL11A2",
@@ -19,6 +31,19 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"BMP4": "A",
+"COL11A1": "G",
+"COL11A2": "G",
+"COL2A1": "G",
+"COL9A1": "G",
+"COL9A2": "G",
+"COL9A3": "G",
+"GZF1": "G",
+"LOXL3": "A",
+"LRP2": "A",
+"VCAN": "A"
+},
 "green": [
 "COL11A1",
 "COL11A2",
@@ -32,6 +57,19 @@
 {
 "v": "4.0",
 "date": "2023-03-22",
+"ratings": {
+"BMP4": "G",
+"COL11A1": "G",
+"COL11A2": "G",
+"COL2A1": "G",
+"COL9A1": "G",
+"COL9A2": "G",
+"COL9A3": "G",
+"GZF1": "G",
+"LOXL3": "A",
+"LRP2": "A",
+"VCAN": "G"
+},
 "green": [
 "BMP4",
 "COL11A1",
@@ -47,6 +85,19 @@
 {
 "v": "4.11",
 "date": "2026-08-12",
+"ratings": {
+"BMP4": "G",
+"COL11A1": "G",
+"COL11A2": "G",
+"COL2A1": "G",
+"COL9A1": "G",
+"COL9A2": "G",
+"COL9A3": "G",
+"GZF1": "G",
+"LOXL3": "A",
+"LRP2": "R",
+"VCAN": "G"
+},
 "green": [
 "BMP4",
 "COL11A1",
@@ -60,6 +111,19 @@
 ]
 }
 ],
+"currentRatings": {
+"BMP4": "G",
+"COL11A1": "G",
+"COL11A2": "G",
+"COL2A1": "G",
+"COL9A1": "G",
+"COL9A2": "G",
+"COL9A3": "G",
+"GZF1": "G",
+"LOXL3": "A",
+"LRP2": "R",
+"VCAN": "G"
+},
 "currentGreen": [
 "BMP4",
 "COL11A1",

@@ -1,0 +1,56 @@
+{
+"id": 55,
+"name": "Breast cancer pertinent cancer susceptibility",
+"current": "2.17",
+"signoffs": [
+{
+"v": "1.1",
+"date": "2021-09-29",
+"ratings": {
+"BRCA1": "G",
+"BRCA2": "G",
+"PALB2": "G",
+"PTEN": "R",
+"TP53": "G"
+},
+"green": [
+"BRCA1",
+"BRCA2",
+"PALB2",
+"TP53"
+]
+},
+{
+"v": "2.0",
+"date": "2023-03-22",
+"ratings": {
+"BRCA1": "G",
+"BRCA2": "G",
+"PALB2": "G",
+"PTEN": "R",
+"TP53": "G"
+},
+"green": [
+"BRCA1",
+"BRCA2",
+"PALB2",
+"TP53"
+]
+}
+],
+"currentRatings": {
+"ATRIP": "A",
+"BRCA1": "G",
+"BRCA2": "G",
+"CDH1": "A",
+"PALB2": "G",
+"PTEN": "A",
+"TP53": "G"
+},
+"currentGreen": [
+"BRCA1",
+"BRCA2",
+"PALB2",
+"TP53"
+]
+}

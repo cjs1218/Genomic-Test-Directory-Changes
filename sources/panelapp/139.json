@@ -6,6 +6,23 @@
 {
 "v": "2.2",
 "date": "2020-02-13",
+"ratings": {
+"ADAMTS13": "R",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "R",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -21,6 +38,23 @@
 {
 "v": "3.0",
 "date": "2023-03-22",
+"ratings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -36,6 +70,23 @@
 {
 "v": "3.4",
 "date": "2024-10-30",
+"ratings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -51,6 +102,23 @@
 {
 "v": "3.6",
 "date": "2025-04-30",
+"ratings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -66,6 +134,23 @@
 {
 "v": "3.8",
 "date": "2026-05-06",
+"ratings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -81,6 +166,23 @@
 {
 "v": "3.10",
 "date": "2026-08-12",
+"ratings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "green": [
 "C3",
 "CD46",
@@ -94,6 +196,23 @@
 ]
 }
 ],
+"currentRatings": {
+"ADAMTS13": "A",
+"C3": "G",
+"CD46": "G",
+"CFB": "G",
+"CFH": "G",
+"CFHR1": "G",
+"CFHR3": "G",
+"CFHR4": "R",
+"CFHR5": "A",
+"CFI": "G",
+"DGKE": "G",
+"INF2": "R",
+"MMACHC": "G",
+"THBD": "R",
+"VTN": "R"
+},
 "currentGreen": [
 "C3",
 "CD46",

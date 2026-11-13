@@ -1,0 +1,47 @@
+{
+"id": 166,
+"name": "Brain cancer pertinent cancer susceptibility",
+"current": "1.5",
+"signoffs": [
+{
+"v": "1.0",
+"date": "2021-09-29",
+"ratings": {
+"APC": "G",
+"ATM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G",
+"TP53": "G"
+},
+"green": [
+"APC",
+"ATM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2",
+"TP53"
+]
+}
+],
+"currentRatings": {
+"APC": "G",
+"ATM": "G",
+"MLH1": "G",
+"MSH2": "G",
+"MSH6": "G",
+"PMS2": "G",
+"TP53": "G"
+},
+"currentGreen": [
+"APC",
+"ATM",
+"MLH1",
+"MSH2",
+"MSH6",
+"PMS2",
+"TP53"
+]
+}

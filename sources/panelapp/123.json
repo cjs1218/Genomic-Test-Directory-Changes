@@ -6,6 +6,23 @@
 {
 "v": "2.2",
 "date": "2020-03-02",
+"ratings": {
+"ACVRL1": "G",
+"ATM": "R",
+"ATR": "R",
+"BMPR2": "A",
+"ENG": "G",
+"EPHB4": "G",
+"FOXF1": "R",
+"GDF2": "A",
+"KRIT1": "R",
+"MRE11": "R",
+"PIK3CA": "R",
+"RASA1": "R",
+"SMAD4": "G",
+"SOX18": "R",
+"TEK": "R"
+},
 "green": [
 "ACVRL1",
 "ENG",
@@ -16,6 +33,23 @@
 {
 "v": "3.0",
 "date": "2022-11-30",
+"ratings": {
+"ACVRL1": "G",
+"ATM": "R",
+"ATR": "R",
+"BMPR2": "A",
+"ENG": "G",
+"EPHB4": "G",
+"FOXF1": "R",
+"GDF2": "G",
+"KRIT1": "R",
+"MRE11": "R",
+"PIK3CA": "R",
+"RASA1": "G",
+"SMAD4": "G",
+"SOX18": "R",
+"TEK": "R"
+},
 "green": [
 "ACVRL1",
 "ENG",
@@ -28,6 +62,23 @@
 {
 "v": "3.8",
 "date": "2026-08-12",
+"ratings": {
+"ACVRL1": "G",
+"ATM": "R",
+"ATR": "R",
+"BMPR2": "A",
+"ENG": "G",
+"EPHB4": "G",
+"FOXF1": "R",
+"GDF2": "G",
+"KRIT1": "R",
+"MRE11": "R",
+"PIK3CA": "R",
+"RASA1": "G",
+"SMAD4": "G",
+"SOX18": "R",
+"TEK": "R"
+},
 "green": [
 "ACVRL1",
 "ENG",
@@ -38,6 +89,23 @@
 ]
 }
 ],
+"currentRatings": {
+"ACVRL1": "G",
+"ATM": "R",
+"ATR": "R",
+"BMPR2": "A",
+"ENG": "G",
+"EPHB4": "G",
+"FOXF1": "R",
+"GDF2": "G",
+"KRIT1": "R",
+"MRE11": "R",
+"PIK3CA": "R",
+"RASA1": "G",
+"SMAD4": "G",
+"SOX18": "R",
+"TEK": "R"
+},
 "currentGreen": [
 "ACVRL1",
 "ENG",
