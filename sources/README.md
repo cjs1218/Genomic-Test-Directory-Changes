@@ -50,7 +50,7 @@ release's first parse needs checking: open a few R codes in the app and compare 
 
 | Release | Published | Spreadsheet | Criteria PDF |
 |---|---|---|---|
-| 2018/19 | October 2018 | ✓ | ☐ (only the FAQ was found; kept in `sources/reference/`) |
+| 2018/19 | October 2018 | ✓ | not in the web archive (only the FAQ; kept in `sources/reference/`) |
 | 2019/20 | March 2019 | ✓ | ✓ |
 | 2020/21 | August 2020 | ✓ | ✓ |
 | 2020/21 update | November 2020 (criteria only; its pages still say August 2020) | uses August 2020 | ✓ |
@@ -64,16 +64,15 @@ release's first parse needs checking: open a few R codes in the app and compare 
 | v6 | January 2024 | ✓ | ✓ |
 | v7 | July 2024 (spreadsheet file named "eligibility-criteria-v7-updated") | ✓ | ✓ |
 | v7.1 | January 2025 | ✓ | ✓ |
-| v8.0 | May 2025 | ☐ missing | ☐ missing |
+| v8.0 | May 2025 | not in the web archive | not in the web archive |
 | v8.1 | 9 July 2025 | ✓ | ✓ |
 | v9 | 8 April 2026 | ✓ | ✓ |
 | v9.1 | 20 May 2026 (criteria update; directory still v9) | (v9) | ✓ from GeneRoute |
-| v9.2 | 9 November 2026 | ✓ | ☐ |
+| v9.2 | 9 November 2026 | ✓ | ✓ |
 
-Not found yet: the December 2017 and March 2018 drafts (before 2018/19); the 2018/19 testing criteria (Annex 1); a
-September 2020 release (the 2021/22 change column says "Changes since September 2020"); v8.0 (May 2025); and the v9.2
-criteria PDF. Until a release's criteria are loaded, its criteria are compared with the nearest loaded
-versions, and the app says the change happened somewhere between them.
+Not in the UK Government Web Archive (checked November 2026): the 2018/19 testing criteria, v8.0 (May 2025), and the
+December 2017 and March 2018 drafts. So criteria comparisons start from March 2019, and changes published in v8.0 are
+dated to v8.1 (July 2025), the first version held after v7.1.
 
 Some PDFs (October 2021, v3, v9) have a font defect that splits words when the text is extracted ("Ref errals f or").
 `tools/parse_version.py` rejoins them using the PDF's raw text, and criteria comparisons ignore spacing, so this never

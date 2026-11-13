@@ -290,14 +290,14 @@
       "label": "v9.2",
       "published": "2026-11-09",
       "directory": "v9.2 (9 November 2026)",
-      "criteria": "",
+      "criteria": "v9.2 (9 November 2026)",
       "files": {
         "xlsx": "rare-and-inherited-disease-national-genomics-test-directory-v9.2.xlsx",
-        "pdf": ""
+        "pdf": "rare-and-inherited-disease-eligibility-criteria-v9.2.pdf"
       },
       "links": {
         "xlsx": "sources/files/rare-and-inherited-disease-national-genomics-test-directory-v9.2.xlsx",
-        "pdf": "https://www.england.nhs.uk/wp-content/uploads/2018/08/rare-and-inherited-disease-eligibility-criteria-v9.2.pdf",
+        "pdf": "sources/files/rare-and-inherited-disease-eligibility-criteria-v9.2.pdf",
         "archive": "https://www.england.nhs.uk/publication/national-genomic-test-directories/"
       }
     }
