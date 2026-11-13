@@ -145,3 +145,20 @@ test('patientLetter: plain English, number changes first, no version numbers, pl
   const notYet = C.patientLetter({ ...base, code: 'R472', events: [{ r: 'c', k: ['added'] }], entA: undefined, entB: { name: 'Spinal muscular atrophy' }, changes: [] });
   assert.match(notYet, /did not include a test for spinal muscular atrophy\. This test was added in November 2026\./);
 });
+
+test('gene ratings between two dates: net change and when it happened, signed-off versions only', () => {
+  const p = { signoffs: [
+    { v: '1.0', date: '2020-02-01', add: ['A', 'B'], rem: [], aa: ['C'], ra: ['D'] },
+    { v: '2.0', date: '2021-03-01', add: ['C'], rem: ['B'], ar: ['C'], ra: ['B'] },
+    { v: '3.0', date: '2023-01-01', add: ['E'], rem: [] }] };
+  const r = C.ratingChanges(p, '2020-06-01', '2024-01-01');
+  assert.equal(r.from.v, '1.0'); assert.equal(r.to.v, '3.0');
+  assert.deepEqual(r.genes.map(g => [g.gene, g.was, g.now]), [['B', 'G', 'R'], ['C', 'A', 'G'], ['E', null, 'G']]);
+  assert.deepEqual(r.genes.find(g => g.gene === 'E').steps, [{ v: '3.0', date: '2023-01-01', was: null, now: 'G' }]);
+  assert.equal(C.ratingChanges(p, '2021-03-01', '2022-01-01').genes.length, 0, 'same version on both dates');
+  const early = C.ratingChanges(p, '2019-01-01', '2021-06-01');
+  assert.ok(early.fromIsFirst, 'before the first sign-off, the first one is used and flagged');
+  const csv = C.geneChangesCsv(r.genes.map(g => ({ panelId: 9, panel: 'Panel, with comma', ...g })), '2020-06-01', '2024-01-01').split('\r\n');
+  assert.match(csv[0], /^Panel ID,Panel,Gene,Change,Rating on 2020-06-01,Rating on 2024-01-01/);
+  assert.equal(csv[3], '9,"Panel, with comma",E,Now green,not on panel,green,2023-01-01,3.0,not on panel,green');
+});

@@ -222,3 +222,27 @@ button.link:hover { background: none; color: var(--accent-dark); }
 .limits li { margin: 4px 0; }
 #start-limits { margin-top: 14px; }
 @media print { .term { border-bottom: 0; } }
+
+/* ---------- Gene changes ---------- */
+fieldset.by { border: 0; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px 18px; align-items: center; }
+fieldset.by legend { font-weight: 600; float: left; margin-right: 10px; padding: 0; }
+fieldset.by label { display: inline-flex; gap: 6px; align-items: center; cursor: pointer; }
+#g-list { position: absolute; z-index: 10; left: 0; right: 0; top: 70px; margin: 0; padding: 4px 0; list-style: none; background: var(--card);
+  border: 2px solid var(--fg); border-radius: 4px; box-shadow: 0 6px 18px rgb(0 0 0 / .18); max-height: 360px; overflow-y: auto; }
+#g-list li { padding: 7px 10px; cursor: pointer; line-height: 1.35; }
+#g-list li[aria-selected="true"], #g-list li:hover { background: var(--accent-soft); }
+#g-list .why { display: block; font-size: .82rem; color: var(--muted); }
+dl.pair { display: grid; grid-template-columns: max-content 1fr; gap: 2px 12px; margin: 6px 0 12px; }
+dl.pair dt { font-weight: 600; } dl.pair dd { margin: 0; }
+.rating { display: inline-block; font-size: .8rem; font-weight: 700; padding: 1px 8px; border-radius: 999px; white-space: nowrap; }
+.rating.green { background: #d6f0dd; color: #14532d; } .rating.amber { background: #fdebc8; color: #6b3d00; }
+.rating.red { background: #fde2e1; color: #8a1c14; } .rating.none { background: transparent; color: var(--muted); border: 1px dashed var(--border); }
+.other-ratings { margin-top: 10px; } .other-ratings summary { cursor: pointer; }
+@media (max-width: 640px) {
+  table.gene-table thead { display: none; }
+  table.gene-table, table.gene-table tbody, table.gene-table tr, table.gene-table td { display: block; width: 100%; }
+  table.gene-table tr { border: 1px solid var(--border); border-radius: 6px; margin-bottom: 8px; padding: 6px 8px; }
+  table.gene-table td { border: 0; padding: 2px 0; display: grid; grid-template-columns: 6em 1fr; gap: 8px; }
+  table.gene-table td::before { content: attr(data-label); font-size: .8rem; font-weight: 600; color: var(--muted); }
+  dl.pair { grid-template-columns: 1fr; }
+}

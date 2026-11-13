@@ -37,3 +37,20 @@ test('main journeys work in a browser', { skip: !pw && 'playwright not installed
     assert.deepEqual(errors, []);
   } finally { await browser.close(); server.close(); }
 });
+
+test('gene changes view works in a browser', { skip: !pw && 'playwright not installed' }, async () => {
+  const server = serve(path.join(__dirname, '..')); await new Promise(r => server.listen(0, r));
+  const base = `http://localhost:${server.address().port}/`;
+  const browser = await pw.chromium.launch(); const page = await browser.newPage();
+  const errors = []; page.on('pageerror', e => errors.push(e.message));
+  try {
+    await page.goto(base + '#view=genes&by=code&q=R208&from=2020-03-01&to=2026-11-13');
+    await page.waitForSelector('#genes-result .gene-table');
+    const txt = await page.textContent('#genes-result');
+    assert.match(txt, /PALB2/); assert.match(txt, /added to the genes named in the test target, August 2020/);
+    await page.goto(base + '#view=genes'); await page.check('input[value=gene]');
+    await page.fill('#g-q', 'PALB'); await page.waitForSelector('#g-list li');
+    assert.ok((await page.$$eval('#g-list li', ls => ls.map(l => l.textContent))).some(t => t.includes('PALB2')));
+    assert.deepEqual(errors, []);
+  } finally { await browser.close(); server.close(); }
+});

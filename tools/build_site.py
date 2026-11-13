@@ -184,6 +184,34 @@ def main():
             genes.setdefault(gname, []).append(e['code'])
     write_js(os.path.join(OUT, 'genes.js'), 'Genes tested by each R code in the latest release (search index).',
              f'TDH.addGenes({dump(dict(sorted(genes.items())))})')
+    # panel index (for the Gene changes view): every panel with a saved history, its sign-off span, and the R codes whose
+    # tests use it now (c) or used it in an earlier release (o); and which panels each gene has ever been on (any rating)
+    uses_now, uses_ever = {}, {}
+    for r in rels:
+        pr = json.load(open(os.path.join(SRC, 'parsed', r['id'] + '.json'), encoding='utf-8'))
+        for e in pr['indications']:
+            for t in e['tests']:
+                for pid in t.get('panels', []):
+                    uses_ever.setdefault(pid, set()).add(e['code'])
+                    if r is rels[-1]: uses_now.setdefault(pid, set()).add(e['code'])
+    pindex, gpanels = {}, {}
+    pdir = os.path.join(OUT, 'panels')
+    for f in sorted(os.listdir(pdir) if os.path.isdir(pdir) else []):
+        if not f.endswith('.js'): continue
+        pid = int(f[:-3])
+        d = json.loads(re.search(r'TDH\.addPanel\(\d+,(.*)\);', open(os.path.join(pdir, f), encoding='utf-8').read(), re.S).group(1))
+        if not d['signoffs']: continue
+        key = lambda c: int(c[1:])
+        now_ = sorted(uses_now.get(pid, ()), key=key)
+        pindex[pid] = {'n': d['name'], 'f': d['signoffs'][0]['date'], 'l': d['signoffs'][-1]['date'], 'c': now_,
+                       'o': sorted(uses_ever.get(pid, set()) - set(now_), key=key)}
+        for so in d['signoffs']:
+            for k in ('add', 'aa', 'ra'):
+                for g in so.get(k, []): gpanels.setdefault(g, set()).add(pid)
+    write_js(os.path.join(OUT, 'panel-index.js'), 'PanelApp panels with a signed-off history: name, first and last sign-off, R codes using them.',
+             f'TDH.addPanelIndex({dump(pindex)})')
+    write_js(os.path.join(OUT, 'gene-panels.js'), 'Panels each gene has been on at any GMS sign-off (any rating).',
+             f'TDH.addGenePanels({dump({g: sorted(v) for g, v in sorted(gpanels.items())})})')
     # curated links win over automatic suggestions for the same code
     cur_from = {(l['from'], l.get('release')) for l in curated}
     links = curated + [l for l in links if (l['from'], l['release']) not in cur_from]

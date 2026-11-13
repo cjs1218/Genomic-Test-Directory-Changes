@@ -7,7 +7,10 @@ const TDH = window.TDH = {
   rel: {}, panels: {}, genes: null,
   addRelease(id, d) { d.byCode = Object.fromEntries(d.indications.map(e => [e.code, e])); this.rel[id] = d; },
   addPanel(id, d) { this.panels[id] = d; },
-  addGenes(g) { this.genes = g; }
+  addGenes(g) { this.genes = g; },
+  panelIndex: null, genePanels: null,
+  addPanelIndex(x) { this.panelIndex = x; },
+  addGenePanels(x) { this.genePanels = x; }
 };
 const RELEASES = TDH_RELEASES;
 const LATEST = RELEASES[RELEASES.length - 1];
@@ -72,6 +75,9 @@ async function panel(pid) {
   return TDH.panels[pid];
 }
 let genesLoading = null;
+let pindexLoading = null, gpLoading = null;
+function loadPanelIndex() { return pindexLoading || (pindexLoading = loadScript('data/panel-index.js').catch(() => { TDH.panelIndex = {}; })); }
+function loadGenePanels() { return gpLoading || (gpLoading = loadScript('data/gene-panels.js').catch(() => { TDH.genePanels = {}; })); }
 function loadGenes() { return genesLoading || (genesLoading = loadScript('data/genes.js').catch(() => { TDH.genes = {}; })); }
 
 // ---------- names and search ----------
@@ -486,7 +492,8 @@ async function renderGenes(entA, entB, dateA, dateB) {
       <div>Then (${esc(C.longDate(dateA))}): ${at(a, dateA, inA)}</div><div>Now (${esc(C.longDate(dateB))}): ${at(b, dateB, inB)}</div>
       ${a && b ? (d.added.length || d.removed.length ? list(d.added, 'Added') + list(d.removed, 'Removed') : '<p class="note">No change in the genes tested.</p>') : ''}</div>`);
   }
-  box.innerHTML = head + blocks.join('');
+  const more = `<p class="no-print"><a href="#view=genes&by=code&q=${encodeURIComponent(entB ? entB.code : entA.code)}&from=${dateA}&to=${dateB}">See every gene change for these panels, with dates and amber/red changes →</a></p>`;
+  box.innerHTML = head + blocks.join('') + more;
   return genes;
 }
 
@@ -533,6 +540,224 @@ function renderVersions() {
       <div class="hint">Directory ${esc(r.directory || '')}${r.criteria ? '; criteria ' + esc(r.criteria) : ''}</div><div class="hint">${docLinks(r)}</div></div></div>`).join('')}</div>`;
 }
 
+
+// ---------- gene changes view ----------
+const gq = $('#g-q'), glist = $('#g-list');
+const G_LABEL = { code: ['R code or condition', 'e.g. R208 or breast cancer. Compares the genes on every panel the code’s tests use.'],
+  panel: ['PanelApp panel', 'Panel name or number, e.g. Hereditary ataxia or 486. Includes panels not named in the directory.'],
+  gene: ['Gene', 'A gene symbol, e.g. PALB2. Shows every panel where its rating changed.'] };
+let gOptions = [], gActive = -1;
+const gBy = () => document.querySelector('input[name=by]:checked').value;
+const ratingName = l => l ? C.RATING[l] : 'not on panel';
+const ratingChip = l => `<span class="rating ${l ? C.RATING[l] : 'none'}">${ratingName(l)}</span>`;
+function setBy(by) {
+  document.querySelectorAll('input[name=by]').forEach(r => { r.checked = r.value === by; });
+  $('#g-q-label').textContent = G_LABEL[by][0]; $('#g-hint').textContent = G_LABEL[by][1];
+  gq.placeholder = { code: 'e.g. R208, breast cancer', panel: 'e.g. Hereditary ataxia, 486', gene: 'e.g. PALB2' }[by];
+}
+document.querySelectorAll('input[name=by]').forEach(r => r.addEventListener('change', () => { setBy(gBy()); gq.value = ''; delete gq.dataset.key; gq.focus(); }));
+
+function gSearch(q) {
+  const by = gBy(), t = q.trim();
+  if (!t) return [];
+  if (by === 'code') return search(t).slice(0, 8).map(o => ({ key: o.code, html: `<span class="code">${o.code}</span> ${esc(latestName(o.code))}${o.why ? `<span class="why">${esc(o.why)}</span>` : ''}`, label: optionLabel(o.code) }));
+  if (by === 'panel') {
+    const idx = TDH.panelIndex || {}, w = C.norm(t).split(/\s+/).filter(Boolean);
+    return Object.entries(idx).filter(([id, p]) => id === t || w.every(x => C.norm(p.n).includes(x)))
+      .sort((a, b) => (b[0] === t) - (a[0] === t) || a[1].n.localeCompare(b[1].n)).slice(0, 8)
+      .map(([id, p]) => ({ key: id, label: `${p.n} (PanelApp ${id})`, html: `${esc(p.n)} <span class="hint">PanelApp ${id}</span>${p.c.length ? `<span class="why">used by ${p.c.join(', ')}</span>` : ''}` }));
+  }
+  const gp = TDH.genePanels || {}, g = t.toUpperCase();
+  return Object.keys(gp).filter(k => k.startsWith(g)).sort((a, b) => (a !== g) - (b !== g) || a.length - b.length || a.localeCompare(b)).slice(0, 8)
+    .map(k => ({ key: k, label: k, html: `<strong>${esc(k)}</strong><span class="why">on ${gp[k].length} panel${gp[k].length > 1 ? 's' : ''}</span>` }));
+}
+function gRender() {
+  if (!gOptions.length) { glist.hidden = true; gq.setAttribute('aria-expanded', 'false'); gq.removeAttribute('aria-activedescendant'); return; }
+  glist.innerHTML = gOptions.map((o, i) => `<li role="option" id="gopt-${i}" data-i="${i}" aria-selected="${i === gActive}">${o.html}</li>`).join('');
+  glist.hidden = false; gq.setAttribute('aria-expanded', 'true');
+  if (gActive >= 0) gq.setAttribute('aria-activedescendant', 'gopt-' + gActive); else gq.removeAttribute('aria-activedescendant');
+}
+function gChoose(o) { gq.value = o.label; gq.dataset.key = o.key; gOptions = []; gActive = -1; gRender(); $('#g-error').hidden = true; }
+gq.addEventListener('input', async () => {
+  delete gq.dataset.key;
+  const by = gBy();
+  await (by === 'code' ? loadGenes() : by === 'panel' ? loadPanelIndex() : loadGenePanels());
+  gOptions = gSearch(gq.value); gActive = -1; gRender();
+});
+gq.addEventListener('keydown', ev => {
+  if (glist.hidden) return;
+  if (ev.key === 'ArrowDown') { gActive = (gActive + 1) % gOptions.length; gRender(); ev.preventDefault(); }
+  else if (ev.key === 'ArrowUp') { gActive = (gActive - 1 + gOptions.length) % gOptions.length; gRender(); ev.preventDefault(); }
+  else if (ev.key === 'Enter' && gActive >= 0) { gChoose(gOptions[gActive]); ev.preventDefault(); }
+  else if (ev.key === 'Escape') { gOptions = []; gRender(); }
+});
+gq.addEventListener('blur', () => setTimeout(() => { gOptions = []; gRender(); }, 150));
+glist.addEventListener('mousedown', ev => { const li = ev.target.closest('li[data-i]'); if (li) { ev.preventDefault(); gChoose(gOptions[+li.dataset.i]); } });
+
+$('#genes-form').addEventListener('submit', async ev => {
+  ev.preventDefault();
+  const err = $('#g-error'); err.hidden = true;
+  const by = gBy(), from = $('#g-from').value, to = $('#g-to').value || today();
+  const fail = m => { err.textContent = m; err.hidden = false; };
+  if (!from) return fail('Enter the “from” date.');
+  if (from > to) return fail('The “from” date is after the “to” date.');
+  if (to > today()) return fail('The “to” date is in the future.');
+  let key = gq.dataset.key;
+  if (!key) {
+    await (by === 'code' ? loadGenes() : by === 'panel' ? loadPanelIndex() : loadGenePanels());
+    const found = gSearch(gq.value);
+    if (by === 'gene' && TDH.genePanels[gq.value.trim().toUpperCase()]) key = gq.value.trim().toUpperCase();
+    else if (found.length === 1) key = found[0].key;
+    else return fail(found.length ? 'More than one match: choose one from the list.' : `Nothing matches “${gq.value}”.`);
+  }
+  location.hash = `view=genes&by=${by}&q=${encodeURIComponent(key)}&from=${from}&to=${to}`;
+});
+
+/** Changes for one panel as HTML, plus rows for the CSV and lines for the copied summary. */
+function panelChangeBlock(pid, p, from, to, usedBy, named) {
+  const r = C.ratingChanges(p, from, to);
+  // the code named its genes on the "from" date instead of using this panel: compare from those named genes
+  if (named && r.to) {
+    const states = C.panelStates(p);
+    const firstGreen = g => states.find(st => st.date <= r.to.date && st.levels.get(g) === 'G');
+    r.from = { v: null, date: null, levels: new Map([...named.genes].map(g => [g, 'G'])), named: named.label };
+    r.fromIsFirst = false;
+    r.genes = [...new Set([...named.genes, ...r.to.levels.keys()])].map(g => ({ gene: g, was: named.genes.has(g) ? 'G' : null, now: r.to.levels.get(g) || null }))
+      .filter(x => x.was !== x.now).map(x => {
+        const d = named.added && named.added[x.gene];  // added as a named gene in a later release, before the panel
+        if (d) return { ...x, steps: [], viaDirectory: d };
+        const f = x.now === 'G' && firstGreen(x.gene);
+        return { ...x, steps: f ? [{ v: f.v, date: f.date, was: null, now: 'G' }] : [] };
+      })
+      .sort((a, b) => a.gene.localeCompare(b.gene));
+  }
+  const idx = (TDH.panelIndex || {})[pid] || {};
+  const count = st => { if (!st) return ''; const n = { G: 0, A: 0, R: 0 }; st.levels.forEach(v => n[v]++); return `${n.G} green, ${n.A} amber, ${n.R} red`; };
+  const at = (st, d) => st && st.named ? `${esc(st.named)}: ${st.levels.size} gene${st.levels.size === 1 ? '' : 's'} (${esc([...st.levels.keys()].join(', '))})` : st ? `signed-off version ${esc(st.v)} (${esc(C.longDate(st.date))}): ${count(st)}` : `no signed-off version yet${p.signoffs.length ? ` (first signed off ${esc(C.longDate(p.signoffs[0].date))})` : ''}`;
+  const head = `<div class="result-head"><h3><a href="https://panelapp.genomicsengland.co.uk/panels/${pid}/">${esc(p.name)}</a> <span class="hint">PanelApp ${pid}</span></h3></div>
+    ${usedBy ? `<p class="hint">${usedBy}</p>` : (idx.c && idx.c.length ? `<p class="hint">Used now by ${idx.c.map(c => `<a href="#${c}">${c}</a>`).join(', ')}</p>` : '')}
+    <dl class="pair"><dt>On ${esc(C.longDate(from))}</dt><dd>${r.fromIsFirst ? `no signed-off version yet, so the first one is used: ${at(r.from)}` : at(r.from)}</dd>
+    <dt>On ${esc(C.longDate(to))}</dt><dd>${at(r.to)}</dd></dl>`;
+  if (!r.from || !r.to) return { html: head + '<p class="muted">No signed-off gene list to compare on these dates.</p>', rows: [], lines: [] };
+  const groups = [['Now green', g => g.now === 'G'], ['No longer green', g => g.was === 'G'], ['Other rating changes', g => g.now !== 'G' && g.was !== 'G']];
+  const when = g => g.viaDirectory ? `added to the genes named in the test target, ${g.viaDirectory}` : g.steps.length ? g.steps.map(s => `${ratingName(s.was)} → ${ratingName(s.now)} on ${C.longDate(s.date)} (v${s.v})`).join('; ')
+    : r.from.named ? (g.was === 'G' ? 'named then; not green on the panel now' : 'on the panel from its first sign-off') : '';
+  const table = list => `<div class="table-wrap"><table class="gene-table"><thead><tr><th>Gene</th><th>On ${esc(C.longDate(from))}</th><th>On ${esc(C.longDate(to))}</th><th>When it changed</th></tr></thead><tbody>
+    ${list.map(g => `<tr><td data-label="Gene"><strong>${esc(g.gene)}</strong></td><td data-label="Then">${r.from.named && !g.was ? '<span class="rating none">not tested</span>' : ratingChip(g.was)}</td><td data-label="Now">${ratingChip(g.now)}</td><td data-label="When">${esc(when(g))}</td></tr>`).join('')}</tbody></table></div>`;
+  const sections = groups.map(([title, test], n) => {
+    const list = r.genes.filter(test);
+    if (!list.length) return n < 2 ? `<p class="muted">${title}: none.</p>` : '';
+    const body = list.length > 40 ? `${table(list.slice(0, 40))}<details><summary>Show all ${list.length}</summary>${table(list.slice(40))}</details>` : table(list);
+    return n === 2 ? `<details class="other-ratings"><summary><strong>${title} (${list.length})</strong>: amber and red genes added, removed or re-rated</summary>${body}</details>` : `<h4>${title} (${list.length})</h4>${body}`;
+  }).join('');
+  const lines = [`${p.name} (PanelApp ${pid}): ${r.from.named ? r.from.named : `${r.from.v} signed off ${C.longDate(r.from.date)}`} → ${r.to.v} signed off ${C.longDate(r.to.date)}`];
+  const nowG = r.genes.filter(g => g.now === 'G'), lostG = r.genes.filter(g => g.was === 'G');
+  const last = g => g.steps.length ? C.longDate(g.steps[g.steps.length - 1].date) : '';
+  lines.push(nowG.length ? `  Now green (${nowG.length}): ${nowG.map(g => `${g.gene} (${g.was ? 'was ' + ratingName(g.was) + ', ' : ''}${g.viaDirectory || last(g)})`).join(', ')}` : '  Now green: none');
+  lines.push(lostG.length ? `  No longer green (${lostG.length}): ${lostG.map(g => `${g.gene} (now ${ratingName(g.now)}, ${last(g)})`).join(', ')}` : '  No longer green: none');
+  const other = r.genes.length - nowG.length - lostG.length;
+  if (other) lines.push(`  Other amber/red rating changes: ${other}`);
+  return { html: head + sections, rows: r.genes.map(g => ({ panelId: pid, panel: p.name, ...g })), lines };
+}
+
+async function renderGenesView(q) {
+  const out = $('#genes-result');
+  const by = ['code', 'panel', 'gene'].includes(q.by) ? q.by : 'code';
+  setBy(by);
+  const from = q.from || '', to = q.to || today();
+  $('#g-from').value = from; $('#g-to').value = to;
+  if (!q.q || !from) { out.innerHTML = `<div class="card start"><h2>Gene changes between two dates</h2>
+      <p>See which genes were added to, or removed from, the PanelApp panels used for NHS testing between two dates, and when each change was made.</p>
+      <ul><li><strong>R code</strong>: every panel the code’s tests use (the panels can change over time).</li>
+      <li><strong>PanelApp panel</strong>: any panel signed off for NHS testing, including ones not named in the directory.</li>
+      <li><strong>Gene</strong>: every panel where that gene’s rating changed.</li></ul>
+      <p class="hint">Uses the versions of each panel signed off for NHS testing, which began in early 2020. <strong>Green</strong> genes are the ones laboratories test; amber and red genes have less evidence and are not tested.</p>
+      <p class="examples-title">Try an example:</p><ul class="examples">
+        <li><a href="#view=genes&by=code&q=R208&from=2020-03-01">R208 breast and ovarian cancer, March 2020 to today</a></li>
+        <li><a href="#view=genes&by=gene&q=PALB2&from=2020-03-01">Gene PALB2, March 2020 to today</a></li>
+        <li><a href="#view=genes&by=panel&q=486&from=2023-01-01&to=2024-12-31">Paediatric disorders panel, during 2023 and 2024</a></li></ul></div>`;
+    return; }
+  out.innerHTML = '<p class="muted">Loading…</p>';
+  await loadPanelIndex();
+  const blocks = [], rows = [], lines = [];
+  let title = '', note = '';
+  if (by === 'code') {
+    const code = q.q.toUpperCase();
+    if (!TDH_CHANGES[code]) { out.innerHTML = `<div class="card"><p>${esc(code)} is not in any version held.</p></div>`; return; }
+    gq.value = optionLabel(code); gq.dataset.key = code;
+    const rA = C.releaseAt(RELEASES, from) || RELEASES[0], rB = C.releaseAt(RELEASES, to) || LATEST;
+    const [A, B] = await Promise.all([release(rA.id), release(rB.id)]);
+    const pa = new Set((A.byCode[code] ? A.byCode[code].tests : []).flatMap(t => t.panels || []));
+    const pb = new Set((B.byCode[code] ? B.byCode[code].tests : []).flatMap(t => t.panels || []));
+    title = `${code} – ${latestName(code)}`;
+    const ids = [...new Set([...pa, ...pb])];
+    if (!ids.length) note = `<p class="muted">${esc(code)}’s tests don’t use a PanelApp panel on either date; any genes are named in the test target (see <a href="#${code}&seen=${from}">the comparison</a>).</p>`;
+    for (const pid of ids) {
+      const p = await panel(pid);
+      const usedBy = pa.has(pid) && pb.has(pid) ? `Used by ${code} on both dates.` : pa.has(pid) ? `Used by ${code} on ${C.longDate(from)} but not on ${C.longDate(to)}.` : `Used by ${code} on ${C.longDate(to)} but not on ${C.longDate(from)}; before that its genes were named in the test target.`;
+      if (!p) { blocks.push(`<div class="card notice">PanelApp panel ${pid}: gene history not available.</div>`); continue; }
+      let named = null;
+      if (!pa.has(pid) && A.byCode[code]) {  // genes named in the code's test targets on the "from" date
+        const gs = new Set(A.byCode[code].tests.flatMap(t => t.panels && t.panels.length ? [] : (t.target.match(/\b[A-Z][A-Z0-9]{1,9}\b/g) || []))
+          .filter(g => /\d/.test(g) || g.length >= 3).filter(g => !['WGS', 'WES', 'MLPA', 'STR', 'CNV', 'DNA', 'FISH', 'NIPD'].includes(g)));
+        if (gs.size) {
+          // when later releases added genes to the named target (e.g. "R208.1 target: BRCA1;BRCA2 → BRCA1;BRCA2;PALB2")
+          const added = {}, span = C.between(RELEASES, rA.id, rB.id).map(r => r.id);
+          for (const e of TDH_CHANGES[code].events.filter(e => span.includes(e.r))) for (const d of e.d || []) {
+            const m = d.match(/^R\d+\.\d+ target: (.*) → (.*)$/); if (!m) continue;
+            const before = new Set(m[1].match(/\b[A-Z][A-Z0-9]{1,9}\b/g) || []);
+            for (const g of m[2].match(/\b[A-Z][A-Z0-9]{1,9}\b/g) || []) if (!before.has(g) && !(g in added)) added[g] = relName(relById(e.r));
+          }
+          named = { genes: gs, added, label: `Genes named in ${code}’s test target (${relName(rA)})` };
+        }
+      }
+      const b = panelChangeBlock(pid, p, from, to, usedBy, named); blocks.push(`<div class="card">${b.html}</div>`); rows.push(...b.rows); lines.push(...b.lines);
+    }
+  } else if (by === 'panel') {
+    const pid = q.q, p = await panel(pid);
+    if (!p) { out.innerHTML = `<div class="card"><p>No signed-off history held for PanelApp panel ${esc(pid)}.</p></div>`; return; }
+    gq.value = `${p.name} (PanelApp ${pid})`; gq.dataset.key = pid;
+    title = `${p.name} (PanelApp ${pid})`;
+    const b = panelChangeBlock(pid, p, from, to); blocks.push(`<div class="card">${b.html}</div>`); rows.push(...b.rows); lines.push(...b.lines);
+  } else {
+    await loadGenePanels();
+    const g = q.q.toUpperCase(), pids = (TDH.genePanels || {})[g] || [];
+    gq.value = g; gq.dataset.key = g;
+    title = `Gene ${g}`;
+    if (!pids.length) { out.innerHTML = `<div class="card"><p>${esc(g)} has not been on any panel signed off for NHS testing.</p></div>`; return; }
+    out.innerHTML = `<p class="muted">Loading ${pids.length} panels…</p>`;
+    const ps = await Promise.all(pids.map(id => panel(id)));
+    const changed = [], same = [];
+    pids.forEach((pid, i) => {
+      const p = ps[i]; if (!p) return;
+      const r = C.ratingChanges(p, from, to);
+      const x = r.genes.find(y => y.gene === g);
+      if (x) { changed.push({ pid, p, x }); rows.push({ panelId: pid, panel: p.name, ...x }); }
+      else if (r.from && r.to && r.to.levels.has(g)) same.push({ pid, p, l: r.to.levels.get(g) });
+    });
+    const used = pid => { const c = (TDH.panelIndex[pid] || {}).c || []; return c.length ? c.map(c => `<a href="#${c}">${c}</a>`).join(', ') : '–'; };
+    blocks.push(`<div class="card"><h3>Panels where ${esc(g)}’s rating changed (${changed.length})</h3>${changed.length ? `<div class="table-wrap"><table class="gene-table"><thead><tr><th>Panel</th><th>Used now by</th><th>On ${esc(C.longDate(from))}</th><th>On ${esc(C.longDate(to))}</th><th>When it changed</th></tr></thead><tbody>
+      ${changed.map(({ pid, p, x }) => `<tr><td data-label="Panel"><a href="#view=genes&by=panel&q=${pid}&from=${from}&to=${to}">${esc(p.name)}</a> <span class="hint">${pid}</span></td><td data-label="Used by">${used(pid)}</td><td data-label="Then">${ratingChip(x.was)}</td><td data-label="Now">${ratingChip(x.now)}</td><td data-label="When">${esc(x.steps.map(s => `${ratingName(s.was)} → ${ratingName(s.now)} on ${C.longDate(s.date)}`).join('; '))}</td></tr>`).join('')}</tbody></table></div>` : '<p class="muted">No changes between these dates.</p>'}
+      ${same.length ? `<details><summary>Panels where ${esc(g)} kept the same rating (${same.length})</summary><ul>${same.map(({ pid, p, l }) => `<li><a href="#view=genes&by=panel&q=${pid}&from=${from}&to=${to}">${esc(p.name)}</a> – ${ratingName(l)}</li>`).join('')}</ul></details>` : ''}</div>`);
+    lines.push(`${g}: rating changed on ${changed.length} panel${changed.length === 1 ? '' : 's'}`);
+    changed.forEach(({ pid, p, x }) => lines.push(`  ${p.name} (PanelApp ${pid}): ${ratingName(x.was)} → ${ratingName(x.now)}${x.steps.length ? ', ' + x.steps.map(s => C.longDate(s.date)).join(', ') : ''}`));
+  }
+  const summary = [`PanelApp gene changes, ${C.longDate(from)} to ${C.longDate(to)} (versions signed off for NHS testing)`, title, ...lines].join('\n');
+  out.innerHTML = `<div class="card answer"><div class="result-head"><h2>${esc(title)}</h2>
+      <div class="toolbar no-print"><button type="button" id="g-copy">Copy summary</button><button type="button" class="secondary" id="g-csv">Download spreadsheet (CSV)</button><button type="button" class="secondary" id="g-print">Print</button></div></div>
+      <p>Changes between <strong>${esc(C.longDate(from))}</strong> and <strong>${esc(C.longDate(to))}</strong>, using the version of each panel signed off for NHS testing on each date. ${term('Green', 'panelapp')} genes are the ones laboratories test.</p>
+      <span class="hint" id="g-copied" role="status"></span></div>${note}${blocks.join('')}<div class="card no-print">${limitsHtml()}</div>`;
+  $('#g-copy').onclick = () => copy(summary, '#g-copied', 'Summary copied');
+  $('#g-print').onclick = () => window.print();
+  $('#g-csv').onclick = () => {
+    const blob = new Blob(['﻿' + C.geneChangesCsv(rows, from, to)], { type: 'text/csv;charset=utf-8' });
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob);
+    a.download = `gene-changes-${(by === 'panel' ? 'panel-' : '') + q.q}-${from}-to-${to}.csv`; document.body.appendChild(a); a.click(); a.remove();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  };
+  document.title = `${title} – gene changes`;
+}
+
 // ---------- routing ----------
 function route() {
   const h = decodeURIComponent(location.hash.slice(1));
@@ -540,14 +765,17 @@ function route() {
   const view = q.view || 'compare';
   document.querySelectorAll('.tab').forEach(t => { if (t.dataset.view === view) t.setAttribute('aria-current', 'page'); else t.removeAttribute('aria-current'); });
   $('#compare-view').hidden = view !== 'compare'; $('#release-view').hidden = view !== 'release'; $('#versions-view').hidden = view !== 'versions';
+  $('#genes-view').hidden = view !== 'genes';
   if (view === 'release') renderRelease(q.rel, q.kind);
   else if (view === 'versions') renderVersions();
+  else if (view === 'genes') renderGenesView(q);
   else if (q.code && /^R\d+$/i.test(q.code)) { $('#choices').hidden = true; renderCompare({ code: q.code.toUpperCase(), seen: q.seen || '', from: q.from, to: q.to }); }
   else { $('#result').innerHTML = ''; $('#start').hidden = false; document.title = 'Test Directory Changes'; }
 }
 
 function init() {
   fillReleaseSelects();
+  setBy('code');
   $('#start-limits').innerHTML = limitsHtml();
   $('#stats').textContent = `Every version from ${C.relDate(RELEASES[0])} to ${C.relDate(LATEST)} (${RELEASES.length} versions)`;
   $('#built').textContent = `Data built ${C.longDate(TDH_BUILT)}.`;

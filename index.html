@@ -29,6 +29,7 @@
 
     <nav class="tabs" aria-label="Views">
       <a href="#" data-view="compare" class="tab">Compare an R code</a>
+      <a href="#view=genes" data-view="genes" class="tab">Gene changes</a>
       <a href="#view=release" data-view="release" class="tab">What changed in a version</a>
       <a href="#view=versions" data-view="versions" class="tab">Versions held</a>
     </nav>
@@ -78,6 +79,29 @@
         </div>
       </div>
       <div id="result" aria-live="polite"></div>
+    </section>
+
+    <section id="genes-view" hidden>
+      <form id="genes-form" class="card" autocomplete="off" novalidate>
+        <fieldset class="by"><legend>Compare genes by</legend>
+          <label><input type="radio" name="by" value="code" checked> R code</label>
+          <label><input type="radio" name="by" value="panel"> PanelApp panel</label>
+          <label><input type="radio" name="by" value="gene"> Gene</label>
+        </fieldset>
+        <div class="form-row">
+          <div class="field grow combo">
+            <label for="g-q" id="g-q-label">R code or condition</label>
+            <input id="g-q" type="text" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="g-list" spellcheck="false" aria-describedby="g-hint">
+            <ul id="g-list" role="listbox" hidden></ul>
+            <p class="hint" id="g-hint"></p>
+          </div>
+          <div class="field"><label for="g-from">From</label><input id="g-from" type="date" aria-describedby="g-from-hint"><p class="hint" id="g-from-hint">For example, the date the patient was seen.</p></div>
+          <div class="field"><label for="g-to">To</label><input id="g-to" type="date" aria-describedby="g-to-hint"><p class="hint" id="g-to-hint">Today, unless you change it.</p></div>
+          <div class="field actions"><button type="submit">Show gene changes</button></div>
+        </div>
+        <p id="g-error" class="error" role="alert" hidden></p>
+      </form>
+      <div id="genes-result" aria-live="polite"></div>
     </section>
 
     <section id="release-view" hidden>

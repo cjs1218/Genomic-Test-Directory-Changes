@@ -6,7 +6,7 @@
     "test": "node --test tests/*.test.js",
     "parse": "python3 tools/parse_version.py --all",
     "build": "python3 tools/build_site.py",
-    "panels": "python3 tools/panel_history.py",
+    "panels": "python3 tools/panel_history.py --all-signed",
     "serve": "python3 -m http.server 8000"
   }
 }

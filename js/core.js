@@ -207,6 +207,65 @@
     return at ? { v: at.v, date: at.date, genes } : null;
   }
 
+  /** Each sign-off of a panel with the rating of every gene then: [{v, date, levels: Map(gene -> 'G'|'A'|'R')}]. Cached on the panel. */
+  function panelStates(panel) {
+    if (panel._states) return panel._states;
+    const out = [], lv = new Map();
+    for (const s of panel.signoffs) {
+      const drop = (list, level) => (list || []).forEach(g => { if (lv.get(g) === level) lv.delete(g); });
+      drop(s.rem, 'G'); drop(s.ar, 'A'); drop(s.rr, 'R');
+      (s.add || []).forEach(g => lv.set(g, 'G')); (s.aa || []).forEach(g => lv.set(g, 'A')); (s.ra || []).forEach(g => lv.set(g, 'R'));
+      out.push({ v: s.v, date: s.date, levels: new Map(lv) });
+    }
+    Object.defineProperty(panel, '_states', { value: out, enumerable: false });
+    return out;
+  }
+
+  const RATING = { G: 'green', A: 'amber', R: 'red' };
+
+  /**
+   * How a panel's gene ratings changed between two dates, using the signed-off version in force on each.
+   * Returns {from, to (states or null), fromIsFirst (true when nothing was signed off by the first date, so the first
+   * sign-off is used), genes: [{gene, was, now ('G'|'A'|'R'|null = not on the panel), steps: [{v, date, was, now}]}]}.
+   * Only genes whose rating differs between the two dates are listed; steps give each sign-off where it changed.
+   */
+  function ratingChanges(panel, fromIso, toIso) {
+    const st = panelStates(panel);
+    const at = iso => { let k = -1; st.forEach((x, n) => { if (x.date <= iso) k = n; }); return k; };
+    let i = at(fromIso), fromIsFirst = false;
+    const j = at(toIso);
+    if (i < 0 && st.length && j >= 0) { i = 0; fromIsFirst = true; }
+    if (i < 0 || j < 0) return { from: i >= 0 ? st[i] : null, to: j >= 0 ? st[j] : null, fromIsFirst, genes: [] };
+    const A = st[i].levels, B = st[j].levels;
+    const genes = [];
+    for (const g of new Set([...A.keys(), ...B.keys()])) {
+      const was = A.get(g) || null, now = B.get(g) || null;
+      if (was === now) continue;
+      const steps = [];
+      for (let k = i + 1; k <= j; k++) {
+        const p = st[k - 1].levels.get(g) || null, c = st[k].levels.get(g) || null;
+        if (p !== c) steps.push({ v: st[k].v, date: st[k].date, was: p, now: c });
+      }
+      genes.push({ gene: g, was, now, steps });
+    }
+    genes.sort((x, y) => x.gene.localeCompare(y.gene));
+    return { from: st[i], to: st[j], fromIsFirst, genes };
+  }
+
+  /** CSV of gene changes: rows [{panelId, panel, gene, was, now, steps}] (one line per sign-off where it changed). */
+  function geneChangesCsv(rows, fromIso, toIso) {
+    const q = v => /[",\n]/.test(String(v)) ? `"${String(v).replace(/"/g, '""')}"` : String(v);
+    const name = l => l ? RATING[l] : 'not on panel';
+    const head = ['Panel ID', 'Panel', 'Gene', 'Change', `Rating on ${fromIso}`, `Rating on ${toIso}`, 'Changed at sign-off (date)', 'Signed-off version', 'Rating before', 'Rating after'];
+    const lines = [head];
+    for (const r of rows) {
+      const change = r.now === 'G' ? 'Now green' : r.was === 'G' ? 'No longer green' : 'Other rating change';
+      for (const s of (r.steps.length ? r.steps : [{ v: '', date: '', was: '', now: '' }]))
+        lines.push([r.panelId, r.panel, r.gene, change, name(r.was), name(r.now), s.date, s.v, s.date ? name(s.was) : '', s.date ? name(s.now) : '']);
+    }
+    return lines.map(l => l.map(q).join(',')).join('\r\n');
+  }
+
   function setDiff(a, b) {
     return { added: [...b].filter(g => !a.has(g)).sort(), removed: [...a].filter(g => !b.has(g)).sort() };
   }
@@ -394,6 +453,6 @@
   }
   const lowerFirst = s => /^[A-Z][a-z]/.test(s) ? s[0].toLowerCase() + s.slice(1) : s;
 
-  const api = { patientLetter, lineChanges, criteriaSource, shortAnswer, longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
+  const api = { panelStates, ratingChanges, geneChangesCsv, RATING, patientLetter, lineChanges, criteriaSource, shortAnswer, longDate, relDate, sameMonthUnsure, inForce, releaseAt, between, tokens, diffTokens, diffText, diffLines, criteriaText, norm, panelAt, setDiff, summary, KIND_TEXT };
   if (typeof module === 'object' && module.exports) module.exports = api; else root.TDHCore = api;
 })(typeof self !== 'undefined' ? self : this);

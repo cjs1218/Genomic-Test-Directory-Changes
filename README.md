@@ -28,6 +28,25 @@ patient was seen. The page then shows, in this order:
   Technical terms (WGS, MLPA, CNVs, trio …) explain themselves on hover, tap or keyboard focus.
 - **What this can and can't tell you**, and a link to report a problem.
 
+### Gene changes
+
+A separate **Gene changes** tab compares PanelApp panels between any two dates (the "to" date is today unless changed),
+using the version of each panel signed off for NHS testing on each date. Search by:
+
+- **R code**: every panel its tests use. When the code named its genes in the test target instead of using a panel on
+  the "from" date (e.g. R208 before 2022), the comparison starts from those named genes, and genes added to the named
+  target are dated by the directory release that added them.
+- **PanelApp panel**: any panel signed off for NHS testing, including ones the directory doesn't name.
+- **Gene**: every panel where that gene's rating changed.
+
+Results list genes that became green, stopped being green, and other amber/red changes, each with the sign-off date (and
+version) of every change between the two dates. Copy a summary or download a spreadsheet (CSV). Sign-offs began in early
+2020; for an earlier date the first sign-off is used and the page says so.
+
+Data: `tools/panel_history.py --all-signed` downloads each signed-off version's ratings (green, amber, red) into
+`sources/panelapp/` and writes `data/panels/`; `tools/build_site.py` writes the search indexes `data/panel-index.js`
+and `data/gene-panels.js`.
+
 When a version's criteria document isn't held (currently v9.2), its criteria are taken from the nearest version that is,
 and the page says so. There is also a **What changed in a version** view and a list of the **Versions held**. Every view
 has a shareable link (e.g. `#R208&seen=2019-06-01`) and prints cleanly.
@@ -64,7 +83,7 @@ with a similar name. These show as "possibly replaced by". To confirm or correct
 
 ## Updating
 
-See [sources/README.md](sources/README.md) to add a release. Then `npm run parse && npm run build && npm run panels && npm test`.
+See [sources/README.md](sources/README.md) to add a release. Then `npm run parse && npm run panels && npm run build && npm test`.
 Needs Python 3 with openpyxl, `pdftotext` (poppler) and Node 22. To view it locally: `npm run serve` and open http://localhost:8000.
 
 Publishing: in the repository settings, turn on GitHub Pages from the `main` branch root.
