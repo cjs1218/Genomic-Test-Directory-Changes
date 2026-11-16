@@ -17,6 +17,9 @@ const LATEST = RELEASES[RELEASES.length - 1];
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 const relById = id => RELEASES.find(r => r.id === id);
+/** Original documents: kept in this repository (sources/files/). A copy of the app published elsewhere (GeneRoute) sets
+    TDH_DOCS_BASE to this repository's site so the links still work. */
+const docUrl = u => /^https?:/.test(u) ? u : (window.TDH_DOCS_BASE || '') + u;
 const today = () => new Date().toISOString().slice(0, 10);
 const codeNum = c => parseInt(c.slice(1), 10);
 const KIND_LABEL = { added: 'New code', removed: 'Retired', name: 'Renamed', criteria: 'Criteria', tests: 'Tests', panels: 'Panels',
@@ -198,8 +201,8 @@ function diffHtml(ops, side) {
 function docLinks(r, ent) {
   const L = r.links || {};
   const out = [];
-  if (L.pdf) out.push(`<a href="${esc(L.pdf)}${ent && ent.page ? '#page=' + ent.page : ''}">Eligibility criteria PDF${ent && ent.page ? ' (p. ' + ent.page + ')' : ''}</a>`);
-  if (L.xlsx) out.push(`<a href="${esc(L.xlsx)}">Spreadsheet</a>`);
+  if (L.pdf) out.push(`<a href="${esc(docUrl(L.pdf))}${ent && ent.page ? '#page=' + ent.page : ''}">Eligibility criteria PDF${ent && ent.page ? ' (p. ' + ent.page + ')' : ''}</a>`);
+  if (L.xlsx) out.push(`<a href="${esc(docUrl(L.xlsx))}">Spreadsheet</a>`);
   if (L.archive) out.push(`<a href="${esc(L.archive)}">Web archive</a>`);
   return out.join(' · ');
 }
@@ -349,13 +352,13 @@ function renderCriteria(o) {
   const box = $('#r-criteria');
   const { centA, centB, critA, critB, relA, relB, changes } = o;
   const la = critA ? critA.label : '', lb = critB ? critB.label : '';
-  const pdf = (r, e) => r && r.links && r.links.pdf && e && e.page ? ` <a class="no-print small" href="${esc(r.links.pdf)}#page=${e.page}">${esc(r.label)} criteria PDF, page ${e.page}</a>` : '';
+  const pdf = (r, e) => r && r.links && r.links.pdf && e && e.page ? ` <a class="no-print small" href="${esc(docUrl(r.links.pdf))}#page=${e.page}">${esc(r.label)} criteria PDF, page ${e.page}</a>` : '';
   let head = `<div class="result-head"><h3>Eligibility criteria: what changed</h3>
     <div class="seg no-print" role="group" aria-label="How to show the criteria">
       ${[['changes', 'Changes only'], ['side', 'Side by side'], ['inline', 'Full text']].map(([m, l]) => `<button type="button" data-mode="${m}" aria-pressed="${critMode === m}">${l}</button>`).join('')}</div></div>`;
   const subst = [];
   if (critA && critA !== relA) subst.push(`the criteria document for ${esc(relName(relA))} isn't held, so ${esc(relName(critA))} is used`);
-  if (critB && critB !== relB) subst.push(`the criteria document for ${esc(relName(relB))} isn't held yet, so ${esc(relName(critB))}, the latest held, is used${relB.links && relB.links.pdf ? ` – <a href="${esc(relB.links.pdf)}">${esc(relB.label)} PDF</a>` : ''}`);
+  if (critB && critB !== relB) subst.push(`the criteria document for ${esc(relName(relB))} isn't held yet, so ${esc(relName(critB))}, the latest held, is used${relB.links && relB.links.pdf ? ` – <a href="${esc(docUrl(relB.links.pdf))}">${esc(relB.label)} PDF</a>` : ''}`);
   if (subst.length) head += `<div class="notice">Note: ${subst.join('; ')}.</div>`;
   if (!centA || !centB) {
     box.innerHTML = head + `<p class="muted">${!centA && !centB ? 'No criteria held for this code in either version.' : `${esc(o.code)} has no criteria in ${esc(!centA ? la : lb)}.`}</p>`
