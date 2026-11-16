@@ -41,7 +41,7 @@ h3 { font-size: 1.1rem; margin: 0 0 10px; }
 .site-head a { color: var(--head-fg); }
 .head-row { display: flex; align-items: center; justify-content: space-between; gap: 12px 16px; flex-wrap: wrap; }
 .brand { display: flex; align-items: center; gap: 12px; min-width: 0; }
-.brand-mark { flex: none; }
+.brand-mark { flex: none; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / .25); }
 .site-head a.brand-home { display: inline-block; font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; text-decoration: none; opacity: .9; }
 .brand-home::after { content: " ›"; }
 .brand h1 { margin: 0; font-size: 1.4rem; line-height: 1.2; }
